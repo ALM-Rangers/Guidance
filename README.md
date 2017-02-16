@@ -10,7 +10,7 @@ notice. You bear the risk of using it.
 #Chapters
 
 ##Templates
-Consistency is important. Find author guidance and templates [here](./Src/Templates).
+Consistency is important. Find author guidance and templates [here](src/Templates).
 
 ##Branching Guidance
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
