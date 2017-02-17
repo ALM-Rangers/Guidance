@@ -22,6 +22,11 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 - [Start here](src/DevOps-Articles)
 
+##Stories
+The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
+
+- [Start here](src/Stories)
+
 #Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
 
