@@ -12,25 +12,25 @@
 ##Value for the reader to read this ebook
 // willys
 ##Value proposition
-//?
+// edward
 ###Go straight to what worked
-//?
+// edward
 ###Avoid the pain of what didn't work
-//?
+// edward
 ###Road-map to create similar results in your org
-//?
+// edward
 ##Intended audience
-//?
+// edward
 ##Why transform?
-//?
+// edward
 ###Part-time, geographically distributed teams
-//?
+// edward
 ###DevOps
-//?
+// edward
 ###Competition
-//?
+// edward
 ###Evolution
-//?
+// edward
 ##What's a ...
 //?
 ###Self-organizing team?
@@ -91,13 +91,13 @@
 
 #Transforming in your org
 ##Clarify the WHY you need to transform ... don't fix what's not broken
-//?
+// edward
 ##Clarify the WHAT you need to transform
-//?
+// edward
 ##Clarify the WHEN you will transform
-//?
+// edward
 ##Baby steps + iterate, no big bang 
-//?
+// edward
 
 #References
 - [How our community evolved](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2016/09/16/how-has-the-ranger-community-evolved-over-the-past-10-years-and-whats-the-future-plan/)
@@ -106,7 +106,7 @@
 
 > Authors: Edward Fry, Rui Melo, Willy Schaub
  
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*
