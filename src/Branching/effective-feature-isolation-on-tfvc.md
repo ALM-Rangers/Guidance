@@ -30,7 +30,11 @@ This topic aims to answer those questions, and give you a clear perspective on f
 
 #What's feature isolation?
 
-The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as “topic branches”) based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch. 
+The feature isolation strategy allows you work on your features or fix bugs in **feature** branches (also known as “topic branches”) based off your **main** branch, or **dev**, or other central branches. It isolates your changes from the rest of your team, allows you to experiment with a feature, and enables easy rollback or merging of changes with your parent branch.
+
+> [!NOTE]
+> 
+> The reference to "feature" is **not** related to the Feature work item type. This strategy can be used with Epic, Feature, Program Backlog Item, User Story, or whatever work item type you've defined in your process. 
 
 It’s typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
 
@@ -91,15 +95,24 @@ Remember it's a soft delete and your history is not lost. You can show deleted b
 
 If needed, you can also [restore](https://www.visualstudio.com/en-us/docs/tfvc/delete-restore-files-folders#restore-items-deleted-from-visual-studio) deleted branches and associated items. 
 
-![Show deleted feature branches](./_img/effective-feature-isolation-on-rfvc/feature-isolation-delete-branches-show.png)
+![Show deleted feature branches](./_img/effective-feature-isolation-on-rfvc/feature-isolation-delete-branches-show.png
+
+If no one in your team has destroyed a branch using the [destroy](https://www.visualstudio.com/en-us/docs/tfvc/destroy-command-team-foundation-version-control) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
 
 > [!NOTE]
 >
 > Use the [destroy](https://www.visualstudio.com/en-us/docs/tfvc/destroy-command-team-foundation-version-control) command with caution. It's a **permanent** delete!
 
-If no one in your team has destroyed a branch, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
+So, by keeping your branches **short-lived** and adopting a **consistent naming convention**, the feature isolation strategy is effective for small and large teams. 
 
-So, by keeping your branches **short-lived** and adopting a **consistent naming convention**, the feature isolation strategy is effective for small and large teams.
+Now that you're using feature isolation, you should explore continuous integration, feature toggles, and other complementary strategies.
+
+##Reference information
+- [Branching Strategies with TFVC (new guidance)](./branching-strategies-with-tfvc.md)
+- [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
+- [Continuous Integration](https://www.visualstudio.com/learn/what-is-continuous-integration/)
+- [Feature Toggles](https://msdn.microsoft.com/en-ca/magazine/dn683796.aspx)
+- [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview)
 
 > Authors: Willy Schaub
  
