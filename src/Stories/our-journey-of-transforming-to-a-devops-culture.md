@@ -10,9 +10,9 @@
 
 #Introduction
 ##Value for the reader to read this ebook
-For many years we have been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered based teams. As we captured our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized that we had to continue to innovate our engineering process, to be able to scale and more importantly, deliver value to our developer community quickly. 
+For many years we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale and more importantly, deliver value to our developer community quickly. 
 
-We embarked on a cultural shift that allowed us to "rub DevOps" on our operational processes, and adopt self-organization, self-management, and autonomy for our teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
+We embarked on a cultural shift that allowed us to "rub DevOps" on our operational processes, and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
 
 > Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet, or one size fits all. The patterns and recommendation covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for you teams. If not, we'd appreciate your candid feedback, so that we can update this article. 
 
@@ -36,6 +36,7 @@ We embarked on a cultural shift that allowed us to "rub DevOps" on our operation
 // edward
 ###Evolution
 // edward
+
 ##What's a ...
 //?
 ###Self-organizing team?
