@@ -43,7 +43,7 @@ Teams are a grouping of individuals who are dependent on each other to pursue a 
 
 Before we started our transition, we relied on traditional **managed** teams. The program manager (PM) set the vision, selected the projects, and managed the unified process and all teams. The structured hierarchy relied on top-down management and bottom-up reporting between the program manager and the project leads (PL), leaving team members with limited authority.
 
-![Managed versus self-organized teams](./_img/our-journey-of-transforming-to-a-devops-culture-teams.png)
+![Managed versus self-organized teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-teams.png)
 
 With **self-organized** teams, the traditional hierarchy and chain-of-command is disappearing for us. 
 
@@ -81,7 +81,7 @@ Cross-functional teams "*have all competencies needed to accomplish the work wit
 
 //?
 
-![Pillars for self-organised teams](./_img/our-journey-of-transforming-to-a-devops-culture-pillars.png)
+![Pillars for self-organised teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-pillars.png)
 
 ##Vision | Mission
 // willys
