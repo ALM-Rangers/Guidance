@@ -38,7 +38,7 @@ The feature isolation strategy allows you work on your features or fix bugs in *
 
 It’s typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
 
-![Basic feature isolation](./_img/effective-feature-isolation-on-rfvc/feature-isolation-basic.png)
+![Basic feature isolation](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 
 Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To workaround this, limit the number of and the lifetime of your TFVC feature branches, and [optimize your workspace](https://www.visualstudio.com/en-us/docs/tfvc/optimize-your-workspace) using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance, and to reduce required disk space on your machine.
 
@@ -60,7 +60,7 @@ Create a feature branch when you need to work on a feature, typically within the
 
 To protect your parent branch and minimize merge conflicts, regularly forward integrate (FI) changes from the parent branch to your feature branch. It ensures that you resolve merge conflicts on your feature branch, not the parent branch.
 
-![Feature isolation drift](./_img/effective-feature-isolation-on-rfvc/feature-isolation-basic-drift.png)
+![Feature isolation drift](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-drift.png)
 
 This strategy also keeps features from getting out of sync with the parent branch, especially if your feature work is taking time or is blocked on the integration of another feature. Remember to FI before you reverse integrate (RI) your changes back to the parent branch!
 
@@ -72,11 +72,11 @@ This strategy also keeps features from getting out of sync with the parent branc
 
 As the number of your feature branches increase, your storage requirements and branch hierarchy visualization noise increases. With only five feature branches, the diagram is already noisy and rapidly losing its monitoring qualities. Can you imagine the impact of your team creating hundreds of feature branches?
  
-![Feature isolation noise](./_img/effective-feature-isolation-on-rfvc/feature-isolation-basic-noise.png)
+![Feature isolation noise](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise.png)
 
 Similarly, the **Source Control Explorer** view becomes noisy and impractical as the number of branches increases. Unless you have a consistent naming convention, finding a specific feature branch among hundreds of feature branches is challenging.
 
-![Feature isolation noise](./_img/effective-feature-isolation-on-rfvc/feature-isolation-basic-noise-vside.png)
+![Feature isolation noise](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
 
 > [!TIP]
 >
@@ -86,7 +86,7 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 
 By [deleting](https://www.visualstudio.com/en-us/docs/tfvc/delete-restore-files-folders#delete-an-item) feature branches you minimise noise and focus on active feature development. 
 
-![Delete feature branches](./_img/effective-feature-isolation-on-rfvc/feature-isolation-delete-branches.png)
+![Delete feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
 
 Remember it's a soft delete and your history is not lost. You can show deleted branches as follows:
 
@@ -95,7 +95,7 @@ Remember it's a soft delete and your history is not lost. You can show deleted b
 
 If needed, you can also [restore](https://www.visualstudio.com/en-us/docs/tfvc/delete-restore-files-folders#restore-items-deleted-from-visual-studio) deleted branches and associated items. 
 
-![Show deleted feature branches](./_img/effective-feature-isolation-on-rfvc/feature-isolation-delete-branches-show.png
+![Show deleted feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches-show.png)
 
 If no one in your team has destroyed a branch using the [destroy](https://www.visualstudio.com/en-us/docs/tfvc/destroy-command-team-foundation-version-control) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
 
