@@ -10,7 +10,7 @@
 
 #Introduction
 ##Value for the reader to read this ebook
-For many years we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale and more importantly, deliver value to our developer community quickly. 
+For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and more importantly, deliver value to our developer community quickly. 
 
 We embarked on a cultural shift that allowed us to "rub DevOps" on our operational processes, and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
 
@@ -34,7 +34,7 @@ We embarked on a cultural shift that allowed us to "rub DevOps" on our operation
 // edward
 ###Competition
 // edward
-###Evolution
+###Evolution @@@NEED TO REVISE THIS HEADING FOR CLARITY @@@
 // edward
 
 ##What's a ...
@@ -63,7 +63,7 @@ Some key observations within our environment:
 
 ###Self-managing team?
 
-Self-managing teams not only choose how best to accomplish their work, but also for managing their engineering process. Building upon organizational processes, these teams adapt their process within the boundary and context of their team.
+Self-managing teams not only choose how best to accomplish their work, but also for manage their engineering process. Building upon organizational processes, these teams adapt their process within the boundary and context of their team.
 
 Some key observations within our environment: 
 - Many teams standardize on [Kanban](https://www.visualstudio.com/en-us/docs/work/kanban/kanban-basics), focusing on moving their work from left (new) to right (done), and relying on PM enablement to minimize bottlenecks. 
