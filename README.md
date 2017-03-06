@@ -15,12 +15,12 @@ Consistency is important. Find author guidance and templates [here](src/Template
 ##Branching Guidance
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-- [Start here](src/Branching-Guidance)
+- [Start here](src/Branching)
 
 ##DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-- [Start here](src/DevOps-Articles)
+- [Start here](src/DevOps)
 
 ##Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
