@@ -9,6 +9,7 @@
 > -----------------------------------------
 
 #Introduction
+
 ##Value for the reader to read this ebook
 For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and more importantly, deliver value to our developer community quickly. 
 
@@ -53,17 +54,17 @@ With **self-organized** teams, the traditional hierarchy and chain-of-command is
 
 ###Self-organizing team?
 
-As suggested by the [Scrum Guide](http://www.scrumguides.org/scrum-guide.html) our "*self-organizing teams choose how best to accomplish their work, rather than being directed by others outside the team*". None of our teams are the same and there is no silver bullet, or secret sauce, to become a self-organized team. 
+As suggested by the [Scrum Guide](http://www.scrumguides.org/scrum-guide.html) our "*self-organizing teams choose how best to accomplish their work, rather than being directed by others outside the team*". None of our teams are the same and there is no secret sauce to become a self-organized team. 
 
 Some key observations within our environment:
 
-- It's not a once-off transition! We're continuously observing, learning, adapting, evolving our environment.
+- It's not a once-off transition! We're continuously observing, learning, adapting, and evolving our environment.
 - Every team member must self-organize! There is no central control or micro-management. 
-- Team members must trust and respect each other! Members who are not engaged or go dark, destroy self-organized teams.
+- Team members must trust and respect each other! Members who are not engaged or go dark, drain the energy from self-organized teams.
 
 ###Self-managing team?
 
-Self-managing teams not only choose how best to accomplish their work, but also for manage their engineering process. Building upon organizational processes, these teams adapt their process within the boundary and context of their team.
+Self-managing teams not only choose how best to accomplish their work, but also how to manage their engineering process. Building upon organizational processes, these teams adapt their process within the boundary and context of their team.
 
 Some key observations within our environment: 
 - Many teams standardize on [Kanban](https://www.visualstudio.com/en-us/docs/work/kanban/kanban-basics), focusing on moving their work from left (new) to right (done), and relying on PM enablement to minimize bottlenecks. 
@@ -79,18 +80,31 @@ Cross-functional teams "*have all competencies needed to accomplish the work wit
 
 #Pillars
 
-//?
+Our teams rely on a common infrastructure, based on [Visual Studio Team Services](https://www.visualstudio.com/team-services/), and four pillars to transition to and effectively evolve as self-organized, self-managed, and cross-functional teams. We'll refer back to these pillars, when we discuss patterns we have observed with our teams.
 
 ![Pillars for self-organised teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-pillars.png)
 
 ##Vision | Mission
-// willys
+
+Our overall goal is to *continuous delivery of value to our end users*. For each project, we define a crisp vision and a captivating mission, aligned with our overall [mission](https://aka.ms/vsarmission) statement. It's important that we create a meaningful purpose and motivation for our teams, so that everyone knows what and believes in what we're doing, and has the feeling of doing something great for the larger community.
+
 ##Framework | boundaries
-// willys
+
+Teams choose what to work on, how to best accomplish their work, and how to manage their engineering process. While this creates the ideal and effective environment for the team, it's important to create clear boundaries of responsibility, information flow, monitoring, and allowable **drift** from the overall program. Our common infrastructure enables teams to focus on their mission and learn to rely on stable progress monitoring, debt, adoption blocker, compliance, and overall program management to create stability. 
+
 ##Authority
-// willys
+
+> "*The price of greatness is responsibility*" - Winston Churchill
+
+Autonomy, independence, and freedom comes with responsibility and accountability. We're all accountable to the community, teams we're collaborating with, and peers. We succeed or fail as a team! Responsibility and accountability is not something we can enforce or establish in a person. It's something we assume and expect from all our team members, outlined in our [manifesto](https://aka.ms/vsaraboutus) of core values.
+
 ##Reflection
-// willys
+
+In our eBook [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) we emphasized the need for continuous reflection, adaption, and improvements. It's important to continuously evolve, find ways to improve as an individual and as well as a greater whole. 
+
+> "*"Information is the oxygen of the modern age. It seeps through the walls topped by barbed wire, it wafts across electrified borders.*" - Ronald Reagan
+
+Reflection is an opportunity for all of us to inspect ourselves, plan for improvements, and share our learnings. It's a pillar that must be embraced by all stakeholders, from individual team member, to the overall program. Reflection fuels improvement and innovation if nurtured, or withers if ignored!
 
 #Our journey
 
