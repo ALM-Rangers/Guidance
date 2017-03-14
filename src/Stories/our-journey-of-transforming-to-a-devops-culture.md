@@ -56,7 +56,7 @@ With **self-organized** teams, the traditional hierarchy and chain-of-command is
 
 As suggested by the [Scrum Guide](http://www.scrumguides.org/scrum-guide.html) our "*self-organizing teams choose how best to accomplish their work, rather than being directed by others outside the team*". None of our teams are the same and there is no secret sauce to become a self-organized team. 
 
-Some key observations within our environment:
+Observations:
 
 - It's not a once-off transition! We're continuously observing, learning, adapting, and evolving our environment.
 - Every team member must self-organize! There is no central control or micro-management. 
@@ -66,7 +66,7 @@ Some key observations within our environment:
 
 Self-managing teams not only choose how best to accomplish their work, but also how to manage their engineering process. Building upon organizational processes, these teams adapt their process within the boundary and context of their team.
 
-Some key observations within our environment: 
+Observations: 
 - Many teams standardize on [Kanban](https://www.visualstudio.com/en-us/docs/work/kanban/kanban-basics), focusing on moving their work from left (new) to right (done), and relying on PM enablement to minimize bottlenecks. 
 - Successful self-managed teams actively monitor and evolve their process. 
 
