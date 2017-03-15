@@ -52,7 +52,13 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 
 ## Start with a simple branching strategy
 
-Create a source control structure that identifies *shippable* release units. 
+Create a source control structure that identifies *shippable* release units. The concept of *releasable units* are a foundational piece of this strategy, which Steve St Jean describes as follows:
+- The physical unit of versioning and delivery.
+- The primary unit to support the branching and release models.
+- Can be at the Suite-, Application-, or Component-level.
+- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit.
+- In TFVC this would be the root node under the team project node.
+- Can be equated to
 
 You typically start with having to support only one production version, with parallel defect corrections and development of new features for future releases. Typical examples include web sites, corporate line of business applications, and interim tools.
 
@@ -81,7 +87,7 @@ Automate your build to trigger with every checkin to the release branch, run aut
 
 When the need arises to support more than one production version, for example a commercial solution such as Word, you can expand your simple branching strategy. 
 
-For every completed release cycle you need to support, create a new release branch and continue next version development in main, using [feature isolation](./effective-feature-isolation-on-tfvc).
+For every completed release cycle you need to support, create a new release branch and continue next version development in main, using [feature isolation](./effective-feature-isolation-on-tfvc). Take note of the reverse integration (RI) merges from v1.0 and v2.0 to **main**, which represent bug fixes that are released to production.
 
 ![Version 2.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-complex.png)
 
