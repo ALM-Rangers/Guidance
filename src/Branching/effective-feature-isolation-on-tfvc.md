@@ -11,7 +11,7 @@ author: willys
 ---
 
 > 
-> #**THIS IS DRAFT.3 - WORK IN PROGRESS**
+> #**THIS IS DRAFT.4 - PUBLISHED TO [Articles about DevOps and Visual Studio Team Services](https://aka.ms/techarticles)**
 > 
 
 #Effective feature isolation on TFVC
@@ -116,7 +116,7 @@ Now that you're using feature isolation, you should explore continuous integrati
 
 > Authors: Willy Schaub
  
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*
