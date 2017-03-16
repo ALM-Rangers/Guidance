@@ -1,4 +1,5 @@
 
+
 #Visual Studio ALM Rangers Guidance 
 
 #Introduction 
@@ -16,11 +17,12 @@ Consistency is important. Find author guidance and templates [here](src/Template
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
 - [Start here](src/Branching)
+- Completed articles:
 
-| Article | DRAFT | FINAL PUBLICATION |
-|---------|-------|-------------------|
-|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|TBD|
-|Effective TFVC branching stretagies for DevOps|TBD|TBD|
+  | Article | DRAFT | FINAL PUBLICATION |
+  |---------|-------|-------------------|
+  |Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|TBD|
+  |Effective TFVC branching stretagies for DevOps|TBD|TBD|
 
 ##DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
