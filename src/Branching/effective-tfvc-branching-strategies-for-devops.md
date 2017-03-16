@@ -120,7 +120,7 @@ So, by using a **simple** branching strategy and adopting a **consistent naming 
 
 > Authors: Sergio A Romero
  
-*(c) 2015 Microsoft Corporation. All rights reserved. This document is
+*(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.*
