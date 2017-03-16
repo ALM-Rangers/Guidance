@@ -17,6 +17,11 @@ The purpose is to build some insightful and practical guidance around branching 
 
 - [Start here](src/Branching)
 
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|TBD|
+|Effective TFVC branching stretagies for DevOps|TBD|TBD|
+
 ##DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
