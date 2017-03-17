@@ -108,7 +108,7 @@ So, by using a **simple** branching strategy and adopting a **consistent naming 
 - Avoid going branch crazy!
 	- **merging** changes comes with complexity and a cost
 	- there's no need to have a separate branch per environment
-- Do not use **cherry-picking** to get your code to production
+- Avoid using **cherry-picking** to get your code to production
 - Do not attempt to solve **people** or **process** problems with tools
 
 #Reference information
