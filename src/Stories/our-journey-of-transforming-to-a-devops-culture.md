@@ -10,12 +10,12 @@
 
 #Introduction
 
-##Value for the reader to read this ebook
-For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and more importantly, deliver value to our developer community quickly. 
+##Value for the reader to read this eBook
+For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteer-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and more importantly, deliver value to our developer community quickly. 
 
-We embarked on a cultural shift that allowed us to "rub DevOps" on our operational processes, and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
+We embarked on a cultural shift that allowed us to "rub DevOps" on our operational processes, and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioral patterns we have observed. 
 
-> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet, or one size fits all. The patterns and recommendation covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for you teams. If not, we'd appreciate your candid feedback, so that we can update this article. 
+> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet, or one size fits all. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate your candid feedback, so that we can update this article. 
 
 ##Value proposition
 // edward
@@ -46,10 +46,10 @@ Before we started our transition, we relied on traditional **managed** teams. Th
 
 ![Managed versus self-organized teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-teams.png)
 
-With **self-organized** teams, the traditional hierarchy and chain-of-command is disappearing for us. 
+With **self-organized** teams, the traditional hierarchy and chain-of-command is disappearing. 
 
 - The role of the program manager has evolved from management to enablement. 
-- The project lead is still pivotal to drive the team's energy and momentum, but no longer reports to the PM.
+- The project lead is still pivotal in driving the team's energy and momentum, but no longer reports to the PM.
 - Each team shares the point-of-contact (PC) responsibility, enabling shared status knowledge and continuous collaboration.
 
 ###Self-organizing team?
@@ -80,9 +80,9 @@ Cross-functional teams "*have all competencies needed to accomplish the work wit
 
 #Pillars
 
-Our teams rely on a common infrastructure, based on [Visual Studio Team Services](https://www.visualstudio.com/team-services/), and four pillars to transition to and effectively evolve as self-organized, self-managed, and cross-functional teams. We'll refer back to these pillars, when we discuss patterns we have observed with our teams.
+Our teams rely on a common infrastructure, based on [Visual Studio Team Services](https://www.visualstudio.com/team-services/), and four pillars to transition to and effectively evolve as self-organized, self-managed, and cross-functional teams. We'll refer to these pillars when we discuss patterns we have observed with our teams.
 
-![Pillars for self-organised teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-pillars.png)
+![Pillars for self-organized teams](./_img/our-journey-of-transforming-to-a-devops-culture/our-journey-pillars.png)
 
 ##Vision | Mission
 
@@ -100,11 +100,11 @@ Autonomy, independence, and freedom comes with responsibility and accountability
 
 ##Reflection
 
-In our eBook [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) we emphasized the need for continuous reflection, adaption, and improvements. It's important to continuously evolve, find ways to improve as an individual and as well as a greater whole. 
+In our eBook [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) we emphasized the need for continuous reflection, adaption, and improvements. It's important to continuously evolve, find ways to improve as an individual and as a greater whole. 
 
 > "*"Information is the oxygen of the modern age. It seeps through the walls topped by barbed wire, it wafts across electrified borders.*" - Ronald Reagan
 
-Reflection is an opportunity for all of us to inspect ourselves, plan for improvements, and share our learnings. It's a pillar that must be embraced by all stakeholders, from individual team member, to the overall program. Reflection fuels improvement and innovation if nurtured, or withers if ignored!
+Reflection is an opportunity for all of us to inspect ourselves, plan for improvements, and share our learnings. It's a pillar that must be embraced by all stakeholders, from individual team member, to the overall program. Reflection fuels improvement and innovation if nurtured, and withers if ignored!
 
 #Our journey
 
@@ -112,7 +112,7 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 
 ##Why we transformed
 // ruimelo
-##When we transfored (should be when we started as transformation is ongoing)
+##When we transformed (should be when we started as transformation is ongoing)
 // ruimelo
 ##How we transformed
 // ruimelo
@@ -157,7 +157,7 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 
 #References
 - [How our community evolved](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2016/09/16/how-has-the-ranger-community-evolved-over-the-past-10-years-and-whats-the-future-plan/)
-- [What are self organising teams](http://www.infoq.com/articles/what-are-self-organising-teams)
+- [What are self organizing teams](http://www.infoq.com/articles/what-are-self-organising-teams)
 - [getKanban](https://getKanban.com)
 
 > Authors: Edward Fry, Rui Melo, Willy Schaub
