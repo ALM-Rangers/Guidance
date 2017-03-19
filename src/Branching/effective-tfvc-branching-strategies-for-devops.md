@@ -43,7 +43,7 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 - Use consistent naming conventions for branches
 	- features/username/description for work performed by an individual - example, *features/sandra/sdk-java*
 	- bugfix/username/bugid for work done specific to an engineering bug - example, *bugfix/takashi/707*
-	- releases/version for planned releases - example, *releases/V1.00RC*
+	- releases/version for planned releases - example, *releases/V1.00*
 - Frequently reverse integrate (RI) and merge into your main branch
 - Encourage consistent code reviews - garbage in, garbage out
 - Implement a CI/CD pipeline, using:
@@ -56,9 +56,9 @@ Create a source control structure that identifies *shippable* release units. The
 - The physical unit of versioning and delivery.
 - The primary unit to support the branching and release models.
 - Can be at the Suite-, Application-, or Component-level.
-- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit.
+- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit but Visio is not as it may release or patch independent of the rest of the Microsoft OFfice SUite.
 - In TFVC this would be the root node under the team project node.
-- Can be equated to
+- Can be equated to a repo in Git
 
 You typically start with having to support only one production version, with parallel defect corrections and development of new features for future releases. Typical examples include web sites, corporate line of business applications, and interim tools.
 
@@ -81,7 +81,15 @@ Automate your build to trigger with every checkin to the release branch, run aut
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|
 |Main|CI_Bld|Dev|Triggered with every checkin to main|
-|V1.00RC|RCV1_CI_Bld|Dev -> QA -> UAT -> Staging -> Prod|Triggered with every checkin to release|
+|V1.00|RC_Bld|Dev -> QA -> UAT -> Staging -> Prod|Triggered with every checkin to release|
+
+When version 2 becomes the Release Candidate you can update your existing RC build definition to point to the V2.00 branch and it will now build and release just as V1.00 did when it was the current version.
+
+|Branch|Build|Pipelines|Notes|
+|------|-----|---------|-----|
+|Main|CI_Bld|Dev|Triggered with every checkin to main|
+|V2.00|RC_Bld|Dev -> QA -> UAT -> Staging -> Prod|Triggered with every checkin to release|
+|V1.00|Hotfix_Bld|Hotfix -> Staging -> Prod|Triggered with every checkin to hotfix|
 
 ## Expand branching strategy as needed
 
