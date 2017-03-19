@@ -126,24 +126,67 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 // ruimelo
 
 #Patterns
-##The team that...
-//?
-###Goes from zero to isolated success
-// willys
-###Goes from zero to cross-team success
-// willys
-###Implodes with over-ambition
-// willys
-###Fizzles out over time
-// willys
-###Never get's started
+
+Team behaviours create patterns giving clues into behaviours and concepts that work for or against us. You'll probably recognize some of the patterns we have observed as part of our transformation and learn from the others. The objective of this section is not to critique any of our teams, but to share the patterns, anti-patterns, dysfunctions, and more importantly to cultivate productive, passionate, and healthy teams.
+
+##Goes from zero to isolated success
 // willys
 
+![image showing dash to success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-success.png)
+Project goal is articulated and visible
+Team proudly shares their status, progress, and product for all to see
+Atmosphere of transparency, trust, and collaboration 
+
+##Goes from zero to cross-team success
+// willys
+
+![image showing dash to team success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-team.png)
+
+##Implodes with over-ambition
+// willys
+
+![image showing reach for stars](./_img/our-journey-of-transforming-to-a-devops-culture/reach-4-stars.png)
+Continuous passion and activity
+False sense of urgency over quality
+There's always one team member that starts as the hero and ends as the bottleneck
+Bloat the requirements and features until the progress falters
+Warning signs  
+- We'll makeup slippage in the next sprint
+- We're toast
+
+##Fizzles out over time
+// willys
+
+![image showing fizzle out](./_img/our-journey-of-transforming-to-a-devops-culture/all-gone.png)
+Design, develop, test paralysis
+Disagree on scope, features, design ... 
+Passion, commitment, and capacity dwindles
+Warning signs
+- Team's too quiet
+- Team's waiting on each other
+- Team's lacklustre
+- Status "work continues" ... "code complete"
+
+##Never get's started
+// willys
+
+![image showing never get's started](./_img/our-journey-of-transforming-to-a-devops-culture/never-gets-started.png)
+No-one has passion for or believes in the project
+No-one sees the value
+No vision or achievable goal
+Project design and planning plod on and on and on
+Warning sign
+- Smell
+- We're clueless
+Cost of these projects is high on morale, passion, and future project commitment
+
 #Continuing the transformation
+
 ##What's next?
-//?
+// willys
+
 ##Tools and technologies?
-//?
+// willys
 
 #Transforming in your org
 ##Clarify the WHY you need to transform ... don't fix what's not broken
