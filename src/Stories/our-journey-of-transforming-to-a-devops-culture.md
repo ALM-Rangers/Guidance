@@ -130,18 +130,22 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 Team behaviours create patterns giving clues into behaviours and concepts that work for or against us. You'll probably recognize some of the patterns we have observed as part of our transformation and learn from the others. The objective of this section is not to critique any of our teams, but to share the patterns, anti-patterns, dysfunctions, and more importantly to cultivate productive, passionate, and healthy teams.
 
 ##Goes from zero to isolated success
-// willys
+
+The team exemplifies the dream team that everyone wants to be a member of.
 
 ![image showing dash to success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-success.png)
-Project goal is articulated and visible
-Team proudly shares their status, progress, and product for all to see
-Atmosphere of transparency, trust, and collaboration
-Pillars OK - Vision, Framework, Authority, Reflection
+
+The project **vision** is articulated, visible, and regularly reiterated. The team is comprised of a natural leader, members with a variety of competence in different functions, and an atmosphere of trust and **authority**.  They have a consistent **framework** and proudly share their status, progress, and previews. When you review their dashboards, you're not overwhelmed with noise, trends are visible, **reflective** and predictive.
+
+Stakeholders, such as Program Managers (PM) or Product Owners (PO), do not have to ask for status. The transparency, passion, and collaboration is infectious!
 
 ##Goes from zero to cross-team success
-// willys
+
+Teams who embrace self-organization and self-management, are an inspiring autonomous team within teams.
 
 ![image showing dash to team success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-team.png)
+
+We recognized the dream team that embraced the four main pillars of vision, framework, authority, and reflection. Initially the team will be focused on their project, their success, and isolated from the rest of the teams. As they mature and improve their skills, they expand their influence to other self-organized and self-managed teams. Isolated success evolves into cross-team success.
 
 ##Implodes with over-ambition
 // willys
