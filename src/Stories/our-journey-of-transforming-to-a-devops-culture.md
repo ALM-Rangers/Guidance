@@ -145,21 +145,19 @@ Teams who embrace self-organization and self-management, are an inspiring autono
 
 ![image showing dash to team success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-team.png)
 
-We recognized the dream team that embraced the four main pillars of vision, framework, authority, and reflection. Initially the team will be focused on their project, their success, and isolated from the rest of the teams. As they mature and improve their skills, they expand their influence to other self-organized and self-managed teams. Isolated success evolves into cross-team success.
+We recognized the dream team that embraced the four main pillars of **vision**, **framework**, **authority**, and **reflection**. Initially the team will be focused on its own project and success, isolated from the rest of the teams. As they mature and improve their skills, they mentor and expand their influence to other self-organized and self-managed teams.
+
+Stakeholders, such as Program Managers (PM) or Product Owners (PO), surrounded by these inspirational teams, are in nirvana.
 
 ##Implodes with over-ambition
-// willys
+
+The team arises like a rising star, but fails to deliver value to the user.
 
 ![image showing reach for stars](./_img/our-journey-of-transforming-to-a-devops-culture/reach-4-stars.png)
-Continuous passion and activity
-False sense of urgency over quality
-There's always one team member that starts as the hero and ends as the bottleneck
-Bloat the requirements and features until the progress falters
-Warning signs  
-- We'll makeup slippage in the next sprint
-- We're toast
-- Pillars OK - Framework, Authority
-- Pillars NOK - Vision, Reflection
+
+If you're a fly on the wall of this team, you'll experience a profound sense of urgency, continuous passion, and frenzied. It's not unusual for team members working on and completing assumed work items before the team has agreed the vision. There's always one team member who starts as the hero and ends as the bottleneck. Bloating requirements and features is one of the symptoms, resulting in the team's ambition, energy, and capacity to ultimately fizzle out.
+
+These teams fail to agree on a vision and plan of action (framework), they rely on one team member, typically their project lead, and never have time to reflect. They're toast before getting started.
 
 ##Fizzles out over time
 // willys
