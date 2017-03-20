@@ -56,7 +56,7 @@ Create a source control structure that identifies *shippable* release units. The
 - The physical unit of versioning and delivery.
 - The primary unit to support the branching and release models.
 - Can be at the Suite-, Application-, or Component-level.
-- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit but Visio is not as it may release or patch independent of the rest of the Microsoft OFfice SUite.
+- For Suites, all applications must version and patch together. For example, Microsoft Word and Excel are part of the Microsoft Office Suite releasable unit but Visio is not as it may release or patch independent of the rest of the Microsoft Office Suite.
 - In TFVC this would be the root node under the team project node.
 - Can be equated to a repo in Git
 
