@@ -135,7 +135,7 @@ Team behaviours create patterns giving clues into behaviours and concepts that w
 
 > The team exemplifies the dream team that everyone wants to be a member of.
 
-![image showing dash to success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-success.png)
+![image showing dash to success](./_img/our-journey-of-transforming-to-a-devops-culture/p-zero-2-success.png)
 
 The project **vision** is articulated, visible, and regularly reiterated. The team is comprised of a natural leader, members with a variety of competence in different functions, and an atmosphere of trust and **authority**.  They have a consistent **framework** and proudly share their status, progress, and previews. When you review their dashboards, you're not overwhelmed with noise, trends are visible, **reflective** and predictive.
 
@@ -145,7 +145,7 @@ Stakeholders, such as Program Managers (PM) or Product Owners (PO), do not have 
 
 > Teams who embrace self-organization and self-management, are an inspiring autonomous team within teams.
 
-![image showing dash to team success](./_img/our-journey-of-transforming-to-a-devops-culture/zero-2-team.png)
+![image showing dash to team success](./_img/our-journey-of-transforming-to-a-devops-culture/p-zero-2-team.png)
 
 We recognized the dream team that embraced the four main pillars of **vision**, **framework**, **authority**, and **reflection**. Initially the team will be focused on its own project and success, isolated from the rest of the teams. As they mature and improve their skills, they mentor and expand their influence to other self-organized and self-managed teams.
 
@@ -155,7 +155,7 @@ Stakeholders, such as Program Managers (PM) or Product Owners (PO), surrounded b
 
 > The team arises like a rising star, then crashes like a doomed meteorite.
 
-![image showing reach for stars](./_img/our-journey-of-transforming-to-a-devops-culture/reach-4-stars.png)
+![image showing reach for stars](./_img/our-journey-of-transforming-to-a-devops-culture/p-reach-4-stars.png)
 
 If you're a fly on the wall of this team, you'll experience a profound sense of urgency, continuous passion, and frenzied. It's not unusual for team members working on and completing assumed work items before the team has agreed the vision. There's always one team member who starts as the hero and ends as the bottleneck. Bloating requirements and features is one of the symptoms, resulting in the team's ambition, energy, and capacity to ultimately fizzle out.
 
@@ -165,7 +165,7 @@ These teams fail to agree on a vision and plan of action (framework), they rely 
 
 > The team gets started, keeps moving, but fails to deliver value.
 
-![image showing fizzle out](./_img/our-journey-of-transforming-to-a-devops-culture/all-gone.png)
+![image showing fizzle out](./_img/our-journey-of-transforming-to-a-devops-culture/p-all-gone.png)
 
 Similarly this team typically starts with energy and resolve. However, design, development, and test paralysis sets in as the team disagrees on scope, features, and designs. There's no clear vision, no authority and no guiding framework. The team's passion, commitment, and capacity dwindles and resigned silence takes over until there is no energy at all.
 
@@ -175,7 +175,7 @@ Keep a lookout for warning signs. For example, when a team continuously reports 
 
 > The team is uninspired and uncommitted, but says nothing.
 
-![image showing never get's started](./_img/our-journey-of-transforming-to-a-devops-culture/never-gets-started.png)
+![image showing never get's started](./_img/our-journey-of-transforming-to-a-devops-culture/p-never-gets-started.png)
 
 No-one in the team has passion for or believes in the project. No-one sees tangible value, a vision, or achievable goal. Typically these teams never get started or the design and planning plod on and on. Everyone goes silent and lays low until until there's an expected milestone or a request for status.
 
