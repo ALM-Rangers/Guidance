@@ -10,6 +10,10 @@ ms.author: willys
 author: sergio romero
 ---
 
+> 
+> #**THIS IS DRAFT.3 - PUBLISHED TO [Articles about DevOps and Visual Studio Team Services](https://aka.ms/techarticles)**
+>
+
 # Effective TFVC branching strategies for DevOps
 
 Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](https://msdn.microsoft.com/en-us/library/ms181237.aspx))? You probably have a few questions, such as:
