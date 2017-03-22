@@ -20,8 +20,8 @@ The purpose is to build some insightful and practical guidance around branching 
 
   | Article | DRAFT | FINAL PUBLICATION |
   |---------|-------|-------------------|
-  |Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|TBD|
-  |Effective TFVC branching stretagies for DevOps|TBD|TBD|
+  |Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-feature-isolation-on-tfvc)|
+  |Effective TFVC branching stretagies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-tfvc-branching-strategies-for-devops)|
 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
