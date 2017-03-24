@@ -1,8 +1,9 @@
 
 # Visual Studio ALM Rangers Guidance 
+![](ALMRangers.Logo.250x83.png)
 
 # Introduction 
-Welcome to our staging area for our practical guidance, giving you an early glimpse into upcoming guidance. 
+Welcome to our staging area for our practical guidance, giving you an early glimpse into upcoming guidance. You can find a list of all our published articles [here](https://aka.ms/vsarpublications). 
 
 Information and views expressed in this guidance, including URL and other Internet Web site references, may change without
 notice. You bear the risk of using it.
