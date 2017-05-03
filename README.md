@@ -31,8 +31,9 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 - [Start here](src/DevOps)
 - Work in progress
 
-  | Article | DRAFT | FINAL PUBLICATION |
-  |---------|-------|-------------------|
+  | Article | DRAFT | FINAL PUBLICATION |
+  |---------|-------|-------------------|
+  |Manage database upgrades|||
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
