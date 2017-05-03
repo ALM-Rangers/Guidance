@@ -1,4 +1,5 @@
 
+
 # Visual Studio ALM Rangers Guidance 
 ![](ALMRangers.Logo.250x83.png)
 
@@ -28,11 +29,20 @@ The purpose is to build some insightful and practical guidance around branching 
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
 - [Start here](src/DevOps)
+- Work in progress
+
+  | Article | DRAFT | FINAL PUBLICATION |
+  |---------|-------|-------------------|
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
 
 - [Start here](src/Stories)
+- Work in progress
+
+  | Article | DRAFT | FINAL PUBLICATION |
+  |---------|-------|-------------------|
+  |Our journey of transforming to a DevOps culture|[DRAFT2](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 
 # Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
