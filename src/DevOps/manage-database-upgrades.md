@@ -45,14 +45,14 @@ Your databases may contain different data for each environment.
 
 When updating your database, you could deploy schema and data changes.
 
-- **Modify the database schema** - You may need to add new tables, append columns to tables, or create and update indexes.
-- **Creating and updating data** - You may need to insert new data into tables, update existing data, and validate that data has been correctly modified.
+- **Modify the database schema** - add new tables, append columns to tables, or create and update indexes.
+- **Creating and updating data** - insert new data into tables, update existing data, and validate that data has been correctly modified.
 
 ### 24x7
 
 Deploying database changes to high-availability and critical systems, for example financial or military systems, is a challenge.
 
-- **Downtime has a significant impact** -user dissatisfaction or worse, a sense of distrust in the platform. 
+- **Downtime has significant impact** - user dissatisfaction or worse, a sense of distrust in the platform. 
 - **Backups and restore are not a recovery option** - every action must be part of a forward moving process.
 
 ### Backward compatibility
