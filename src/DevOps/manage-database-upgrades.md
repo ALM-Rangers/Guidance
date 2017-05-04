@@ -14,17 +14,63 @@ author: ruimelo
 > #**THIS IS DRAFT.1 - WORK IN PROGRESS **
 > 
 
-#Manage database upgrades
+# Manage database upgrades
 
-Are you planning to upgrade your database? You probably have a few questions, such as:
+Are you planning to upgrade your production database? You probably have a few questions, such as:
 
-- What are upgrades all about?
-- How does it relate to DevOps?
-- Why should you bother automating database resources?
+- How can I include my databases in the DevOps process?
+- How can I automate the database upgrades?
+- How can I overcome known challenges and risks?
 
-This topic aims to answer this and other questions, share learnings from the field, and give you a few strategies to manage your upgrades.
+This topic aims to answer this and give you a few recipes to manage your upgrades.
 
-## @
+## Automation is key
+
+Databases are a complex set of artifacts that usually require a significant amount of effort to deploy. They evolve with your solutions, both structure and data wide. It's crucial that you include them in your DevOps process.
+
+Automation provides a trustworthy strategy for deploying change. It promotes consistency, improves traceability, removes human error, and enables your database to mature with your solution.
+
+## Considerations
+
+Databases present a unique set of upgrade challenges. With other artifacts, for example web services or web applications, you can use clusters and load balancing to deploy to a subset of servers. Let's explore some of the considerations you need to consider when planning your database upgrade.
+
+### Multiple Environment
+
+Your databases may contain different data for each environment.
+
+- **Users accessing the databases** - it's typical for applications to be implemented in segregated environments, using different domains, and enforcing  access.
+- **Environment specific configuration data** - configuration data, for example web services endpoints and linked server destinations, may be stored in the databases, and require different values in each environment.
+
+### Deploying schema and data
+
+When updating your database, you could deploy schema and data changes.
+
+- **Modify the database schema** - You may need to add new tables, append columns to tables, or create and update indexes.
+- **Creating and updating data** - You may need to insert new data into tables, update existing data, and validate that data has been correctly modified.
+
+### 24x7
+
+Deploying database changes to high-availability and critical systems, for example financial or military systems, is a challenge.
+
+- **Downtime has a significant impact** -user dissatisfaction or worse, a sense of distrust in the platform. 
+- **Backups and restore are not a recovery option** - every action must be part of a forward moving process.
+
+### Backward compatibility
+
+It's likely that your databases need to support multiple versions of your solution. You need to maintain backward compatibility with all existing versions and support recovery for each.
+
+### Database recovery
+
+When something goes terribly wrong, for example data corruption, it's important that you're able to recover your database and data. You typically roll-forward by performing operations that restore previous version of your database, undo and validate data changes.
+
+For example, a change may require a column to change its type. Your roll-forward strategy could be to create a new column with the new type, cast the old column values to the new type, and fill update the new column.
+
+- **If you never delete the old column** - delete only the new column and revert any code (for example views and store procedures) which refers to the new column. This scenario becomes complex if new values are added to the new column during the roll-forward.
+- **If you delete the old column** - re-create the old column and cast the values back. Once again, the scenario becomes complex if new values are added to the new column, risking cast back failure to the old column.
+
+## Solutions
+
+Based on the considerations we covered, let's look at some of the solutions you can consider to automate the deployment of your database.
 @
 
 ##Reference information
