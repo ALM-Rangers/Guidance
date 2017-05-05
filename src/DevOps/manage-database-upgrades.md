@@ -32,9 +32,15 @@ Automation provides a trustworthy strategy for deploying change. It promotes con
 
 ## Considerations
 
-Databases present a unique set of upgrade challenges. With other artifacts, for example web services or web applications, you can use clusters and load balancing to deploy to a subset of servers. Let's explore some of the considerations you need to consider when planning your database upgrade.
+Databases present a unique set of upgrade challenges. With other artifacts, for example web services or web applications, you can use clusters and load balancing to deploy to a subset of servers. Let's explore some of the considerations you need to consider when planning your database upgrade, such as:
 
-### Multiple Environment
+- Dealing with multiple environments
+- Deploying schema and data
+- 24x7 availability
+- Backwards compatibility
+- Database recovery
+
+### Dealing with multiple environments
 
 Your databases may contain different data for each environment.
 
@@ -48,7 +54,7 @@ When updating your database, you could deploy schema and data changes.
 - **Modify the database schema** - add new tables, append columns to tables, or create and update indexes.
 - **Creating and updating data** - insert new data into tables, update existing data, and validate that data has been correctly modified.
 
-### 24x7
+### 24x7 availabiltity
 
 Deploying database changes to high-availability and critical systems, for example financial or military systems, is a challenge.
 
@@ -71,6 +77,31 @@ For example, a change may require a column to change its type. Your roll-forward
 ## Solutions
 
 Based on the considerations we covered, let's look at some of the solutions you can consider to automate the deployment of your database.
+
+- Data-Tier Applications
+- Custom approaches
+	- Manually generate scripts	14
+	- Version databases and script differences
+	- Build different versions of databases and script differences
+	- Use Red Gate data tools
+
+### Data-Tier Applications
+
+A data-tier application (DAC) is a logical database management entity that defines all the artifacts contained in the database. For example: tables, views, stored procedures and login objects. You use a portable package (DACPAC) to deploy schema changes, or a @ (BACPAC) to deploy schema and data changes. (For more information, read [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications).)
+
+### Custom approaches
+@
+
+#### Manually generate scripts
+@
+
+#### Version databases and s@cript differences
+@
+
+#### Build different versions of databases and script differences
+@
+
+#### Use Red Gate data tools
 @
 
 ##Reference information
