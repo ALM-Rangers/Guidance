@@ -173,7 +173,7 @@ You now have a CI/CD pipeline, with three environments, targeting three differen
 
 You should consider adding validation tests and manual approvals between environments.
 
-@@@@@@@@@@@@@@@@@@@@@@@@ WILLY @@@@ ADD ILLUSTRATION THAT SHOWS A COMPLETE PIPELINE WITH MANUAL APPROVALS@@@@
+![CI/CD pipeline](./_img/manage-database-upgrades/manage-database-upgrades-pipeline.png)
 
 **What about possible data loss during deployments?** - The default option is to block schema changes that could potentially result in data loss, but you could override it: **/p:BlockOnPossibleDataLoss=True/False**. (For details, read [SqlPackage.exe](https://msdn.microsoft.com/en-us/library/hh550080.aspx)).
 
