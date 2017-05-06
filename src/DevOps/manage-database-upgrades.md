@@ -76,26 +76,117 @@ For example, a change may require a column to change its type. Your roll-forward
 
 ## Solutions
 
-Based on the considerations we covered, let's look at some of the solutions you can consider to automate the deployment of your database.
+Based on the considerations we covered, let's have a look at some of the automation you can consider for the deployment of your database.
 
 - Data-Tier Applications
 - Custom approaches
-	- Manually generate scripts	14
+	- Manually generate scripts
 	- Version databases and script differences
 	- Build different versions of databases and script differences
 	- Use Red Gate data tools
 
 ### Data-Tier Applications
 
-A data-tier application (DAC) is a logical database management entity that defines all the artifacts contained in the database. For example: tables, views, stored procedures and login objects. You use a portable package (DACPAC) to deploy schema changes, or a @ (BACPAC) to deploy schema and data changes. (For more information, read [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications).)
+A [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications) (DAC) is a logical database management entity that defines all the artifacts contained in the database. For example: tables, views, stored procedures and login objects. A portable package (DACPAC) is used to deploy schema changes, or a BACPAC to deploy schema and data changes. Read  [Import Source: Database or Data-tier Application](https://msdn.microsoft.com/en-us/library/hh864423(v=vs.10)), for options to import artifacts from a live database, and [linked servers](https://docs.microsoft.com/en-us/sql/relational-databases/linked-servers/linked-servers-database-engine) to access objects from another database. 
+
+To get started, you can import an existing database, or create an empty SQL Server Database project with the SQL Server Data Tools (SSDT), as shown.
+
+![Create an empty SQL Server Database project](./_img/manage-database-upgrades/manage-database-upgrades-01.jpg)
+
+> [!TIP]
+> If you have are references to a very large Database, like an ERP database, start by creating a script with the relevant subset of the schema, then import that script to your database project. You can use SQL Server Management Studio to connect to the database and generate the script for the required objects. For more information please check [Generate Scripts](https://docs.microsoft.com/en-us/sql/relational-databases/scripting/generate-scripts-sql-server-management-studio).
+
+Once built, your SSDT project will generate a file with ***.dacpac** extension. It contains all the information needed to deploy the database changes and enables you to orchestrate your continuous integration and delivery (CI/CD) flow.
+
+- **Create your build definition** - Read [CI/CD for newbies](https://www.visualstudio.com/en-us/docs/build/get-started/ci-cd-part-1) to get started.
+
+- **Create your target databases** - In the example below, we've created four databases. These can be Azure SQL or SQL Server databases. The first one is used for development and others are the target deployments for three environments. 
+
+	![Four online sample databases](./_img/manage-database-upgrades/manage-database-upgrades-05.png)
+
+- **Create your release pipeline**
+
+	- Select **Build & Release > Releases > New Definition > Empty > Next**.
+
+		![Create empty release pipeline](./_img/manage-database-upgrades/manage-database-upgrades-06.png) 
+
+	- From the Artifacts, select your **Project**, the **Source (Build definition)**, and **Create** the release definition.
+
+		![Create release definition](./_img/manage-database-upgrades/manage-database-upgrades-07.png)
+
+	- **OPTION A - Deploy to a Azure SQL database**
+		- Add an **Azure SQL Database Deployment** task from the task catalog.
+
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
+
+		- Select your **Azure Connection Type** and **Azure RM Subscription**.
+
+			![Select Azure COnnection Type and Azure RM Subscription](./_img/manage-database-upgrades/manage-database-upgrades-09.png)
+
+		- Configure the **SQL DB Details**.
+
+			![Configure the SQL DB Details](./_img/manage-database-upgrades/manage-database-upgrades-10.png)
+
+		- Select the **SQL DACPAC File** generated for your database.
+
+			![Select the DACPAC file](./_img/manage-database-upgrades/manage-database-upgrades-11.png)
+
+	- **OPTION B - Deploy to a SQL Server database**
+
+		- There are no out-of-the-box tasks for SQL Server, but you can leverage existing Marketplace extensions. For example [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp).
+
+		- Add an **WinRM - SQL Sever DB Deployment** task from the task catalog.
+
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-12.jpg)
+
+		- Select one of the deployment strategy, for example **Sql Dacpac**.
+
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-13.jpg)
+
+		- Configure the deployment options. Here's an example:
+
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-14.jpg)
+
+- **Test your release definition** - Before moving to other environments, you should test your release definition by creating a release.
+
+	- Select **Release > Create Release**.
+
+		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-15.png)
+
+	- If all the configurations are correct, you'll get a **SUCCEEDED** result and a target database with all the artifacts that existed in the original database.
+
+		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-16.png)
+	
+- **Replicate your environment** - You can now clone the environment you just created.
+
+	- From your first environment context menu, select **Clone Environment**.
+
+		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-17.png)
+
+	- Make the necessary changes to the cloned release configuration.
+
+	- Repeat the process by cloning your second environment.
+
+You now have a CI/CD pipeline, with three environments, targeting three different databases. By default approvals for each environment are configured to be automatic.
+
+![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-19.png)
+
+You should consider adding validation tests and manual approvals between environments.
+
+@@@@@@@@@@@@@@@@@@@@@@@@ WILLY @@@@ ADD ILLUSTRATION THAT SHOWS A COMPLETE PIPELINE WITH MANUAL APPROVALS@@@@
+
+**What about possible data loss during deployments?** - The default option is to block schema changes that could potentially result in data loss, but you could override it: **/p:BlockOnPossibleDataLoss=True/False**. (For details, read [SqlPackage.exe](https://msdn.microsoft.com/en-us/library/hh550080.aspx)).
+
+**What about possible data conflicts during deployments?** - You can consider different strategies to avoid conflicts from occurring. For example, leverage the post- and pre- deployment script support in DAC. It gives you additional control over conflicts that might occur, and how to resolve them.
+
+**What about backups?** - Database backups should always be part of your pipeline, unless your business doesn’t allow you to restore. Be aware that backups can take a significant amount of time and will impact the overall execution time of your pipeline. 
 
 ### Custom approaches
-@
 
 #### Manually generate scripts
 @
 
-#### Version databases and s@cript differences
+#### Version databases and script differences
 @
 
 #### Build different versions of databases and script differences
