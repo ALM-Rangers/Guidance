@@ -81,8 +81,8 @@ Based on the considerations we covered, let's have a look at some of the automat
 - Data-Tier Applications
 - Custom approaches
 	- Manually generate scripts
+	- Version databases in development environment
 	- Version databases and script differences
-	- Build different versions of databases and script differences
 	- Use Red Gate data tools
 
 ### Data-Tier Applications
@@ -183,17 +183,54 @@ You should consider adding validation tests and manual approvals between environ
 
 ### Custom approaches
 
+While we recommend the use of [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications), you have other approaches to consider, such as:
+
+- Manually generate scripts
+- Version databases in development environment
+- Version databases and script differences
+- Use Red Gate data tools
+
 #### Manually generate scripts
-@
+
+Probably the most common approach we encounter is still to manage the database change scripts manually. This process is complex and error prone. Having multiple environments will involve an expensive amount of effort to manage the scripts for each environment. 
+Here’s how you can automate your scripts in your release pipeline:
+- Create a script which lists all **.sql** files in a path that’s accessible by your agents.
+
+> [!TIP]
+> 
+> Use a file naming convention for the **.sql** files that contains the sequence (for example #1_CreateNewTable.sql, #2_CreateNewView.sql, etc.) in which they should be run. List the **.sql** files with an ascending sort, to define the correct sequence when they are run.
+
+- Add the Batch Script or Command Line task to your release pipeline.
+- Configure the task to execute each of the *.sql files using [SQLCMD.EXE](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility). 
+You must ensure that the *.sql files can be executed several times. For example, before updating a schema, the scripts needs to validate if the update has already been applied.
+
+#### Version databases in development environment
+
+If you are maintaining manually created scripts, you can evolve your environment and maintain a database for each version your solution.
+
+![Versioned databases](./_img/manage-database-upgrades/manage-database-upgrades-21.png)
+ 
+You can use tools, such as the [SSDT’s Schema Compare](https://msdn.microsoft.com/en-us/library/hh272690(v=vs.103).aspx), to generate the differences between the database versions.
 
 #### Version databases and script differences
-@
 
-#### Build different versions of databases and script differences
-@
+You can take versioned databases one step further, by creating a Visual Studio solution with a project for each database version.
+
+![Database projects](./_img/manage-database-upgrades/manage-database-upgrades-22.png)
+ 
+During your CI build, you can run tools, such as **vsdbcmd.exe**, to generate *.sql files with statements to update the database. You can then apply the .sql files during the CD release if the target database has a matching version.
 
 #### Use Red Gate data tools
-@
+
+If you’re using Visual Studio 2017 you can consider the [Red Gate](https://www.red-gate.com/) data tools set. They extend DevOps practices to SQL Server and Azure SQL databases and increase your productivity while doing database development. 
+Use the [Redgate ReadyRoll VSTS/TFS plugin](https://marketplace.visualstudio.com/items?itemName=redgatesoftware.redgate-readyroll) to automate the deployment of changes in your CD pipeline. (Read [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) for a walk-through of the process).
+
+
+## Conclusion and lessons learned
+
+Database deployment is a complex process and comes with a considerable amount of risk. Knowing that is paramount for you to manage the risk and choosing the deployment approach that is right for you. It's important to design the database, its deployment and upgrades from the start. Considering future changes and how to manage change will  influence how you'll design and maintain your databases in a positive way.
+
+Now that you've covered some of the considerations and options of automating the database upgrades, you should explore ways to improve your CI/CD pipelines. This topic is vast and certainly there's much more to talk about. We'd appreciate and are looking forward to your feedback and opinions. 
 
 ##Reference information
 - [Rollbacks with Automated Database Deployments](http://www.codeaperture.io/2016/09/18/rollbacks-with-automated-database-deployments/)
