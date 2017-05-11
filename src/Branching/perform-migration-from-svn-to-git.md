@@ -17,9 +17,12 @@ author: hkamel
 
 
 ## Understand git-svn
+in this article we will rely on git-svn command to perform the migrations. [git svn](https://git-scm.com/docs/git-svn) is a simple conduit for changesets between Subversion and Git. It provides a bidirectional flow of changes between a Subversion and a Git repository.
 
 ### Limitations
 #### Author Information
+SVN and Git are difefrent when it comes to how it store the author infromation. 
+
 #### Tags
 
 ## Steps to migrate
@@ -35,7 +38,7 @@ author: hkamel
 - [Feature Toggles](https://msdn.microsoft.com/en-ca/magazine/dn683796.aspx)
 - [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview)
 
-> Authors: Hosam Kamel
+> Authors: Hosam Kamel, William
  
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
