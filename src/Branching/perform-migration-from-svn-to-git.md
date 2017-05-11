@@ -13,11 +13,18 @@ author: hkamel
 # Perform the migration from SVN to Git
 
 
-
 ## Requirements
 
 
+## Understand git-svn
+
+### Limitations
+#### Author Information
+#### Tags
+
 ## Steps to migrate
+
+
 
 
 
