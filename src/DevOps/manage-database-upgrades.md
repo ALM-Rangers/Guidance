@@ -112,7 +112,7 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 	- **OPTION A - Deploy to a Azure SQL database**
 		- Add an **Azure SQL Database Deployment** task from the task catalog.
 
-			[Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
 
 		- Select your **Azure Connection Type** and **Azure RM Subscription**.
 
