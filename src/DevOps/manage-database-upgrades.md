@@ -54,7 +54,7 @@ When updating your database, you could deploy schema and data changes.
 - **Modify the database schema** - add new tables, append columns to tables, or create and update indexes.
 - **Creating and updating data** - insert new data into tables, update existing data, and validate that data has been correctly modified.
 
-### 24x7 availabiltity
+### 24x7 availability
 
 Deploying database changes to high-availability and critical systems, for example financial or military systems, is a challenge.
 
@@ -89,9 +89,8 @@ Based on the considerations we covered, let's have a look at some of the automat
 
 A [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications) (DAC) is a logical database management entity that defines all the artifacts contained in the database. For example: tables, views, stored procedures and login objects. A portable package (DACPAC) is used to deploy schema changes, or a BACPAC to deploy schema and data changes. Read  [Import Source: Database or Data-tier Application](https://msdn.microsoft.com/en-us/library/hh864423(v=vs.10)), for options to import artifacts from a live database, and [linked servers](https://docs.microsoft.com/en-us/sql/relational-databases/linked-servers/linked-servers-database-engine) to access objects from another database. 
 
-To get started, you can import an existing database, or create an empty SQL Server Database project with the SQL Server Data Tools (SSDT), as shown.
+To get started, you can import an existing database, or create an empty SQL Server Database project with the SQL Server Data Tools (SSDT) through Visual Studio IDE.
 
-![Create an empty SQL Server Database project](./_img/manage-database-upgrades/manage-database-upgrades-01.jpg)
 
 > [!TIP]
 > If you have are references to a very large Database, like an ERP database, start by creating a script with the relevant subset of the schema, then import that script to your database project. You can use SQL Server Management Studio to connect to the database and generate the script for the required objects. For more information please check [Generate Scripts](https://docs.microsoft.com/en-us/sql/relational-databases/scripting/generate-scripts-sql-server-management-studio).
@@ -108,16 +107,12 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 
 	- Select **Build & Release > Releases > New Definition > Empty > Next**.
 
-		![Create empty release pipeline](./_img/manage-database-upgrades/manage-database-upgrades-06.png) 
-
 	- From the Artifacts, select your **Project**, the **Source (Build definition)**, and **Create** the release definition.
-
-		![Create release definition](./_img/manage-database-upgrades/manage-database-upgrades-07.png)
 
 	- **OPTION A - Deploy to a Azure SQL database**
 		- Add an **Azure SQL Database Deployment** task from the task catalog.
 
-			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
+			[Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
 
 		- Select your **Azure Connection Type** and **Azure RM Subscription**.
 
