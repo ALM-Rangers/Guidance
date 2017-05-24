@@ -21,8 +21,8 @@ X
 ## X
 
 ##Reference information
-- [X](X)
-- [CI/CD pipeline examples]()
+- [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+- [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 
 > Authors: Josh Garverick | Find the origin of this article and connect with the ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
