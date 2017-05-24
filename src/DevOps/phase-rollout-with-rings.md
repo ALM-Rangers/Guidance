@@ -16,9 +16,36 @@ author: willys
 
 # Phase the roll-out of your application through rings
 
+In today's fast-paced, feature-driven markets, it is imperative to be able to deliver value and receive feedback on features quickly and continuously. Partnering with end-users to get early versions of features vetted out is extremely valuable.
+
+Are you planning to build and deploy Visual Studio Team Services extensions to production? You probably have a few questions, such as:
+- How do I embrace DevOps to deliver changes and value faster?
+- How do I mitigate the risk of deploying to production?
+- How do I automate the build and deployment?
+
+This topic aims to answer this and share our implementation of tiers, or rings, within our production infrastructure. For an insight into the guidelines we follow in Microsoft, please read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
+
+## Overview of rings
 X
 
-## X
+## Considerations
+X
+
+## Moving change through rings
+X
+
+## Using rings for extension projects
+X
+
+## Dealing with change
+X
+
+## Is there a dependency with feature flags?
+X
+
+## Conclusion\
+
+Now that you've covered the concepts and considerations of rings, and our implementation of rings, you should be confident to explore ways to improve your CI/CD pipelines. While the use of rings adds a level of complexity, having a game plan to address feature management and rapid customer feedback is invaluable.
 
 ##Reference information
 - [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
