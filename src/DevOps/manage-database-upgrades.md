@@ -1,8 +1,8 @@
 ---
 title: DevOps - Manage database upgrades
-description: ?
+description: Explore how to manage your database upgrades
 ms.assetid: 547cbec5-e619-4eea-ad0b-2b4d19393280
-ms.prod: vs-devops-manage-database-upgrades/
+ms.prod: vs-devops-manage-database-upgrades
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.date: 05/05/2017
@@ -101,7 +101,7 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 
 - **Create your target databases** - In the example below, we've created four databases. These can be Azure SQL or SQL Server databases. The first one is used for development and others are the target deployments for three environments. 
 
-	![Four online sample databases](./_img/manage-database-upgrades/manage-database-upgrades-05.png)
+	![Four online sample databases](./_img/manage-database-upgrades/manage-database-upgrades-samples.png)
 
 - **Create your release pipeline**
 
@@ -112,19 +112,19 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 	- **OPTION A - Deploy to a Azure SQL database**
 		- Add an **Azure SQL Database Deployment** task from the task catalog.
 
-			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-08.png)
+			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-azure-task.png)
 
 		- Select your **Azure Connection Type** and **Azure RM Subscription**.
 
-			![Select Azure COnnection Type and Azure RM Subscription](./_img/manage-database-upgrades/manage-database-upgrades-09.png)
+			![Select Azure COnnection Type and Azure RM Subscription](./_img/manage-database-upgrades/manage-database-upgrades-rm-sub.png)
 
 		- Configure the **SQL DB Details**.
 
-			![Configure the SQL DB Details](./_img/manage-database-upgrades/manage-database-upgrades-10.png)
+			![Configure the SQL DB Details](./_img/manage-database-upgrades/manage-database-upgrades-db-details.png)
 
 		- Select the **SQL DACPAC File** generated for your database.
 
-			![Select the DACPAC file](./_img/manage-database-upgrades/manage-database-upgrades-11.png)
+			![Select the DACPAC file](./_img/manage-database-upgrades/manage-database-upgrades-dacpac.png)
 
 	- **OPTION B - Deploy to a SQL Server database**
 
@@ -132,31 +132,31 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 
 		- Add an **WinRM - SQL Sever DB Deployment** task from the task catalog.
 
-			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-12.jpg)
+			![Add a WinRM Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-winrm-task.jpg)
 
 		- Select one of the deployment strategy, for example **Sql Dacpac**.
 
-			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-13.jpg)
+			![Select deployment strategy](./_img/manage-database-upgrades/manage-database-upgrades-strategy.jpg)
 
 		- Configure the deployment options. Here's an example:
 
-			![Add an Azure SQL Database Deployment task](./_img/manage-database-upgrades/manage-database-upgrades-14.jpg)
+			![Configure deployment task](./_img/manage-database-upgrades/manage-database-upgrades-config.jpg)
 
 - **Test your release definition** - Before moving to other environments, you should test your release definition by creating a release.
 
 	- Select **Release > Create Release**.
 
-		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-15.png)
+		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-release.png)
 
 	- If all the configurations are correct, you'll get a **SUCCEEDED** result and a target database with all the artifacts that existed in the original database.
 
-		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-16.png)
+		![Release results](./_img/manage-database-upgrades/manage-database-upgrades-results.png)
 	
 - **Replicate your environment** - You can now clone the environment you just created.
 
 	- From your first environment context menu, select **Clone Environment**.
 
-		![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-17.png)
+		![Clone a release](./_img/manage-database-upgrades/manage-database-upgrades-clone.png)
 
 	- Make the necessary changes to the cloned release configuration.
 
@@ -164,11 +164,11 @@ Once built, your SSDT project will generate a file with ***.dacpac** extension. 
 
 You now have a CI/CD pipeline, with three environments, targeting three different databases. By default approvals for each environment are configured to be automatic.
 
-![Create a release](./_img/manage-database-upgrades/manage-database-upgrades-19.png)
+![CI/CD pipeline](./_img/manage-database-upgrades/manage-database-upgrades-pipeline.png)
 
 You should consider adding validation tests and manual approvals between environments.
 
-![CI/CD pipeline](./_img/manage-database-upgrades/manage-database-upgrades-pipeline.png)
+![CI/CD pipeline](./_img/manage-database-upgrades/manage-database-upgrades-cicd-pipeline.png)
 
 **What about possible data loss during deployments?** - The default option is to block schema changes that could potentially result in data loss, but you could override it: **/p:BlockOnPossibleDataLoss=True/False**. (For details, read [SqlPackage.exe](https://msdn.microsoft.com/en-us/library/hh550080.aspx)).
 
@@ -203,7 +203,7 @@ You must ensure that the *.sql files can be executed several times. For example,
 
 If you are maintaining manually created scripts, you can evolve your environment and maintain a database for each version your solution.
 
-![Versioned databases](./_img/manage-database-upgrades/manage-database-upgrades-21.png)
+![Versioned databases](./_img/manage-database-upgrades/manage-database-upgrades-version.png)
  
 You can use tools, such as the [SSDT’s Schema Compare](https://msdn.microsoft.com/en-us/library/hh272690(v=vs.103).aspx), to generate the differences between the database versions.
 
@@ -211,7 +211,7 @@ You can use tools, such as the [SSDT’s Schema Compare](https://msdn.microsoft.
 
 You can take versioned databases one step further, by creating a Visual Studio solution with a project for each database version.
 
-![Database projects](./_img/manage-database-upgrades/manage-database-upgrades-22.png)
+![Database projects](./_img/manage-database-upgrades/manage-database-upgrades-vs-solution.png)
  
 During your CI build, you can run tools, such as **vsdbcmd.exe**, to generate *.sql files with statements to update the database. You can then apply the .sql files during the CD release if the target database has a matching version.
 
