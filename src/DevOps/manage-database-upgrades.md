@@ -1,8 +1,8 @@
 ---
 title: DevOps - Manage database upgrades
-description: ?
+description: Explore how to manage your database upgrades
 ms.assetid: 547cbec5-e619-4eea-ad0b-2b4d19393280
-ms.prod: vs-devops-manage-database-upgrades/
+ms.prod: vs-devops-manage-database-upgrades
 ms.technology: vs-devops-articles
 ms.manager: douge
 ms.date: 05/05/2017
