@@ -128,13 +128,13 @@ You're able to continue the drill-down from visual cue to detailed telemetry. Us
 
 ## What's the value?
 
-The return on investment and ongoing value we get from the ring deployment model is astounding, especially considering our challenging environment. Our engineers are all part-time volunteers, geographically distributed around the globe, with limited bandwidth, and constantly challenged with the variety of time zones we're dealing with.
+The return on investment and ongoing value we get from the ring deployment model is astounding, especially considering our challenging environment. Our engineers are all part-time volunteers, geographically distributed around the globe, with limited bandwidth, and constantly challenged with a variety of time zones injecting latency into our process.
 
 Here's a summary of how our engineering process has evolved since we have introduced ring deployment models.
 
 ![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-value.png)
 
-We achieved consistent and reliable automation, we reduced all response times, we removed all error prone manual intervention, and our users are happy. Here's a recent example response from the marketplace that sums it all up" "*Development team is quick to respond to bug fixes! *".
+We achieved consistent and reliable automation, we reduced all response times, we removed all error prone manual intervention, and our users are happy. Here's a recent example response from the marketplace that sums it all up" "*Development team is quick to respond to bug fixes!*".
 
 ## Is there a dependency on feature flags?
 
