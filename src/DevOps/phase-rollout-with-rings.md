@@ -48,7 +48,7 @@ Our users fall into three general buckets:
 
 Based on these user types we opted for three rings to gradually roll changes to our **DEV**elopment, **BETA** validation, and **PROD**uction environments.
 
-![DEV, BETA, PROD Rings](_img\phase-rollout-with-rings\phase-rollout-with-rings-rings.png)
+![DEV, BETA, PROD Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
 >[!TIP]
 >It’s important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
@@ -63,11 +63,11 @@ Next you need to map the topology of your application to the ringed deployment m
 
 At the application level, the composition of our extensions are innocuous, easy to digest, scale, and deploy independently. Each extension has one of more web and script files, interfaces with Core client, REST client, and REST APIs, and persists state in cache or resilient storage.
 
-![Application Layer Roll-out](_img\phase-rollout-with-rings\phase-rollout-with-rings-app-layer.png)
+![Application Layer Roll-out](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
 At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/data-storage).
 
-![Infrastructure Layer Roll-out](_img\phase-rollout-with-rings\phase-rollout-with-rings-inf-layer.png)
+![Infrastructure Layer Roll-out](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
 The extension topology is perfectly suited for the ring deployment model and we publish a version of each extension for each deployment ring:
 -  A private **DEV**elopment version for your canary ring
@@ -81,7 +81,7 @@ The extension topology is perfectly suited for the ring deployment model and we 
 
 Let's observe how a change triggers and moves through our ring based deployment process.
 
-![Extension rings](_img\phase-rollout-with-rings\phase-rollout-with-rings-pipeline.png)
+![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
 1. A developer from the [Countdown Widget extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALMthe continuous Rangers/Countdown-Widget-Extension) repository.
 2. The commit triggers a continuous integration build.
@@ -89,12 +89,12 @@ Let's observe how a change triggers and moves through our ring based deployment 
 4. The **DEV** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point only the **Canaries** are impacted by the change.
 5. The **DEV** deployment triggers the **BETA** environment deployment. This time we have a pre-deployment approval gate, which requires any one of the authorized users to approve the release.
 
-	![Pre-deployment approval for BETA environment](_img\phase-rollout-with-rings\phase-rollout-with-rings-beta-approval.png)
+	![Pre-deployment approval for BETA environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-beta-approval.png)
 
 6. The **BETA** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point both the **Canaries** and **Early Adopter** are impacted by the change.
 7. The **BETA** deployment triggers the **PROD** environment deployment. This time we have a stricter pre-deployment approval gate, which requires all of the authorized users to approve the release.
 
-	![Pre-deployment approval for PROD environment](_img\phase-rollout-with-rings\phase-rollout-with-rings-prod-approval.png)
+	![Pre-deployment approval for PROD environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-prod-approval.png)
 
 8. The **PROD** deployment publishes a public extension to the marketplace. At this stage everyone who has installed the extension in their VSTS account is affected by the change.
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving us two opportunities to validate the change and hotfix critical bugs before we release to production.
@@ -111,25 +111,25 @@ To detect and mitigate issues, learn from tracking usage, "test in production", 
 
 XXX
 
-![High-level deashboard on VSTS](_img\phase-rollout-with-rings\phase-rollout-with-rings-dash.png)
+![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
 XXX
 
-![High-level deashboard on VSTS](_img\phase-rollout-with-rings\phase-rollout-with-rings-dash-release.png)
+![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-release.png)
 
 XXX
 
-![High-level deashboard on VSTS](_img\phase-rollout-with-rings\phase-rollout-with-rings-dash-build.png)
+![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-build.png)
 
 XXX
 
-![High-level deashboard on VSTS](_img\phase-rollout-with-rings\phase-rollout-with-rings-dash-ai.png)
+![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-ai.png)
 
 ## Is there a dependency on feature flags?
 
 No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if your not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the DEV ring, and fine-tune a subset for the BETA and PROD rings, as shown.
 
-![Feature flags](_img\phase-rollout-with-rings\phase-rollout-with-rings-feature-flags.png)
+![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
 [LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for Visual Studio Team Services & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
 
