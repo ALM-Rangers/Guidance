@@ -32,6 +32,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
   | Article | DRAFT | FINAL PUBLICATION |
   |---------|-------|-------------------|
   |Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
+  |Phase rollout with rings|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)||
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
