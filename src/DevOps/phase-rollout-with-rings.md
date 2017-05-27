@@ -23,7 +23,7 @@ Are you planning to build and deploy Visual Studio Team Services (VSTS) extensio
 - How do you mitigate the risk of deploying to production?
 - How do you automate the build and deployment?
 
-This topic aims to answer this and share our implementation of tiers, or rings, within our production infrastructure. For an insight into the guidelines we follow in Microsoft, please read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
+This topic aims to answer this and share our implementation of tiers, or rings, within our production infrastructure for DevLabs extensions. For an insight into the guidelines we follow in Microsoft, please read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
 
 ## One or more rings to rule your deployments
 
@@ -33,7 +33,6 @@ Deployment rings are one of DevOps practices used to limit impact on end-users, 
 
 Before you convert your deployment infrastructure to a ringed deployment model, it's to consider the following:
 - Who are your primary types of users? For example early adopters and users.
-- What are the 
 - What's your application topology?
 - What's the value of embracing ringed deployment model?
 - What's the cost to convert your current infrastructure to a ringed deployment model?
@@ -55,13 +54,13 @@ Based on these user types we opted for three rings to gradually roll changes to 
 
 ## Application topology
 
-Next you need to map the topology of your application to the ringed deployment model. It's important to reiterate that we want to limit the impact of change on end-users and to continuously deliver value. Value includes both the value delivered to the end-user and the value (return-on-investment) of converting your existing infrastructure.
+Next you need to map the topology of your application to the ringed deployment model. Remember, we want to limit the impact of change on end-users and to continuously deliver value. Value includes both the value delivered to the end-user and the value (return-on-investment) of converting your existing infrastructure.
 
 > [!TIP]
 > The ringed deployment model is not a silver bullet!
 > Start small, prototype, and continuously compare impact, value, and cost.
 
-At the application level, the composition of our extensions are innocuous, easy to digest, scale, and deploy independently. Each extension has one of more web and script files, interfaces with Core client, REST client, and REST APIs, and persists state in cache or resilient storage.
+At the application level, the composition of our extensions is innocuous, easy to digest, scale, and deploy independently. Each extension has one of more web and script files, interfaces with Core client, REST client, and REST APIs, and persists state in cache or resilient storage.
 
 ![Application Layer Roll-out](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
@@ -75,7 +74,7 @@ The extension topology is perfectly suited for the ring deployment model and we 
 -  A public **PROD**uction version for the public production ring
 
 > [!TIP]
-> By publishing your extension as private, you're effectively limiting and controlling their exposure to users you explicitly invite. 
+> By publishing your extension as private, you're effectively limiting and controlling their exposure for users you explicitly invite. 
 
 ## Moving changes through our ring-based deployment process
 
@@ -96,38 +95,50 @@ Let's observe how a change triggers and moves through our ring based deployment 
 
 	![Pre-deployment approval for PROD environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-prod-approval.png)
 
-8. The **PROD** deployment publishes a public extension to the marketplace. At this stage everyone who has installed the extension in their VSTS account is affected by the change.
+8. The **PROD** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their VSTS account is affected by the change.
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving us two opportunities to validate the change and hotfix critical bugs before we release to production.
 
 > [!TIP]
 > Review [CI/CD Pipelines](https://ala.ms/cicdpipelines) and [Approvals](https://www.visualstudio.com/en-us/docs/build/concepts/definitions/release/environments#approvals) for detailed documentation of our pipelines and the approval features for release management.
 
-## Dealing with noise, cost, and surfacing the value
+## Dealing with monitoring and noise
 
 To detect and mitigate issues, learn from tracking usage, "test in production", determine cost and value, you need **effective** monitoring. Determine what type data is important, for example infrastructure issues, violations, and feature usage. Avoid noisy alerts which get ignored, or drown out alerts for higher priority issues.
 
 > [!TIP]
 > Start with high-level views of your data, visual dashboards that you can watch from afar, and drill-down as needed. Perform, regular housekeeping of your views and remove all noise. A visual dashboard tells a far better story than hundreds of notification emails, often filtered and forgotten by email rules.
 
-XXX
+Here are a few examples of visual dashboards we use to "spot" the anomalies, the unexpected, and the overall health of our pipelines within the ring deployment model.
 
-![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
+Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions extension we have an overview of our pipeline builds and releases, as well as lead and cycle time trends. It's evident that we have 34 successful builds, 12 successful releases, and 12 releases in progress.
 
-XXX
+![High-level dashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
-![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-release.png)
+Another dashboard gives us a visual view of all the release. The visual indicators and colours allow us to glance at these dashboards from afar. In fact, we only react if we see the **X** counters increment or parts of the dashboard turning **red**.
 
-XXX
+![Release dashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-release.png)
 
-![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-build.png)
+If you're looking for more detail you can use the build overview. We have a healthy code coverage, happy tests, and the BETA ring deployment is in progress.
 
-XXX
+![Build Overview on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-build.png)
 
-![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-ai.png)
+You're able to continue the drill-down from visual cue to detailed telemetry. Using Application Insights you can drill into live metrics, smart detection, and usage telemetry.
+
+![AI metrics on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash-ai.png)
+
+## What's the value?
+
+The return on investment and ongoing value we get from the ring deployment model is astounding, especially considering our challenging environment. Our engineers are all part-time volunteers, geographically distributed around the globe, with limited bandwidth, and constantly challenged with the variety of time zones we're dealing with.
+
+Here's a summary of how our engineering process has evolved since we have introduced ring deployment models.
+
+![High-level deashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-value.png)
+
+We achieved consistent and reliable automation, we reduced all response times, we removed all error prone manual intervention, and our users are happy. Here's a recent example response from the marketplace that sums it all up" "*Development team is quick to respond to bug fixes! *".
 
 ## Is there a dependency on feature flags?
 
-No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if your not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the DEV ring, and fine-tune a subset for the BETA and PROD rings, as shown.
+No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the DEV ring, and fine-tune a subset for the BETA and PROD rings, as shown.
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
@@ -141,11 +152,11 @@ Now that you've covered the concepts and considerations of rings, and our implem
 
 ### How do we know that a change can be deployed to the next ring?
 
-Your goal should be to have a consistent checklist for the users approving a release. See [aka.ms/vsarDoD](https://aka.ms/vsarDoD) for an example definition of done.
+Your goal should be to have a consistent checklist for the users approving a release. See [aka.ms/vsarDoD](https://aka.ms/vsarDoD) for an example definition of done checklist.
 
 ### How long do we wait before we push a change to the next ring?
 
-There is no fixed duration or "cool off" period. It depends on how long it takes for you to complete all release validations successfully. In our environment changes are automatically delivered to the **Canaries** and as quickly as possible to the **Early Adopters**. Our objective is to gather telemetry and feedback from **Canaries** and **Early Adopters**, working in different and geographically distributed environments.
+There is no fixed duration or "cool off" period. It depends on how long it takes for you to complete all release validations successfully. In our environment changes are automatically delivered to the **Canaries** and as quickly as possible to the **Early Adopters**. Our objective is to gather telemetry and feedback from **Canaries** and **Early Adopters**, working in different and geographically distributed environments as quickly as possible.
 
 ### How do you manage a hotfix?
 
