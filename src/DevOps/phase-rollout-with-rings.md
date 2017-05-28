@@ -110,7 +110,7 @@ To detect and mitigate issues, learn from tracking usage, "test in production", 
 
 Here are a few examples of visual dashboards we use to "spot" the anomalies, the unexpected, and the overall health of our pipelines within the ring deployment model.
 
-Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions extension we have an overview of our pipeline builds and releases, as well as lead and cycle time trends. It's evident that we have 34 successful builds, 12 successful releases, and 12 releases in progress.
+Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions extension we have an overview of our pipeline builds and releases, as well as lead and cycle time trends. It's evident that we have 33 successful builds, 1 failed build, 12 successful releases, and 12 releases in progress.
 
 ![High-level dashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
