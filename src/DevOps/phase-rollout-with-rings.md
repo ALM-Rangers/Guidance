@@ -4,7 +4,7 @@ description: Explore how to phase your application roll-out using a tier or ring
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: vs-devops-phase-rollout-with-rings
 ms.technology: vs-devops-articles
-ms.manager: douge
+ms.manager: willys
 ms.date: 05/22/2017
 ms.author: willys
 author: willys
