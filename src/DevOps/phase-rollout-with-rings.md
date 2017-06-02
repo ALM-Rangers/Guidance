@@ -92,7 +92,7 @@ Let's observe how a change triggers and moves through our ring based deployment 
 	![Pre-deployment approval for Early Adopter environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-early-approval.png)
 
 6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point both the **Canaries** and **Early Adopter** are impacted by the change.
-7. The **Early Adopter** deployment triggers the **User** environment deployment. This time we have a stricter pre-deployment approval gate, which requires all of the authorized users to approve the release.
+7. The **Early Adopter** deployment triggers the **Users** environment deployment. This time we have a stricter pre-deployment approval gate, which requires all of the authorized users to approve the release.
 
 	![Pre-deployment approval for User environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-users-approval.png)
 
