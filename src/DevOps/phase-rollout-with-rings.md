@@ -4,14 +4,14 @@ description: Explore how to phase your application roll-out using a tier or ring
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: vs-devops-phase-rollout-with-rings
 ms.technology: vs-devops-articles
-ms.manager: douge
+ms.manager: willys
 ms.date: 05/22/2017
 ms.author: willys
-author: willys
+author: josh garverick
 ---
 
 > 
-> #**THIS IS DRAFT.1 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.2 - WORK IN PROGRESS **
 > 
 
 # Phase the roll-out of your application through rings
@@ -39,15 +39,13 @@ Before you convert your deployment infrastructure to a ringed deployment model, 
 
 ## User types
 
-Our users fall into three general buckets:
+Our users fall into three general buckets in production:
 
 - **Canaries** who voluntarily test bleeding edge features as soon as they are available.
-- **Early adopters** who voluntarily test BETA releases, considered more refined than the canary bits.
-- **Users** who consume our products in production, after passing through canaries and early adopters.
+- **Early adopters** who voluntarily preview releases, considered more refined than the canary bits.
+- **Users** who consume our products, after passing through canaries and early adopters.
 
-Based on these user types we opted for three rings to gradually roll changes to our **DEV**elopment, **BETA** validation, and **PROD**uction environments.
-
-![DEV, BETA, PROD Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
+![User Rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
 >[!TIP]
 >It’s important to weigh out which users in your value chain are best suited for each of these buckets. Communicating the opportunity to provide feedback, as well as the risk levels at each tier, is critical to setting expectations and ensuring success.
@@ -78,24 +76,27 @@ The extension topology is perfectly suited for the ring deployment model and we 
 
 ## Moving changes through our ring-based deployment process
 
-Let's observe how a change triggers and moves through our ring based deployment process.
+Let's observe how a change triggers and moves through our ring based deployment process we're using for all our extension projects, using the [VSTS Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
 
+> **VSTS Developer Tools Build Tasks** extension is our secret sauce, used to package and publish Team Services extensions to the Visual Studio Marketplace.
+ 
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
-1. A developer from the [Countdown Widget extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALMthe continuous Rangers/Countdown-Widget-Extension) repository.
+1. A developer from the [Countdown Widget extension](hhttps://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) project commits a change to the [GitHub](https://github.com/ALMthe continuous Rangers/Countdown-Widget-Extension) repository.
+
 2. The commit triggers a continuous integration build.
-3. The new build triggers a continuous deployment trigger, which automatically starts the **DEV** environment deployment.
-4. The **DEV** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point only the **Canaries** are impacted by the change.
-5. The **DEV** deployment triggers the **BETA** environment deployment. This time we have a pre-deployment approval gate, which requires any one of the authorized users to approve the release.
+3. The new build triggers a continuous deployment trigger, which automatically starts the **Canaries** environment deployment.
+4. The **Canaries** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point only the **Canaries** are impacted by the change.
+5. The **Canaries** deployment triggers the **Early Adopter** environment deployment. This time we have a pre-deployment approval gate, which requires any one of the authorized users to approve the release.
 
-	![Pre-deployment approval for BETA environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-beta-approval.png)
+	![Pre-deployment approval for Early Adopter environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-early-approval.png)
 
-6. The **BETA** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point both the **Canaries** and **Early Adopter** are impacted by the change.
-7. The **BETA** deployment triggers the **PROD** environment deployment. This time we have a stricter pre-deployment approval gate, which requires all of the authorized users to approve the release.
+6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. At this point both the **Canaries** and **Early Adopter** are impacted by the change.
+7. The **Early Adopter** deployment triggers the **User** environment deployment. This time we have a stricter pre-deployment approval gate, which requires all of the authorized users to approve the release.
 
-	![Pre-deployment approval for PROD environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-prod-approval.png)
+	![Pre-deployment approval for User environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-users-approval.png)
 
-8. The **PROD** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their VSTS account is affected by the change.
+8. The **Users** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their VSTS account is affected by the change.
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving us two opportunities to validate the change and hotfix critical bugs before we release to production.
 
 > [!TIP]
