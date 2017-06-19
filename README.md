@@ -12,39 +12,39 @@ notice. You bear the risk of using it.
 ## Branching Guidance
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-- [Start here](src/Branching)
-- Completed articles:
+### [Start here](src/Branching)
+### Completed articles:
 
-  | Article | DRAFT | FINAL PUBLICATION |
-  |---------|-------|-------------------|
-  |Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-feature-isolation-on-tfvc)|
-  |Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-tfvc-branching-strategies-for-devops)|
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-feature-isolation-on-tfvc)|
+|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-tfvc-branching-strategies-for-devops)|
 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-- [Start here](src/DevOps)
-- Completed articles:
+### [Start here](src/DevOps)
+### Completed articles:
 
-  | Article | DRAFT | FINAL PUBLICATION |
-  |---------|-------|-------------------|
-  |Phase rollout with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Phase rollout with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
   
- - Work in progress
+### Work in progress
 
-  | Article | DRAFT | FINAL PUBLICATION |
-  |---------|-------|-------------------|
-  |Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
 
-- [Start here](src/Stories)
-- Work in progress
+### [Start here](src/Stories)
+### Work in progress
 
-  | Article | DRAFT | FINAL PUBLICATION |
-  |---------|-------|-------------------|
-  |Our journey of transforming to a DevOps culture|[DRAFT2](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Our journey of transforming to a DevOps culture|[DRAFT2](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 
 # Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
