@@ -24,12 +24,18 @@ The purpose is to build some insightful and practical guidance around branching 
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
 - [Start here](src/DevOps)
+
+- Compl;eted articles:
+
+  | Article | DRAFT | FINAL PUBLICATION |
+  |---------|-------|-------------------|
+  |Phase rollout with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.om](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
+
 - Work in progress
 
   | Article | DRAFT | FINAL PUBLICATION |
   |---------|-------|-------------------|
   |Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
-  |Phase rollout with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)||
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
