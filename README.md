@@ -1,4 +1,4 @@
-#2 Visual Studio ALM Rangers Guidance 
+# Visual Studio ALM Rangers Guidance 
 ![](ALMRangers.Logo.250x83.png)
 
 # Introduction 
