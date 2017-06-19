@@ -1,4 +1,4 @@
-2 Visual Studio ALM Rangers Guidance 
+#2 Visual Studio ALM Rangers Guidance 
 ![](ALMRangers.Logo.250x83.png)
 
 # Introduction 
@@ -13,7 +13,7 @@ notice. You bear the risk of using it.
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
 #### [Start here](src/Branching)
-#### Completed articles
+#### Completed articles to edit the branching articles
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
@@ -23,7 +23,7 @@ The purpose is to build some insightful and practical guidance around branching 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-#### [Start here](src/DevOps)
+#### [Start here](src/DevOps) to edit the DevOps articles
 #### Completed articles
 
 | Article | DRAFT | FINAL PUBLICATION |
@@ -39,7 +39,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
 
-### [Start here](src/Stories)
+#### [Start here](src/Stories) to edit the stories
 #### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
