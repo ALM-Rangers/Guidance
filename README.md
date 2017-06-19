@@ -25,7 +25,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 - [Start here](src/DevOps)
 
-- Compl;eted articles:
+- Completed articles:
 
   | Article | DRAFT | FINAL PUBLICATION |
   |---------|-------|-------------------|
