@@ -1,3 +1,4 @@
+
 # Visual Studio ALM Rangers Guidance 
 ![](ALMRangers.Logo.250x83.png)
 
@@ -28,13 +29,14 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Phase rollout with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
+|Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
   
 ### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
 |Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
+|Phase the features of your application with feature flags|||
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
