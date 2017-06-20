@@ -11,7 +11,7 @@ author: josh garverick
 ---
 
 > 
-> #**THIS IS DRAFT.2 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.2.1 - WORK IN PROGRESS **
 > 
 
 # Phase the roll-out of your application through rings
@@ -31,7 +31,7 @@ Deployment rings are one of DevOps practices used to limit impact on end-users, 
 
 ## Considerations
 
-Before you convert your deployment infrastructure to a ringed deployment model, it's to consider the following:
+Before you convert your deployment infrastructure to a ringed deployment model, it's important to consider the following:
 - Who are your primary types of users? For example early adopters and users.
 - What's your application topology?
 - What's the value of embracing ringed deployment model?
@@ -139,7 +139,7 @@ We achieved consistent and reliable automation, we reduced all response times, w
 
 ## Is there a dependency on feature flags?
 
-No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the DEV ring, and fine-tune a subset for the BETA and PROD rings, as shown.
+No, rings and feature flags are symbiotic. Feature flags give you fine-grained control of features included in your change. For example, if you're not fully confident about a feature you can use feature flags to **hide** the feature in one or all of the deployment rings. For example, you could enable all features in the canaries ring, and fine-tune a subset for the early adopters and production users, as shown.
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
