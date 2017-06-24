@@ -34,20 +34,17 @@ Before you introduce feature flags to your engineering process, it's important t
 
 @
 
-## What is A|B Testing?
+![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-feature-flag.png)
 
-@
+![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-ab-test.png)
 
 ## What FF solution did we chose?
 
 @
 
-explicitly invite. 
-
-## Moving features with feature flags in our engineering process
+## Managing features with feature flags in our engineering process
 
 @
-
 
 ## What's the value?
 
@@ -63,7 +60,6 @@ Now that you've covered the concepts and considerations of feature flags, and ou
 ### Is there a dependency on feature flags?
 
 No, rings and feature flags are symbiotic. Read [Phase the roll-out of your application through rings](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings) for details.
-
 
 ##Reference information
 - [Phase the roll-out of your application through rings](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)
