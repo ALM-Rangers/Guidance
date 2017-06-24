@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Stories"
   ],
+  "SelectedNode": "\\src\\Stories\\our-journey-of-transforming-to-a-devops-culture.md",
   "PreviewInSolutionExplorer": false
 }
