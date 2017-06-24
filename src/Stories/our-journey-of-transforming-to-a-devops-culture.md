@@ -354,7 +354,7 @@ Earlier, we mentioned how the Rangers are set up to create and move on, making m
 
 ### What's next?
 
-When we embraced [DevOps](https://aka.ms/whatisdevops) X, we realized that our transformation is based on culture, people, and products. It's a blurring of barriers between developers, operations, and users. It's about communication, efficiency, predictability, and value. It's about **continuous** change to become better!
+When we embraced [DevOps](https://aka.ms/whatisdevops) concepts, we realized that our transformation is based on culture, people, and products. It's a blurring of barriers between developers, operations, and users. It's about communication, efficiency, predictability, and value. It's about **continuous** change to become better!
 
 ![Return on investment](./_img/our-journey-of-transforming-to-a-devops-culture/return-on-investment.png)
 
@@ -366,7 +366,7 @@ As part of our re-engineering effort we implemented automated continuous integra
 
 ![Pipelines and Rings](./_img/our-journey-of-transforming-to-a-devops-culture/pipelines-and-rings.png)
 
-We use believe in visual cues and dashboards, some powered by Rasberry Pis and the Codify build light. We’re continuously investigating products to improve our engineering process. For example, we use [WhiteSource](https://www.whitesourcesoftware.com/) to scan all our open source libraries, get real time alerts on security risks, policy violations, and to generate reports on open source usage. We use [LaunchDarkly](https://launchdarkly.com/) to manage our feature flags across all projects.
+We use in visual cues and dashboards, some powered by Rasberry Pis and the Codify build light. We’re continuously investigating products to improve our engineering process. For example, we use [WhiteSource](https://www.whitesourcesoftware.com/) to scan all our open source libraries, get real time alerts on security risks, policy violations, and to generate reports on open source usage. We use [LaunchDarkly](https://launchdarkly.com/) to manage our feature flags across all projects.
 
 > [!NOTE]
 > To find more information on our re-engineering efforts, go to our [team blog - aka.ms/vsar](https://aka.ms/vsar), and look at our ecosystem and CI/CD Pipeline tags
