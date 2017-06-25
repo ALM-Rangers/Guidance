@@ -11,27 +11,34 @@
 > -----------------------------------------
 
 ## Introduction
-In 2015, the ALM Rangers moved from a traditional organizational structure to a self-organizing team structure. This article is an overview of the process that we used and the results that we saw as a result of the change. You can use this information to help you decide if a similar transformation would be beneficial to your own organization.
+In 2015, the ALM Rangers moved from a traditional organizational structure to a self-organizing team structure. This article is an overview of the process that we used and the results that we saw as a result of the change. You can use this information to help you 
+decide if a similar transformation would be beneficial to your own organization.
 
 ### Intended audience
+
 Who should read this article? The answer is simple – any organization, individual, or company looking to streamline their teams and processes. If you’re looking for a more manageable, intuitive way to work on projects, or if your members (like the Rangers) are scattered all over the planet, then this article is for you.
 
 ### Value for the reader to read this article
+
 For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and, more importantly, deliver value to our developer community quickly. 
 
 We embarked on a cultural shift that allowed us to “rub DevOps” on our operational processes and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
 
+> [!NOTE]
 > Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet or one-size-fits-all solution. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate your candid feedback so that we can update this article. 
 
 #### Go straight to what worked
-**“I have not failed. I've just found 10,000 ways that won't work.”** *- Thomas A. Edison*
+
+> “*I have not failed. I've just found 10,000 ways that won't work.*” - Thomas A. Edison
 
 We’ve gone through the 10,000 failures so you don’t have to. Our goal is to provide you with an understanding of self-organized teams and how they revolutionized the Rangers so that you can put it to work for your organization. Although we are continually adapting our methods, what we’ve learned is an invaluable resource. In 2009, the Rangers had two full-time Program Managers and five concurrent projects running. After moving to self-organizing teams, we have one part-time Program Manager and ten concurrent projects running. Communication is faster. Efficiency is greater. Headaches are fewer. 
 
 #### Avoid the pain of what didn't work
+
 As stated in the last section, we’ve already gone through the arduous trial and error process. Traditional managed teams have their place, but companies are changing. For example, the Rangers are comprised of a diverse and widely dispersed group of application lifecycle management (ALM) experts from all over the globe. Traditional management became a hindrance to productivity due to the expansive nature of the Rangers projects. With self-organized teams, members can use the tools which best fit the type of project. For instance, the best process for a guidance project may not be the best process for a tooling project.
 
 #### Road-map to create similar results in your org
+
 Congratulations! You’ve already taken the first step to progress by reading this article.
 
 The second step is identifying the problem areas. Are your projects bottlenecking? Are your projects running late and over budget? Are your projects dragging and off-track?
@@ -43,9 +50,11 @@ The last step is to simplify. Use tools and techniques like Kanban, Slack, and V
 To learn more about the Rangers evolution from a rigid, well-defined and common framework, to flexible, self-managed and self-organized teams check out our free e-book, [Managing Agile Open-Source Software Projects with Microsoft Visual Studio Online](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/)
 
 ### Why transform?
+
 Self-organizing teams allow a freedom and flexibility that traditional managing strategies just don’t have. Here are a few reasons why the ALM Rangers made the change to self-organizing teams.
 
 #### Part-time team members
+
 The ALM Rangers are comprised of several volunteer experts in various IT fields. Each of the members works on the Rangers projects outside of their normal life. Due to the part-time nature of their work, it can be difficult for members to manage projects in larger teams and stay informed on all the projects going on. With self-organized teams, each team focuses on their own independent projects.
 
 However, this isn’t the only example of a part-time team. Consultants who are working on several projects simultaneously or at different customers could be considered “part-time” from the vantage of each of those projects. 
@@ -57,6 +66,7 @@ Again, from the vantage of any single one of these activities, the developer can
 The Rangers experience this problem regularly since we are, by definition, a part-time group of volunteers. Therefore, because our experience is so like what many in your organization likely face, you may find value in our journey to a solution.
 
 #### Geographically distributed teams
+
 The ALM Rangers are a worldwide organization of ALM zealots, and almost none of us is anywhere near a peer in proximity (with a few exceptions, of course). For instance, I'm the only Ranger in the entire state where I live. There are entire countries with only a single Ranger in them. Managing such a widely distributed group can be overwhelming. With self-organized teams, the need for oversight lessens as the smaller teams take on personal responsibility for their own work.
 
 The challenge of a highly distributed workforce is much more prevalent than you might think. Increasingly, teams in all sorts of organizations are distributed across floors in a building, buildings on a campus, offices in different cities, and even cities in different countries. Off-shoring and near-shoring are more and more common.
@@ -66,6 +76,7 @@ As a result, teams are not only the opposite of co-located – which is widely a
 These are challenges that the Rangers have already faced and, hopefully, addressed as part of the shift to self-organizing teams.
 
 #### DevOps
+
 Just like the ALM Rangers’ mission statement says, our goal is to “*provide professional guidance, practical experience and gap-filling solutions to the ALM community.*”
 
 A big part of that is done with DevOps, which is just the idea that we should structure our software development processes to deliver continuous value to a product’s users. We cover DevOps in detail elsewhere – such as our blog and guidance products – so there’s no need to go through it again here.
@@ -79,6 +90,7 @@ Of course, [Visual Studio Team Services](https://www.visualstudio.com/team-servi
 Because of adopting these tools and using them better, members no longer filter through countless emails to find the messages that are applicable to them. Slack and VSTS create a central location for all projects and team collaboration.
 
 #### Competition
+
 Competition comes in many forms. In our case, the competition wasn’t market-related (all Ranger products and guidance are free). Rather, competing priorities and work create a challenging environment in which to get things done. If you remember, the Rangers are a volunteer organization whose members are fueled by their passion. But reality must still be managed, and Rangers must prioritize their day jobs (i.e. the ones that pay the bills) and family commitments over their Ranger work.
 
 As a result, we needed a process that would enhance productivity while preserving our core values.
@@ -122,7 +134,6 @@ Observations:
 Cross-functional teams “*have all competencies needed to accomplish the work without depending on others not part of the team*” - [Scrum Guide](http://www.scrumguides.org/scrum-guide.html). Once cross-functional teams embrace self-organization and self-management, they become an inspiring autonomous team within teams.
 
 > [!NOTE]
-> 
 > Mature self-organizing, self-managed, and cross-functional teams thrive on **autonomy**, **mastery**, and **purpose** as discussed in [DRiVE - by Daniel H.Pink](https://www.youtube.com/watch?v=KgGhSOAtAyQ). 
 
 ## Pillars
@@ -155,7 +166,7 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 
 ## Our journey
 
->It's important to highlight that the WHY, WHAT, WHEN is an ongoing process
+> It's important to highlight that the WHY, WHAT, WHEN is an ongoing process
 
 ### Why we transformed
 // ruimelo
