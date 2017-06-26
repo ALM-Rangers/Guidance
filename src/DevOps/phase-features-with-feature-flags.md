@@ -66,23 +66,29 @@ As outlined in [How to implement feature flags and A|B testing](https://blogs.ms
 
 ## Common Scenarios
 
-@
+We have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension we're hosting on the [marketplace](https://marketplace.visualstudio.com), using a ring deployment model, and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. We're looking for an engineering process in which we can continuously deploy, never have to roll-back, and with which we can fine tune the user experience.
 
-**Enable | disable a feature for everyone**
+You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features at **run-time** and in **production**!
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
+The three core scenarios we're using are:
 
-**Enable | disable a feature for selected users**
+- **Enable | disable a feature for everyone**
 
-@
+	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience or is no longer needed, for example verbose logging, we simply flip the switch.
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-group.png)
+	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
-**Enable | disable a feature as selected by user**
+- **Enable | disable a feature for selected users**
 
-@
+	With this scenario we can achieve the same, but target specific users or groups of users. For example, we could enable the verbose logging feature for a specific user experiencing a problem, or enable a feature for early adopters for preview validation.
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-select.png)
+	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-group.png)
+
+- **Enable | disable a feature as selected by user**
+
+	Lastly, we'd like to give the users a list of preview features and allow each user to decide which feature to enable when. This scenario is key for feature validation, A|B testing, and giving the user flexibiolity and choice.
+
+	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-select.png)
 
 ## Managing features with feature flags in our engineering process
 
