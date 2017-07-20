@@ -51,6 +51,8 @@ To learn more about the Rangers evolution from a rigid, well-defined and common 
 
 ### Why transform?
 
+> Self-organization empowers users to make an impact in their own way without being told "how to". It unleashes passion and creativity.
+
 Self-organizing teams allow a freedom and flexibility that traditional managing strategies just don’t have. Here are a few reasons why the ALM Rangers made the change to self-organizing teams.
 
 #### Part-time team members
