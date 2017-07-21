@@ -38,6 +38,7 @@ Before you introduce feature flags to your engineering process, it's important t
 ## What are Feature Flags (FF)?
 
 > [!NOTE]
+> 
 > A feature flag is also known as a feature toggle, feature switch, feature flipper, or conditional feature.
 
 A feature flag is a technique to enable (expose) or disable (hide) a feature in a solution. It allows us to release and test features, even before they are fully developed and ready for release. It's an alternative to maintaining multiple source-code branches and a low-risk companion for releasing, managing and fine-tuning features in production.
@@ -46,7 +47,11 @@ A feature flag is a technique to enable (expose) or disable (hide) a feature in 
 
 A feature flag can be viewed as an ON | OFF switch for a specific feature. As shown, we can deploy a solution to production that includes both an email and a print feature. If the feature flag is set (ON), we'll email. If reset (OFF) we'll print.
 
-When we combine a feature flag with an experiment, led by a hypothesis, we introduce A|B testing. For example, we could run an experiment to determine if the email (A) or the print (B) feature will result in a higher user satisfaction. 
+When we combine a feature flag with an experiment, led by a hypothesis, we introduce A|B testing. For example, we could run an experiment to determine if the email (A) or the print (B) feature will result in a higher user satisfaction.
+
+> [!NOTE]
+> 
+> A|B testing is also known as Split Testing. It's based on a hypothesis that's defined as: **For** <user> **who** <action> **the** <solution> **is a** <how> **that** <value> **unlike** <competition> **we** <do better>
 
 ![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-ab-test.png)
 
@@ -74,13 +79,17 @@ The three core scenarios we're using are:
 
 - **Enable | disable a feature for everyone**
 
-	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience or is no longer needed, for example verbose logging, we simply flip the switch.
+	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience we simply flip the switch.
+
+	Many times, we collect data that would be invaluable to have when investigating issues, but would otherwise be undesirable to display at all times. For example, logging verbose information to a console window or displaying the Application insights could all be useful. Flags would allow us to choose when to enable that behavior or not, without redeploying code for everyone.
 
 	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
 - **Enable | disable a feature for selected users**
 
 	With this scenario we can achieve the same, but target specific users or groups of users. For example, we could enable the verbose logging feature for a specific user experiencing a problem, or enable a feature for early adopters for preview validation.
+
+	Feature flags allow us to control the configuration in each environment independently. For example, if telemetry in the canary and early adopter deployment rings were overloading/blurring our metrics, we could decide to disable the behavior without redeploying.
 
 	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-group.png)
 
@@ -94,14 +103,25 @@ The three core scenarios we're using are:
 
 @
 
+### Phase 1 - All or nothing FFs
+
+@
+
+![LaunchDarkly Service Endpoint](./_img/phase-features-with-ff/phase-features-with-ff-ld-architecture.png)
+
+### Phase 2 - Targeted FFs
+
+@
+
+![LaunchDarkly Azure Function](./_img/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
+
 ## What's the value?
 
 @
 
-
 ## Conclusion
 
-Now that you've covered the concepts and considerations of feature flags, and our implementation of them, you should be confident to explore ways to improve your CI/CD pipelines. While feature flags come at a cost, having a game plan to manage exposure features at run-time is invaluable.
+Now that you've covered the concepts and considerations of feature flags, and our implementation of them, you should be confident to explore ways to improve your CI/CD pipelines. While feature flags come at a cost, having a game plan to manage exposed features at run-time is invaluable.
 
 ## Q&A
 
