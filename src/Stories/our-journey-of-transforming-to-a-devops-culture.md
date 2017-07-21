@@ -45,8 +45,6 @@ The third step is to trust your team leaders and members. Without trust, self-or
 
 The last step is to simplify. Use tools and techniques like Kanban, Slack, and VSTS. We'll discuss tools in more detail in a moment.
 
-To learn more about the Rangers evolution from a rigid, well-defined and common framework, to flexible, self-managed and self-organized teams check out our free e-book, [Managing Agile Open-Source Software Projects with Microsoft Visual Studio Online](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/)
-
 ### Why transform?
 
 > [!NOTE]
