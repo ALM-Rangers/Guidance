@@ -2,11 +2,9 @@
 > 
 > **WORK IN PROGRESS** - DO NOT DISTRIBUTE
 > 
-> Article 2500 - 3500 words
-> 
 > Images - high-quality, 737 pixels wide
 >
-> DRAFT.3 milestone - June 24, 2017
+> DRAFT.4 milestone - July 20, 2017
 > 
 > -----------------------------------------
 
@@ -169,22 +167,67 @@ Reflection is an opportunity for all of us to inspect ourselves, plan for improv
 
 ## Our journey
 
-> It's important to highlight that the WHY, WHAT, WHEN is an ongoing process
+What started as an optimization phase became an ongoing process that is still not concluded. Transformation as we have learned, is not an action, but an ongoing process and we kept on going. After addressing the bigger rocks, we understood that the optimization process brings dynamism and productivity to the team and identifying optimization spots became part of our process. The image bellow represents the evolution of the our team over time.
+
+![team evolution](./_img/our-journey-of-transforming-to-a-devops-culture/our-evolution.png)
+
+> The ride is not over, though. Transformation is part of our ongoing journey.
 
 ### Why we transformed
-// ruimelo
+
+Evolution is a natural state of all organizations and teams. Ours was not an exception. With Microsoft transforming as a global organization, and its teams adopted a permanent evolutionary process, we had the choice of either evolving as a team or taking the risk of fading to background. We took a deep look at our team, and identified some hotspots:
+- Bottleneck at the team management level: one PM managing all the teams and projects, with high dependency of his intervention.
+- Long running projects with little momentum and sub-optimal deliverables
+- Big project teams with few active members
+
+Tacking these hotspots was the beginning of the journey.
+
 ### When we transformed (should be when we started as transformation is ongoing)
-// ruimelo
+
+Our process was based on a rigid mode; when we started in 2006. The Program Manager (PM) managed the teams and imposed the rhythm and goals. Back then, this was the best way to get the community going, with a strong leadership breaking inertia and keeping momentum. With the team evolution, this model proved to be hard to maintain. During 2009, the team had grown to over 200 members, which required 2 full-time dedicated program managers. Projects were long-running, some of them taking over one year to reach maturity and we had in average 5 projects running at the same time. The outcome was suboptimal, required a big effort from all team members, and the deliverables took a long time to reach the field with low impact.
+
+This was the tipping point, when change became necessary. We had learned the team and sub-teams are a living organism that has different operating requirement methods. Imposing a hard process was holding the team back, with a high maintenance cost. Transformation became part of our DNA and we have embraced it into our process, making it a recurring activity.
+
 ### How we transformed
-// ruimelo
+
+Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect the “Family > Work > Rangers” principle. The first step was implementing SCRUM as a team methodology, with smaller teams, sprints with smaller and regular deliveries. A good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced RUCK, a loose implementation of SCRUM. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence  . The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
+
+From the team member perspective, the transformation represented a world of opportunities with a more flexible approach focused on deliverables instead of the process. But with flexibility also came responsibility, which in time matured to a higher commitment of the team members. Reaching the self-management stage, was in the beginning a challenge, used as we were to have the PMs and RUCK masters pushing the team, but after the initial adjustment, the ride has been amazing.
+
 #### Planning
-// ruimelo
+
+The planning phase includes the PM participation, identifying gaps, and prioritizing them with the Product Group (PG). During this phase, a Product Owner (PO) defines the core features (WHAT).. The team presents the project idea to invite volunteers to join the team. A committed PO and a passionate team triggers the project. The projects transitions to an investigation phase once we have a committed PO and a passionate team.
+
 #### Investigation
-// ruimelo
+
+During this phase, the team investigates the proposal with spikes that will bring light into its feasibility, complexity, and expected effort. The outcome of this phase can be one of the following:
+
+- GO: the proposal is feasible, within the 3-sprint goal
+- NO GO: not feasible due to technical impediments or needs re-planning due to complexity or size of the task.
+
 #### Go, Go, Go
-// ruimelo
+
+
+When we have a GO, the team starts to work on the feature. The team self-organizes, using the following guidelines:
+
+- Weekly sync points
+- 3 weeks sprints
+- Using KANBAN boards across the teams 
+- Review and show what you have videos
+- Whenever possible, take advantage of the geographical proximity
+
 ### Value ... was (is) it worth it?
-// ruimelo
+
+Because of the ongoing transformation process, the team has decreased in number from the 200+ members, to 100 active team members, management team evolved from 2 full time PMs to one part-time PM and the number of projects now sits on an average of 10. From the numbers point of view, there is a big improvement on the team outcome.
+
+What have we learned during the transformation:
+
+- Everyone needs fuel to work. Identify it soon enough and provide it to the team members and your engine will roar. Our team works mainly on recognition and the feeling to be part of something.
+- Our model is "Family > Work > Rangers", but because we are volunteering and having the time of our lives while doing it, we can always find time to get something done.
+- In average, a ranger delivers 1.75h per week to the project.
+
+For the team member, after the initial challenge of putting the process into place, the transformation process towards self-management teams, feels more natural and with better results than the previous approaches. On the way, we have learned to embrace transformation and present lower resistance to it, empowering each member and team. Not all is perfect, and we address some of the identified improvement areas in the next section. 
+As a summary, transformation came with some impact, most of it positive: visibility, new challenges, team commitment and solid cadence of deliverables, being some of them. After the initial resistance, teams are now more mature and productive.
 
 ## Patterns
 
