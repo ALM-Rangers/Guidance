@@ -4,7 +4,7 @@
 > 
 > Images - high-quality, 737 pixels wide
 >
-> DRAFT.4 milestone - July 20, 2017
+> DRAFT.5 - BUSY WITH COPY-EDIT REVISIONS AS PER **TODO**s
 > 
 > -----------------------------------------
 
@@ -22,7 +22,9 @@ For many years, we've been evaluating and implementing Agile practices across ou
 We embarked on a cultural shift that allowed us to “rub DevOps” on our operational processes and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
 
 > [!NOTE]
-> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet or "one size fits all" solution. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate [your candid feedback](mailto:ADDRESS_HERE) so that we can update this article. 
+> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet or "one size fits all" solution. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate [your candid feedback](mailto:ADDRESS_HERE) so that we can update this article.
+
+> **TODO:WILLY** - **ADD CONTACT DETAILS AND REDUCE SECTION FROM START TO NEXT TODO**
 
 #### Learn from our history
 
@@ -38,7 +40,9 @@ As stated in the last section, we’ve already gone through the arduous trial-an
 
 #### Road-map to create similar results in your org
 
-Congratulations! You’ve already taken the first step to progress by reading this article. **DougE note: I feel this has been repeated in the prior paragraphs. They feel a little empty already, and I was left wondering: When am I going to get to the action? Can you compress this preamble theme into a couple sentences instead of a few paragraphs?**
+Congratulations! You’ve already taken the first step to progress by reading this article. 
+
+> **TODO:WILLY** - **DougE note: I feel this has been repeated in the prior paragraphs. They feel a little empty already, and I was left wondering: When am I going to get to the action? Can you compress this preamble theme into a couple sentences instead of a few paragraphs?**
 
 The second step is identifying the problem areas. Are your projects bottlenecking? Are your projects running late and over budget? Are your projects dragging and off-track?
 
@@ -191,6 +195,8 @@ This was the tipping point, when change became necessary. We had learned the tea
 
 Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect the “Family > Work > Rangers” principle. The first step was implementing [Scrum](LINK_TO_DOCS_HERE) as a team methodology, with smaller teams, and sprints with smaller and regular deliveries. It was a good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced [Ruck](LINK_TO_DOCS_HERE), a loose implementation of Scrum. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence  . The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
 
+> **TODO:WILLY** - **UPDATE LINKS**
+
 From the team member perspective, the transformation represented a world of opportunities with a more flexible approach focused on deliverables instead of the process. But with flexibility also came responsibility, which in time matured to a higher commitment of the team members. Reaching the self-management stage, was in the beginning a challenge, used as we were to have the PMs and RUCK masters pushing the team, but after the initial adjustment, the ride has been amazing.
 
 #### Planning
@@ -214,6 +220,8 @@ When we have a GO, the team starts to work on the feature. The team self-organiz
 - Using [Kanban boards](LINK_TO_DOCS_HERE) across the teams 
 - Review and show what you have videos
 - Whenever possible, take advantage of the geographical proximity
+
+> **TODO:WILLY** - **UPDATE LINKS**
 
 ### Value ... was (is) it worth it?
 
@@ -307,7 +315,7 @@ It is important to have an idea of how we measured the results. In this case, we
 We interviewed several Rangers and received their honest and invaluable feedback on how the change to self-organizing teams has affected their productivity as well as their overall opinion of the changes. We tried to interview a good cross-section of Rangers, so the roster included leads, experienced Ranger contributors, and new Rangers who have only ever worked under the new system. 
 
 
-**DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
+> **TODO:EDWARD** - **DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
 
 #### Surveys
 
@@ -323,7 +331,9 @@ As always, ours is a culture of candid feedback and continuous improvement, and 
 
 #### Measurable changes
 
-We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation. **DougE note: What are the specific metrics you used? An example would be good here.**
+We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation.
+
+> **TODO:EDWARD** - **DougE note: What are the specific metrics you used? An example would be good here.**
 
 ## Things that remained unchanged
 
@@ -335,7 +345,7 @@ A central coordinator (such as the Rangers’ Program Manager) remains a critica
 
 As a result, you may want to consider a similar role at your organization whose sole purpose is to keep your own highly-distributed, self-organizing teams moving forward toward the same organizational goals.
 
-**DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
+> **TODO:EDWARD** - **DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
 
 ### Project maintenance
 
@@ -345,13 +355,13 @@ The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowle
 
 Quantifiable metrics are challenging and always come back to a discussion of delivering value versus the overhead of tracking metrics. That is still the case after the transformation because it still takes time to set up and to gather metrics. We utilize tools like VSTS heavily for the metrics we do have, but additional metrics whose gathering requires manual overhead are often ignored if they are perceived to have limited value.
 
-**DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
+> **TODO:EDWARD** - **DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
 
 ## Pros of the Ranger transformation
 
 The change to self-organizing teams has been an overall positive experience. Below are the trends we’ve observed through our data collection. 
 
-**DougE: Quotes from team members or from survey to use in these subsections?**
+> **TODO:EDWARD** - **DougE: Quotes from team members or from survey to use in these subsections?**
 
 ### Increased productivity
 
@@ -369,7 +379,7 @@ In the past, new members had to read process documents such as the Ruck Guide an
 
 In other words, the resources that they need are all neatly organized and available on demand (“*pull*” instead of the previous “*push*” of having a mentor send them artifacts to consume). All a new Rangers needs to bring is their experience and passion for all things ALM.
 
-**DougE: Example of how you did it? What resources/tools did you use?**
+> **TODO:EDWARD** - **DougE: Example of how you did it? What resources/tools did you use?**
 
 ## Cons of the Ranger transformation
 
@@ -379,7 +389,7 @@ As with any change, things don’t always go smoothly. There remain a few areas 
 
 One of the main concerns that we heard in the assessment is the feeling of disconnection between individual members and the Rangers group. With smaller teams, we work less often with other Rangers. Since moving from a “*push*” to a “*pull*” communication structure, Rangers receive less day to day information, so it is up to the individual to connect to the group. As you might imagine, this can leave some feeling a sense of detachment from the Rangers as a result.
 
-**DougE note: example anecdote here?**
+> **TODO:EDWARD** - **DougE note: example anecdote here?**
 
 ### Blockers
 
@@ -389,13 +399,13 @@ This can be helpful in small amounts, but too much pressure on an unpaid volunte
 
 The diverse nature of the Rangers can also create a blocker. Between different time zones, work schedules, and motivational issues, communication and coordination can stall out. Fortunately, we discuss some mitigation strategies later in the article.
 
-**DougE note: example anecdote here?**
+> **TODO:EDWARD** - **DougE note: example anecdote here?**
 
 ### Lowered program management
 
 With only half of a resource handling all the program management for 100 professionals worldwide, the Program Manager’s time and attention is spread very thinly. The result is a potential bottleneck for projects.
 
-**DougE note: example anecdote here?**
+> **TODO:EDWARD** - **DougE note: example anecdote here?**
 
 ## Ideas for future success
 
