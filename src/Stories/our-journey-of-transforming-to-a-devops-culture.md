@@ -9,35 +9,36 @@
 > -----------------------------------------
 
 ## Introduction
-In 2015, the ALM Rangers moved from a traditional organizational structure to a self-organizing team structure. This article is an overview of the process that we used and the results that we saw as a result of the change. You can use this information to help you 
-decide if a similar transformation would be beneficial to your own organization.
+In 2015, the ALM Rangers moved from a traditional organization to a *self-organizing team*. This article is an overview of the process that we used and the results that we saw as a result of the change. Read this article to decide if a similar transformation would be beneficial to your own organization.
 
-### Intended audience
+> **Who should read this article?**
+> The answer is simple: any organization, individual, or company looking to streamline their teams and processes. If you’re looking for > a more manageable, intuitive way to work on projects; or if your members (like the Rangers) are scattered all over the planet, then
+> this article is for you.
 
-Who should read this article? The answer is simple – any organization, individual, or company looking to streamline their teams and processes. If you’re looking for a more manageable, intuitive way to work on projects, or if your members (like the Rangers) are scattered all over the planet, then this article is for you.
+### A brief preamble
 
-### Value for the reader to read this article
-
-For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteered-based teams. While we shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, we realized we're not done. We need to scale, and, more importantly, deliver value to our developer community quickly. 
+For many years, we've been evaluating and implementing Agile practices across our geographically distributed, part-time, and volunteer teams and team members. We shared our learnings in the [Managing Agile OSS Projects with Microsoft VSO](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/) eBook, but we realized we're not done. We need to scale, and more importantly, deliver value to our developer community quickly. 
 
 We embarked on a cultural shift that allowed us to “rub DevOps” on our operational processes and embrace self-organized, self-managed and autonomous teams. This article explores self-organized teams, our journey, and behavioural patterns we observed. 
 
 > [!NOTE]
-> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet or one-size-fits-all solution. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate your candid feedback so that we can update this article. 
+> Whether you read the entire article or cherry-pick topics, please bear in mind that there is no silver bullet or "one size fits all" solution. The patterns and recommendations covered herein may or may not apply to your organization. If they do, we hope we'll enable a successful transformation for your teams. If not, we'd appreciate [your candid feedback](mailto:ADDRESS_HERE) so that we can update this article. 
 
-#### Go straight to what worked
+#### Learn from our history
 
 > “*I have not failed. I've just found 10,000 ways that won't work.*” - Thomas A. Edison
 
-We’ve gone through the 10,000 failures so you don’t have to. Our goal is to provide you with an understanding of self-organized teams and how they revolutionized the Rangers so that you can put it to work for your organization. Although we are continually adapting our methods, what we’ve learned is an invaluable resource. In 2009, the Rangers had two full-time Program Managers and five concurrent projects running. After moving to self-organizing teams, we have one part-time Program Manager and ten concurrent projects running. Communication is faster. Efficiency is greater. Headaches are fewer. 
+We’ve gone through the 10,000 failures so you don’t have to. Our goal is to provide you with an understanding of self-organized teams and how they revolutionized the Rangers so that you can put it to work for your organization. Although we are continually adapting our methods, what we’ve learned is an invaluable resource to us, and hopefully to you as well.
+
+In 2009, the Rangers had two full-time Program Managers and five concurrent projects running. After moving to self-organizing teams, we have one part-time Program Manager and ten concurrent projects running. Communication is faster. Efficiency is greater. Headaches are fewer. 
 
 #### Avoid the pain of what didn't work
 
-As stated in the last section, we’ve already gone through the arduous trial and error process. Traditional managed teams have their place, but companies are changing. For example, the Rangers are comprised of a diverse and widely dispersed group of application lifecycle management (ALM) experts from all over the globe. Traditional management became a hindrance to productivity due to the expansive nature of the Rangers projects. With self-organized teams, members can use the tools which best fit the type of project. For instance, the best process for a guidance project may not be the best process for a tooling project.
+As stated in the last section, we’ve already gone through the arduous trial-and-error process. Traditional managed teams have their place, but companies are changing. For example, the Rangers are comprised of a diverse and widely dispersed group of application lifecycle management (ALM) experts from all over the globe. Traditional management became a hindrance to productivity due to the expansive nature of the Rangers projects. With self-organized teams, members can use the tools which best fit the type of project. For instance, the best process for a guidance project may not be the best process for a tooling project.
 
 #### Road-map to create similar results in your org
 
-Congratulations! You’ve already taken the first step to progress by reading this article.
+Congratulations! You’ve already taken the first step to progress by reading this article. **DougE note: I feel this has been repeated in the prior paragraphs. They feel a little empty already, and I was left wondering: When am I going to get to the action? Can you compress this preamble theme into a couple sentences instead of a few paragraphs?**
 
 The second step is identifying the problem areas. Are your projects bottlenecking? Are your projects running late and over budget? Are your projects dragging and off-track?
 
@@ -188,7 +189,7 @@ This was the tipping point, when change became necessary. We had learned the tea
 
 ### How we transformed
 
-Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect the “Family > Work > Rangers” principle. The first step was implementing SCRUM as a team methodology, with smaller teams, sprints with smaller and regular deliveries. A good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced RUCK, a loose implementation of SCRUM. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence  . The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
+Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect the “Family > Work > Rangers” principle. The first step was implementing [Scrum](LINK_TO_DOCS_HERE) as a team methodology, with smaller teams, and sprints with smaller and regular deliveries. It was a good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced [Ruck](LINK_TO_DOCS_HERE), a loose implementation of Scrum. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence  . The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
 
 From the team member perspective, the transformation represented a world of opportunities with a more flexible approach focused on deliverables instead of the process. But with flexibility also came responsibility, which in time matured to a higher commitment of the team members. Reaching the self-management stage, was in the beginning a challenge, used as we were to have the PMs and RUCK masters pushing the team, but after the initial adjustment, the ride has been amazing.
 
@@ -210,7 +211,7 @@ When we have a GO, the team starts to work on the feature. The team self-organiz
 
 - Weekly sync points
 - 3 weeks sprints
-- Using KANBAN boards across the teams 
+- Using [Kanban boards](LINK_TO_DOCS_HERE) across the teams 
 - Review and show what you have videos
 - Whenever possible, take advantage of the geographical proximity
 
@@ -224,7 +225,7 @@ What have we learned during the transformation:
 - Our model is "Family > Work > Rangers", but because we are volunteering and having the time of our lives while doing it, we can always find time to get something done.
 - In average, a ranger delivers 1.75h per week to the project.
 
-For the team member, after the initial challenge of putting the process into place, the transformation process towards self-management teams, feels more natural and with better results than the previous approaches. On the way, we have learned to embrace transformation and present lower resistance to it, empowering each member and team. Not all is perfect, and we address some of the identified improvement areas in the next section. 
+After the initial challenge of putting the process into place, team members find that the transformation process towards self-management teams feels more natural and produces better results than the previous approaches. On the way, they have learned to embrace transformation and resist change less, which empowers each member and team. Not all is perfect, and we address some of the identified improvement areas in the next section. 
 As a summary, transformation came with some impact, most of it positive: visibility, new challenges, team commitment and solid cadence of deliverables, being some of them. After the initial resistance, teams are now more mature and productive.
 
 ## Patterns
@@ -273,23 +274,23 @@ Keep a lookout for warning signs. For example, when a team continuously reports 
 
 ### Strives for ultimate perfection
 
-> The team gets started, strive for perfection, and miss their opportunity for greatness.
+> The team gets started, strives for perfection, and misses their opportunity for greatness.
 
 ![image showing fizzle out](./_img/our-journey-of-transforming-to-a-devops-culture/strive-for-perfection.png)
 
 This team is strives for perfection, which is a good thing. There's always one more thing to fix, to polish, to improve. While we all like polished solutions, we need teams to move quickly, to break things, to ship quickly and continuously, and most importantly to make improvements based on user feedback.
 
-This is one of the toughest teams to identify and coordinate. It's an example where being a "fly on the wall" to observe a team in their environment pays dividends. The team continuously reports a positive status, but behind the scenes you'll detect frustration, team member churn, and one or two members who insist on perfection. This team can completely miss the opportunity to make an impact in the marketplace.
+This is one of the toughest things to identify and coordinate. It's an example where being a "fly on the wall" to observe a team in their environment pays dividends. The team continuously reports a positive status, but behind the scenes you'll detect frustration, team member churn, and one or two members who insist on perfection. This team can completely miss the opportunity to make an impact in the marketplace.
 
-### Never get's started
+### Never gets started
 
 > The team is uninspired and uncommitted, but says nothing.
 
-![image showing never get's started](./_img/our-journey-of-transforming-to-a-devops-culture/p-never-gets-started.png)
+![image showing never gets started](./_img/our-journey-of-transforming-to-a-devops-culture/p-never-gets-started.png)
 
 No-one in the team has passion for or believes in the project. No-one sees tangible value, a vision, or achievable goal. Typically, these teams never get started or the design and planning plod on and on. Everyone goes silent and lays low until there's an expected milestone or a request for status.
 
-If you're exploring one of these teams, you may hear comments such as “we're clueless”, “what's the point”, and “where is everyone”. You'll also notice a lacklustre atmosphere and likely experience a bad smell.
+If you're exploring one of these teams, you may hear comments such as “we're clueless”, “what's the point”, and “where is everyone”. You'll also notice a lackluster atmosphere and likely experience a bad smell.
 
 The worst side effect of these teams is a high cost on morale, passion, and future project commitment. Do not tolerate them for long because they are clearly destructive to their team members and other teams within the program.
 
@@ -303,7 +304,10 @@ It is important to have an idea of how we measured the results. In this case, we
 
 #### Interviews
 
-We interviewed several Rangers and received their honest and invaluable feedback on how the change to self-organizing teams has affected their productivity as well as their overall opinion of the changes. We tried to interview a good cross-section of Rangers, so the roster included leads, experienced Ranger contributors, and new Rangers who have only ever worked under the new system.
+We interviewed several Rangers and received their honest and invaluable feedback on how the change to self-organizing teams has affected their productivity as well as their overall opinion of the changes. We tried to interview a good cross-section of Rangers, so the roster included leads, experienced Ranger contributors, and new Rangers who have only ever worked under the new system. 
+
+
+**DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
 
 #### Surveys
 
@@ -319,7 +323,7 @@ As always, ours is a culture of candid feedback and continuous improvement, and 
 
 #### Measurable changes
 
-We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation. 
+We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation. **DougE note: What are the specific metrics you used? An example would be good here.**
 
 ## Things that remained unchanged
 
@@ -331,6 +335,8 @@ A central coordinator (such as the Rangers’ Program Manager) remains a critica
 
 As a result, you may want to consider a similar role at your organization whose sole purpose is to keep your own highly-distributed, self-organizing teams moving forward toward the same organizational goals.
 
+**DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
+
 ### Project maintenance
 
 The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowledge and tooling. As such, we are set up to create enhancements and guidance efficiently and then move on with other projects. Because of this, there is simply no bandwidth, by design, for project maintenance. Once released, Ranger solutions are available so long as they are relevant, and, when they no longer are, the old solution is usually retired and a new one created. Long term maintenance on projects just isn’t there, and many Rangers would like to see a change in this area.
@@ -339,9 +345,13 @@ The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowle
 
 Quantifiable metrics are challenging and always come back to a discussion of delivering value versus the overhead of tracking metrics. That is still the case after the transformation because it still takes time to set up and to gather metrics. We utilize tools like VSTS heavily for the metrics we do have, but additional metrics whose gathering requires manual overhead are often ignored if they are perceived to have limited value.
 
+**DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
+
 ## Pros of the Ranger transformation
 
 The change to self-organizing teams has been an overall positive experience. Below are the trends we’ve observed through our data collection. 
+
+**DougE: Quotes from team members or from survey to use in these subsections?**
 
 ### Increased productivity
 
@@ -359,6 +369,8 @@ In the past, new members had to read process documents such as the Ruck Guide an
 
 In other words, the resources that they need are all neatly organized and available on demand (“*pull*” instead of the previous “*push*” of having a mentor send them artifacts to consume). All a new Rangers needs to bring is their experience and passion for all things ALM.
 
+**DougE: Example of how you did it? What resources/tools did you use?**
+
 ## Cons of the Ranger transformation
 
 As with any change, things don’t always go smoothly. There remain a few areas of improvement that we are working diligently to fix. The process of transformation is ever evolving, and we welcome your comments on how these challenges can best be addressed.
@@ -366,6 +378,8 @@ As with any change, things don’t always go smoothly. There remain a few areas 
 ### Isolation
 
 One of the main concerns that we heard in the assessment is the feeling of disconnection between individual members and the Rangers group. With smaller teams, we work less often with other Rangers. Since moving from a “*push*” to a “*pull*” communication structure, Rangers receive less day to day information, so it is up to the individual to connect to the group. As you might imagine, this can leave some feeling a sense of detachment from the Rangers as a result.
+
+**DougE note: example anecdote here?**
 
 ### Blockers
 
@@ -375,9 +389,13 @@ This can be helpful in small amounts, but too much pressure on an unpaid volunte
 
 The diverse nature of the Rangers can also create a blocker. Between different time zones, work schedules, and motivational issues, communication and coordination can stall out. Fortunately, we discuss some mitigation strategies later in the article.
 
+**DougE note: example anecdote here?**
+
 ### Lowered program management
 
 With only half of a resource handling all the program management for 100 professionals worldwide, the Program Manager’s time and attention is spread very thinly. The result is a potential bottleneck for projects.
+
+**DougE note: example anecdote here?**
 
 ## Ideas for future success
 
@@ -397,7 +415,8 @@ Finally, one of the more creative ideas was to hold distributed social events, l
 
 With the widely-distributed nature of the Rangers, one members suggested a periodic “burst” of days when all the members on a team are collocated via Skype or Slack at the same time. Basically, for the space of a day (or ½ day or 2 days, etc., as appropriate), all the members of a team would connect on a team tool like Skype and work at the same time. This mitigates the lack of colocation you see in distributed teams.
 
-Having more than half of a resource to manage the program would be enormously beneficial, too. Oftentimes, only the program manager can overcome a blocker, so not having enough of a resource in that role creates a bottleneck, which can really bring multiple projects to crawl. Think of it like a computer with not enough memory – the hard drive “thrashes” as it uses virtual memory to compensate. The same is true of teams. There must be enough of a critical resource like the program manager in order to keep everything moving smoothly.
+Having more than half of a resource to manage the program would be enormously beneficial, too. Oftentimes, only the program manager can overcome a blocker, so not having enough of a resource in that role creates a bottleneck, which can really bring multiple projects to crawl. Think of it like a computer with not enough memory – the hard drive “thrashes” as it creates virtual memory to compensate, introducing unwanted latency across the system. The same is true of teams. There must be enough of a critical resource like the program manager in order to keep everything moving smoothly.
+
 
 ### Increase bandwidth
 
