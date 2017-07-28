@@ -314,15 +314,16 @@ It is important to have an idea of how we measured the results. In this case, we
 
 We interviewed several Rangers and received their honest and invaluable feedback on how the change to self-organizing teams has affected their productivity as well as their overall opinion of the changes. We tried to interview a good cross-section of Rangers, so the roster included leads, experienced Ranger contributors, and new Rangers who have only ever worked under the new system. 
 
+The interview process is a chance to build relationships as much as to gather information, so, when conducting the interviews, it's important to make sure the person being interviewed is comfortable and feels like they can open up.  To start, we respect the interviewee's valuable time, so we agree on a time and make sure to start and end the interview on time.  In addition, interviews are one on one and not recorded in order to encourage candid feedback.  Finally, it's important to thank each person and praise their candor so that they will be interested in future interviews.
 
-> **TODO:EDWARD** - **DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
+> **DONE:EDWARD** - **DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
 
 #### Surveys
 
 A simple survey garnered specific information on multiple aspects of the transformation. Here are a few of the questions posed:
 
 - Scrum Guides states that “self-organizing teams choose how to best accomplish their work, rather than being directed by others outside of the team.” 
-- Are you experiencing this in our teams?
+  T- Are you experiencing this in our teams?
 - What have you learned during our journey and how can we use it next time?
 - What truly motivates you to invest your precious family time in SOTs? 
 - How could we do better?
@@ -331,9 +332,16 @@ As always, ours is a culture of candid feedback and continuous improvement, and 
 
 #### Measurable changes
 
-We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation.
+We track metrics assiduously using tools like VSTS to their full effect. As a result, we could compare “before” and “after” measures of productivity to quantity the effects of the transformation.  Here are some the metrics that we measured:
 
-> **TODO:EDWARD** - **DougE note: What are the specific metrics you used? An example would be good here.**
+- Concurrent projects
+- Releases
+- Average Ranger time per week   
+- Build minutes
+- Team size
+- Program manager bandwidth
+
+> **DONE:EDWARD** - **DougE note: What are the specific metrics you used? An example would be good here.**
 
 ## Things that remained unchanged
 
@@ -341,29 +349,36 @@ Now for the results: although we’ve found the change to have an overall positi
 
 ### Central coordinator
 
-A central coordinator (such as the Rangers’ Program Manager) remains a critically important role. The coordinator makes sure everything moves forward consistently with all the projects, is available to remove blockers as they arise, provides clarity on projects, and facilitates meetings and scheduling events when needed. The Program Manager is the glue between teams. Quite simply, all Rangers feel strongly that the whole program would fall apart without PM’s ardent support.
+A central coordinator (such as the Rangers’ Program Manager) remains a critically important role, which may seem at odds with the idea of self-organizing teams. However, we found that some coordination and governance is necessary. Why?  The short answer is that you need to keep the whole apparatus moving in the same direction.
 
-As a result, you may want to consider a similar role at your organization whose sole purpose is to keep your own highly-distributed, self-organizing teams moving forward toward the same organizational goals.
+Let's elaborate.  Think of the activity of the group in 2 levels.  The "_higher_" level holds responsibility for governance concerns.  For instance, that's where decisions are made about the projects that are going to move forward, how we interface with the Microsoft products groups, and accountability for our public-facing resources and high-level management of internal tools.  The "_lower_" level is where actual work happens.  In other words, that is where extensions are written and guidance is authored, among other things.  The governance level benefits greatly from a central coordinator, while the lower level works best with self-organizing teams.
 
-> **TODO:EDWARD** - **DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
+
+Let's talk about the coordinator's role.  As you might expect, some basic standards are necessary, such as how the repository and work items should be organized at a high level, overall sprint cadence, and establishing shared specialist teams like testers or user experience.  In addition, the coordinator makes sure everything moves forward consistently with all the projects, is available to remove blockers as they arise, provides clarity on projects, and facilitates meetings and scheduling events when needed. 
+
+In short the Program Manager is the glue between all of the self-organizing teams. As a result, all Rangers that we interviewed feel strongly that the whole program would fall apart without the PM’s ardent support.  Therefore, you may want to consider a similar role at your organization whose sole purpose is to keep your own highly-distributed, self-organizing teams moving forward toward the same organizational goals.
+
+> **DONE:EDWARD** - **DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
 
 ### Project maintenance
 
 The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowledge and tooling. As such, we are set up to create enhancements and guidance efficiently and then move on with other projects. Because of this, there is simply no bandwidth, by design, for project maintenance. Once released, Ranger solutions are available so long as they are relevant, and, when they no longer are, the old solution is usually retired and a new one created. Long term maintenance on projects just isn’t there, and many Rangers would like to see a change in this area.
 
-### Quantifiable metrics
+### Quantifiable metric tracking
 
-Quantifiable metrics are challenging and always come back to a discussion of delivering value versus the overhead of tracking metrics. That is still the case after the transformation because it still takes time to set up and to gather metrics. We utilize tools like VSTS heavily for the metrics we do have, but additional metrics whose gathering requires manual overhead are often ignored if they are perceived to have limited value.
+Measuring such points as team throughput, quality variance, and value delivered remain challenging because they always come back to a discussion of delivering value versus the overhead of tracking metrics. That is still the case after the transformation because it still takes time to set up and to gather metrics. We utilize tools like VSTS heavily for the metrics we do have, such as concurrent projects, releases, and build minutes, but additional metrics whose gathering requires manual overhead are often ignored if they are perceived to have limited value.
 
-> **TODO:EDWARD** - **DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
+> **DONE:EDWARD** - **DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
 
 ## Pros of the Ranger transformation
 
 The change to self-organizing teams has been an overall positive experience. Below are the trends we’ve observed through our data collection. 
 
-> **TODO:EDWARD** - **DougE: Quotes from team members or from survey to use in these subsections?**
+> **DONE:EDWARD** - **DougE: Quotes from team members or from survey to use in these subsections?**
 
 ### Increased productivity
+
+> The number of projects has increased, and the number of people on each project has decreased.  - NZ
 
 After the switch, the number of projects doubled as teams became smaller and more efficient. By modernizing the engineering process, development cycle-time was greatly reduced, allowing more projects to move through the pipeline, which correlates to a greater potential value that can ultimately be delivered. Both Ranger feedback and our metrics bear this out.
 
@@ -371,15 +386,19 @@ After the switch, the number of projects doubled as teams became smaller and mor
 
 ### Better team coordination and control
 
+> Small teams are easy to manage and can modify process quickly to meet work styles. - TK
+
 Smaller teams mean fewer meetings and more communication between team members. Team members no longer must wade through endless emails to find the nuggets of information that pertain to them. Even though it creates more individual responsibility and greater personal accountability, teams also have the fluidity to use products of their own choice that work best for both the projects and the team members. With more agility comes greater communication and coordination between members, as well as faster feedback between teams and extended collaborators such as product owners, testers, and the Program Manager.
 
 ### Easier to bring new members onboard
 
-In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ landing site at [aka.ms/sos](htpps://aka.ms/sos) to be up to date on all ongoing projects and teams.
+> I think it’s also easier for a new Ranger to on-board the program. There is no more Ruck guide and other stuff. You just follow aka.ms/sos and you’re done.  - WK
+
+In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ landing site at [aka.ms/sos](htpps://aka.ms/sos) to be up to date on all ongoing projects and teams.  The _sos_ page is created and maintained by the Ranger PM and provides a "home page" for new Rangers.  The page was created using simple markdown and is just a simple _readme.md_ file for the main team project in our repository on VSTS.
 
 In other words, the resources that they need are all neatly organized and available on demand (“*pull*” instead of the previous “*push*” of having a mentor send them artifacts to consume). All a new Rangers needs to bring is their experience and passion for all things ALM.
 
-> **TODO:EDWARD** - **DougE: Example of how you did it? What resources/tools did you use?**
+> **DONE:EDWARD** - **DougE: Example of how you did it? What resources/tools did you use?**
 
 ## Cons of the Ranger transformation
 
@@ -387,11 +406,19 @@ As with any change, things don’t always go smoothly. There remain a few areas 
 
 ### Isolation
 
+> Before the transformation, it was a lot more "in your face" as to the stuff going on… more information was being pushed to Rangers.  Now, each Ranger has to pull the info to stay up to date.  - NZ
+
 One of the main concerns that we heard in the assessment is the feeling of disconnection between individual members and the Rangers group. With smaller teams, we work less often with other Rangers. Since moving from a “*push*” to a “*pull*” communication structure, Rangers receive less day to day information, so it is up to the individual to connect to the group. As you might imagine, this can leave some feeling a sense of detachment from the Rangers as a result.
 
-> **TODO:EDWARD** - **DougE note: example anecdote here?**
+For instance, a Ranger who is on a 2-person project now (and is often the only active member on that project) often feels like he's a remote outpost and has a hard time keeping up with the rapid pace of change.   Not only is it challening for him to stay aware of the other projects in flight, but it's hard to understand why they are important.  In addition, when standards or technology changes, he feels like he often misses the changes unless he just happens to be in a meeeting where they are discussed.
+
+> **DONE:EDWARD** - **DougE note: example anecdote here?**
 
 ### Blockers
+
+> Since teams are smaller and there are more projects, there si potentially more productivity... unless there are blockers, in which case it can be harder to get help.  - DK
+
+> Rangers are spread too thin.  There are too many projects and not enough bandwidth to deliver quickly.  - TK
 
 If you recall, all our members work on Ranger projects part-time on their own. It can be difficult to take away from precious personal time, which is a testament to a Ranger’s passion for ALM. There are many potential blockers that delay or stall a project – family, work, and customer commitments can all get in the way of Ranger project work. Since there is more individual responsibility now, the pressure to produce increases right along with that personal accountability.
 
@@ -399,13 +426,19 @@ This can be helpful in small amounts, but too much pressure on an unpaid volunte
 
 The diverse nature of the Rangers can also create a blocker. Between different time zones, work schedules, and motivational issues, communication and coordination can stall out. Fortunately, we discuss some mitigation strategies later in the article.
 
-> **TODO:EDWARD** - **DougE note: example anecdote here?**
+For instance, a Ranger feels like he is the only contributor on his project, and, as a result, feels a lot of pressure when other things preclude him from working on his project.
+
+> **DONE:EDWARD** - **DougE note: example anecdote here?**
 
 ### Lowered program management
 
+> The role of Willy is still critically important. Starting new projects, making sure we finish projects before we start something else, facilitating meetings and scheduling stuff is very important. Without his guidance/structure, I think we would accomplish way less.  - WK
+
 With only half of a resource handling all the program management for 100 professionals worldwide, the Program Manager’s time and attention is spread very thinly. The result is a potential bottleneck for projects.
 
-> **TODO:EDWARD** - **DougE note: example anecdote here?**
+For instance, the members of a team formed for a new project were disagreeing on the meaning of some of the features.  This went on until the Ranger PM had the bandwidth to step in and broker a resolution.  Additional PM bandwidth would have resolved this faster, thus increasing throughput.
+
+> **DONE:EDWARD** - **DougE note: example anecdote here?**
 
 ## Ideas for future success
 
@@ -469,7 +502,7 @@ The first question is: why transform your organization? We believe in the “if 
 
 ### Clarify the WHAT you need to transform
 
-The second question is: what do you need to transform your organization? The one thing you need above all else is trust. Self-organizing teams simply don’t work without it.
+The second question is: what do you need to transform your organization? The one thing you need above all else is *trust*. Self-organizing teams simply don’t work without it.
 
 ### Clarify the WHEN you will transform
 
