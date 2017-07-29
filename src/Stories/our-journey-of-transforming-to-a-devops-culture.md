@@ -187,54 +187,49 @@ Tacking these hotspots was the beginning of the journey.
 
 ### When we transformed (should be when we started as transformation is ongoing)
 
-Our process was based on a rigid mode; when we started in 2006. The Program Manager (PM) managed the teams and imposed the rhythm and goals. Back then, this was the best way to get the community going, with a strong leadership breaking inertia and keeping momentum. With the team evolution, this model proved to be hard to maintain. During 2009, the team had grown to over 200 members, which required 2 full-time dedicated program managers. Projects were long-running, some of them taking over one year to reach maturity and we had in average 5 projects running at the same time. The outcome was suboptimal, required a big effort from all team members, and the deliverables took a long time to reach the field with low impact.
+Our process was based on a rigid mode; when we started in 2006. The Program Manager (PM) managed the teams and imposed the rhythm and goals. Back then, strong leadership was the best way to get the community going, with a strong leadership breaking inertia and keeping momentum. With the team evolution, this model proved to be hard to maintain. During 2009, the team had grown to over 200 members, which required 2 full-time dedicated program managers. Projects were long-running, some of them taking over one year to reach maturity and we had in average 5 projects running at the same time. The outcome was suboptimal, required a big effort from all team members, and the deliverables took a long time to reach the field with low impact.
 
 This was the tipping point, when change became necessary. We had learned the team and sub-teams are a living organism that has different operating requirement methods. Imposing a hard process was holding the team back, with a high maintenance cost. Transformation became part of our DNA and we have embraced it into our process, making it a recurring activity.
 
 ### How we transformed
 
-Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect the “Family > Work > Rangers” principle. The first step was implementing [Scrum](LINK_TO_DOCS_HERE) as a team methodology, with smaller teams, and sprints with smaller and regular deliveries. It was a good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced [Ruck](LINK_TO_DOCS_HERE), a loose implementation of Scrum. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence  . The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
+Agility was the goal. There was no man power available to keep the rigid model, so we took a quantum leap based on delegation. With it, we aimed to deliver more, with less effort and respect for the “Family > Work > Rangers” principle. The first step was implementing [Scrum](http://www.scrumguides.org/scrum-guide.html) as a team methodology, with smaller teams, and sprints with smaller and regular deliveries. It was a good evolution and first step, but we soon understood we needed to adapt the process to better fit our needs. We introduced [Ruck](https://blogs.msdn.microsoft.com/microsoft_press/2015/04/09/free-ebook-managing-agile-open-source-software-projects-with-microsoft-visual-studio-online/), a loose implementation of Scrum. It was better suited to our environment, however, the PM continued to steer the process, regular scrums and decisions. Unproductive for the teams. To improve this, we moved to self-organized team. The PM became an enabler, and the team adopted a sprint cadence. The PM became an enabler and teams adopted a common sprint cadence, to introduce a common heartbeat.
 
-> **TODO:WILLY** - **UPDATE LINKS**
-
-From the team member perspective, the transformation represented a world of opportunities with a more flexible approach focused on deliverables instead of the process. But with flexibility also came responsibility, which in time matured to a higher commitment of the team members. Reaching the self-management stage, was in the beginning a challenge, used as we were to have the PMs and RUCK masters pushing the team, but after the initial adjustment, the ride has been amazing.
+From the team member perspective, the transformation represented a world of opportunities with a more flexible approach focused on deliverables instead of the process. But with flexibility also came responsibility, which in time matured to a higher commitment of the team members. Reaching the self-management stage, was initially a challenge, as we were used to having the PMs and RUCK masters pushing the team. After the initial adjustment, the ride has been amazing.
 
 #### Planning
 
-The planning phase includes the PM participation, identifying gaps, and prioritizing them with the Product Group (PG). During this phase, a Product Owner (PO) defines the core features (WHAT).. The team presents the project idea to invite volunteers to join the team. A committed PO and a passionate team triggers the project. The projects transitions to an investigation phase once we have a committed PO and a passionate team.
+The planning phase includes the PM participation, identifying gaps, and prioritizing them with the Product Group (PG). During this phase, a Product Owner (PO) defines the core features (WHAT). The team presents the project idea to invite volunteers to join the team. A committed PO and a passionate team triggers the project. The projects transitions to an investigation phase once we have a committed PO and a passionate team.
 
 #### Investigation
 
-During this phase, the team investigates the proposal with spikes that will bring light into its feasibility, complexity, and expected effort. The outcome of this phase can be one of the following:
+During this phase, the team investigates the proposal with research spikes that will bring light into its feasibility, complexity, and expected effort. The outcome of this phase can be one of the following:
 
 - GO: the proposal is feasible, within the 3-sprint goal
 - NO GO: not feasible due to technical impediments or needs re-planning due to complexity or size of the task.
 
 #### Go, Go, Go
 
-
 When we have a GO, the team starts to work on the feature. The team self-organizes, using the following guidelines:
 
 - Weekly sync points
 - 3 weeks sprints
-- Using [Kanban boards](LINK_TO_DOCS_HERE) across the teams 
+- Using [Kanban boards](https://www.visualstudio.com/en-us/docs/work/kanban) across the teams 
 - Review and show what you have videos
 - Whenever possible, take advantage of the geographical proximity
 
-> **TODO:WILLY** - **UPDATE LINKS**
-
 ### Value ... was (is) it worth it?
 
-Because of the ongoing transformation process, the team has decreased in number from the 200+ members, to 100 active team members, management team evolved from 2 full time PMs to one part-time PM and the number of projects now sits on an average of 10. From the numbers point of view, there is a big improvement on the team outcome.
+Because of the ongoing transformation process, the community decreased from the 200+ members to 100 active team members, management team evolved from 2 full time PMs to one part-time PM, and the number of projects now sits on an average of 10. From the numbers point of view, there is a big improvement on the team outcome.
 
 What have we learned during the transformation:
 
-- Everyone needs fuel to work. Identify it soon enough and provide it to the team members and your engine will roar. Our team works mainly on recognition and the feeling to be part of something.
-- Our model is "Family > Work > Rangers", but because we are volunteering and having the time of our lives while doing it, we can always find time to get something done.
-- In average, a ranger delivers 1.75h per week to the project.
+- Everyone needs fuel to work. Identify it soon enough and provide it to the team members and your engine will roar.
+- Our team works mainly on recognition and the feeling to be part of something.
+- Our mantra is "Family > Work > Rangers", but because we are volunteering and having the time of our lives while doing it, we can always find time to get something done.
+- On average, a ranger delivers 1.75h per week to the project.
 
-After the initial challenge of putting the process into place, team members find that the transformation process towards self-management teams feels more natural and produces better results than the previous approaches. On the way, they have learned to embrace transformation and resist change less, which empowers each member and team. Not all is perfect, and we address some of the identified improvement areas in the next section. 
-As a summary, transformation came with some impact, most of it positive: visibility, new challenges, team commitment and solid cadence of deliverables, being some of them. After the initial resistance, teams are now more mature and productive.
+After the initial challenge of putting the process into place, the transformation feels more natural and produces better results than previous approaches. The transformation empowers everyone, improves visibility, and introduces a delivery cadence. Teams are now more mature and productive.
 
 ## Patterns
 
@@ -316,8 +311,6 @@ We interviewed several Rangers and received their honest and invaluable feedback
 
 The interview process is a chance to build relationships as much as to gather information, so, when conducting the interviews, it's important to make sure the person being interviewed is comfortable and feels like they can open up.  To start, we respect the interviewee's valuable time, so we agree on a time and make sure to start and end the interview on time.  In addition, interviews are one on one and not recorded in order to encourage candid feedback.  Finally, it's important to thank each person and praise their candor so that they will be interested in future interviews.
 
-> **DONE:EDWARD** - **DougE: Can you describe how to conduct an interview in short form -- what an effective one might be like?**
-
 #### Surveys
 
 A simple survey garnered specific information on multiple aspects of the transformation. Here are a few of the questions posed:
@@ -341,8 +334,6 @@ We track metrics assiduously using tools like VSTS to their full effect. As a re
 - Team size
 - Program manager bandwidth
 
-> **DONE:EDWARD** - **DougE note: What are the specific metrics you used? An example would be good here.**
-
 ## Things that remained unchanged
 
 Now for the results: although we’ve found the change to have an overall positive effect on the Rangers, there are a few things that remain the same.
@@ -358,8 +349,6 @@ Let's talk about the coordinator's role.  As you might expect, some basic standa
 
 In short the Program Manager is the glue between all of the self-organizing teams. As a result, all Rangers that we interviewed feel strongly that the whole program would fall apart without the PM’s ardent support.  Therefore, you may want to consider a similar role at your organization whose sole purpose is to keep your own highly-distributed, self-organizing teams moving forward toward the same organizational goals.
 
-> **DONE:EDWARD** - **DougE: This whole subsection seems to contradict the central these of "self-organizing teams". Might wanna REALLY explicate this carefully.**
-
 ### Project maintenance
 
 The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowledge and tooling. As such, we are set up to create enhancements and guidance efficiently and then move on with other projects. Because of this, there is simply no bandwidth, by design, for project maintenance. Once released, Ranger solutions are available so long as they are relevant, and, when they no longer are, the old solution is usually retired and a new one created. Long term maintenance on projects just isn’t there, and many Rangers would like to see a change in this area.
@@ -368,13 +357,9 @@ The Rangers’ mandate is really to fill gaps (holes, not craters) in ALM knowle
 
 Measuring such points as team throughput, quality variance, and value delivered remain challenging because they always come back to a discussion of delivering value versus the overhead of tracking metrics. That is still the case after the transformation because it still takes time to set up and to gather metrics. We utilize tools like VSTS heavily for the metrics we do have, such as concurrent projects, releases, and build minutes, but additional metrics whose gathering requires manual overhead are often ignored if they are perceived to have limited value.
 
-> **DONE:EDWARD** - **DougE: List some metrics you used? Maybe a specific example of how you used VSTS?**
-
 ## Pros of the Ranger transformation
 
 The change to self-organizing teams has been an overall positive experience. Below are the trends we’ve observed through our data collection. 
-
-> **DONE:EDWARD** - **DougE: Quotes from team members or from survey to use in these subsections?**
 
 ### Increased productivity
 
@@ -394,11 +379,9 @@ Smaller teams mean fewer meetings and more communication between team members. T
 
 > I think it’s also easier for a new Ranger to on-board the program. There is no more Ruck guide and other stuff. You just follow aka.ms/sos and you’re done.  - WK
 
-In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ landing site at [aka.ms/sos](htpps://aka.ms/sos) to be up to date on all ongoing projects and teams.  The _sos_ page is created and maintained by the Ranger PM and provides a "home page" for new Rangers.  The page was created using simple markdown and is just a simple _readme.md_ file for the main team project in our repository on VSTS.
+In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ internal landing site at [aka.ms/sos](htpps://aka.ms/sos) to be up to date on all ongoing projects and teams.  The _sos_ page is created and maintained by the Ranger PM and provides a "home page" for new Rangers.  The page was created using simple markdown and is just a simple _readme.md_ file for the main team project in our repository on VSTS.
 
 In other words, the resources that they need are all neatly organized and available on demand (“*pull*” instead of the previous “*push*” of having a mentor send them artifacts to consume). All a new Rangers needs to bring is their experience and passion for all things ALM.
-
-> **DONE:EDWARD** - **DougE: Example of how you did it? What resources/tools did you use?**
 
 ## Cons of the Ranger transformation
 
@@ -410,13 +393,11 @@ As with any change, things don’t always go smoothly. There remain a few areas 
 
 One of the main concerns that we heard in the assessment is the feeling of disconnection between individual members and the Rangers group. With smaller teams, we work less often with other Rangers. Since moving from a “*push*” to a “*pull*” communication structure, Rangers receive less day to day information, so it is up to the individual to connect to the group. As you might imagine, this can leave some feeling a sense of detachment from the Rangers as a result.
 
-For instance, a Ranger who is on a 2-person project now (and is often the only active member on that project) often feels like he's a remote outpost and has a hard time keeping up with the rapid pace of change.   Not only is it challening for him to stay aware of the other projects in flight, but it's hard to understand why they are important.  In addition, when standards or technology changes, he feels like he often misses the changes unless he just happens to be in a meeeting where they are discussed.
-
-> **DONE:EDWARD** - **DougE note: example anecdote here?**
+For instance, a Ranger who is on a 2-person project now (and is often the only active member on that project) often feels like he's a remote outpost and has a hard time keeping up with the rapid pace of change.   Not only is it challenging for him to stay aware of the other projects in flight, but it's hard to understand why they are important.  In addition, when standards or technology changes, he feels like he often misses the changes unless he just happens to be in a meeting where they are discussed.
 
 ### Blockers
 
-> Since teams are smaller and there are more projects, there si potentially more productivity... unless there are blockers, in which case it can be harder to get help.  - DK
+> Since teams are smaller and there are more projects, there is potentially more productivity... unless there are blockers, in which case it can be harder to get help. - DK
 
 > Rangers are spread too thin.  There are too many projects and not enough bandwidth to deliver quickly.  - TK
 
@@ -428,17 +409,13 @@ The diverse nature of the Rangers can also create a blocker. Between different t
 
 For instance, a Ranger feels like he is the only contributor on his project, and, as a result, feels a lot of pressure when other things preclude him from working on his project.
 
-> **DONE:EDWARD** - **DougE note: example anecdote here?**
-
 ### Lowered program management
 
-> The role of Willy is still critically important. Starting new projects, making sure we finish projects before we start something else, facilitating meetings and scheduling stuff is very important. Without his guidance/structure, I think we would accomplish way less.  - WK
+> The role of the PM is still critically important. Starting new projects, making sure we finish projects before we start something else, facilitating meetings and scheduling stuff is very important. Without his guidance/structure, I think we would accomplish way less. - WK
 
 With only half of a resource handling all the program management for 100 professionals worldwide, the Program Manager’s time and attention is spread very thinly. The result is a potential bottleneck for projects.
 
 For instance, the members of a team formed for a new project were disagreeing on the meaning of some of the features.  This went on until the Ranger PM had the bandwidth to step in and broker a resolution.  Additional PM bandwidth would have resolved this faster, thus increasing throughput.
-
-> **DONE:EDWARD** - **DougE note: example anecdote here?**
 
 ## Ideas for future success
 
@@ -459,7 +436,6 @@ Finally, one of the more creative ideas was to hold distributed social events, l
 With the widely-distributed nature of the Rangers, one members suggested a periodic “burst” of days when all the members on a team are collocated via Skype or Slack at the same time. Basically, for the space of a day (or ½ day or 2 days, etc., as appropriate), all the members of a team would connect on a team tool like Skype and work at the same time. This mitigates the lack of colocation you see in distributed teams.
 
 Having more than half of a resource to manage the program would be enormously beneficial, too. Oftentimes, only the program manager can overcome a blocker, so not having enough of a resource in that role creates a bottleneck, which can really bring multiple projects to crawl. Think of it like a computer with not enough memory – the hard drive “thrashes” as it creates virtual memory to compensate, introducing unwanted latency across the system. The same is true of teams. There must be enough of a critical resource like the program manager in order to keep everything moving smoothly.
-
 
 ### Increase bandwidth
 
