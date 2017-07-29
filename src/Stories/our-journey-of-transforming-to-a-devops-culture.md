@@ -1,6 +1,6 @@
 > ------------------------------------------
 > 
-> DRAFT.6 - Completed first round of copy-edits
+> DRAFT.6.1 - Completed first round of copy-edits
 > 
 > -----------------------------------------
 
@@ -439,8 +439,7 @@ As part of our re-engineering effort we implemented automated continuous integra
 We use in visual cues and dashboards, some powered by Rasberry Pis and the Codify build light. We’re continuously investigating products to improve our engineering process. For example, we use [WhiteSource](https://www.whitesourcesoftware.com/) to scan all our open source libraries, get real time alerts on security risks, policy violations, and to generate reports on open source usage. We use [LaunchDarkly](https://launchdarkly.com/) to manage our feature flags across all projects.
 
 > [!NOTE]
-> To find more information on our re-engineering efforts, go to our [
-> team blog - aka.ms/vsar](https://aka.ms/vsar), and look at our ecosystem and CI/CD Pipeline tags
+> To find more information on our re-engineering efforts, go to our [team blog - aka.ms/vsar](https://aka.ms/vsar), and look at our ecosystem and CI/CD Pipeline tags
 
 We’ve evolved to using deployment rings to limit impact on canaries, early adopters, and end-users, while gradually deploying and validating change in production. The impact, sometimes called the "blast radius", is typically be evaluated through observation, testing, diagnosis of telemetry, and most importantly, user feedback.
 
