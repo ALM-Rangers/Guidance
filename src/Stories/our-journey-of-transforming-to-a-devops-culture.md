@@ -1,11 +1,11 @@
 > ------------------------------------------
 > 
-> DRAFT.6 - Completed first round of copy-edits
+> DRAFT.6.1 - Completed first round of copy-edits
 > 
 > -----------------------------------------
 
 ## Introduction
-In 2015, the ALM Rangers moved from a traditional organization to a *self-organizing team*. This article is an overview of the process that we used and the results that we saw as a result of the change. Read it to decide if a similar transformation would be beneficial to your own organization.
+In 2015, the ALM Rangers moved from a traditional organization to a *self-organizing team*. This article is an overview of the process we used and the results we observed. Read it to decide if a similar transformation would be beneficial to your own organization.
 
 > **Who should read this article?**
 > The answer is simple: any organization, individual, or company looking to streamline their teams and processes. If you’re looking for > a more manageable, intuitive way to work on projects; or if your members (like the Rangers) are scattered all over the planet, then this article is for you.
@@ -20,8 +20,6 @@ For many years, we've been evaluating and implementing Agile practices across ou
 #### Learn from our history
 
 > “*I have not failed. I've just found 10,000 ways that won't work.*” - Thomas A. Edison
-
-#### Avoid the pain of what didn't work
 
 Congratulations! You’ve already taken the first step to change by reading this article. 
 
@@ -48,11 +46,9 @@ Even within a single organization, developers are often sliced across many diffe
 
 Again, from the vantage of any single one of these activities, the developer can be considered part-time. If you factor in the overhead of management activity that is still quite pervasive in many organizations, then that overhead is going to be multiplied by the number of projects (or areas of work) that the developer has on their plate. As you can see, this problem grows geometrically and can really limit productivity.
 
-The Rangers experience this problem regularly since we are, by definition, a part-time group of volunteers. Therefore, because our experience is so like what many in your organization likely face, you may find value in our journey to a solution.
-
 #### Geographically distributed teams
 
-The ALM Rangers are a worldwide organization of ALM zealots, and almost none of us is anywhere near a peer in proximity (with a few exceptions, of course). For instance, I'm the only Ranger in the entire state where I live. There are entire countries with only a single Ranger in them. Managing such a widely distributed group can be overwhelming. With self-organized teams, the need for oversight lessens as the smaller teams take on personal responsibility for their own work.
+The ALM Rangers are a worldwide organization of ALM zealots, and almost none of us is anywhere near a peer in proximity (with a few exceptions, of course). There are entire countries with only a single Ranger in them. Managing such a widely distributed group can be overwhelming. With self-organized teams, the need for oversight lessens as the smaller teams take on personal responsibility for their own work.
 
 The challenge of a highly distributed workforce is much more prevalent than you might think. Increasingly, teams in all sorts of organizations are distributed across floors in a building, buildings on a campus, offices in different cities, and even cities in different countries. Off-shoring and near-shoring are more and more common.
 
@@ -436,7 +432,7 @@ While the illustration feels like we've reached the end of the journey, we've ju
 
 ### Tools and technologies?
 
-As part of our re-engineering effort we implemented automated continuous integration and continuous delivery pipelines for every project.
+As part of our re-engineering effort we implemented automated continuous integration and continuous delivery pipelines for every project using [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/). It enables us to *"program in any language, develop on any OS, and deploy to any platform."*
 
 ![Pipelines and Rings](./_img/our-journey-of-transforming-to-a-devops-culture/pipelines-and-rings.png)
 
