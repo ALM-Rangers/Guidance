@@ -1,11 +1,5 @@
 # Our journey of transforming to a DevOps culture
 
-> ------------------------------------------
-> 
-> DRAFT.6.1 - Completed first round of copy-edits
-> 
-> -----------------------------------------
-
 ## Introduction
 In 2015, the ALM Rangers moved from a traditional organization to a *self-organizing team*. This article is an overview of the process we used and the results we observed. Read it to decide if a similar transformation would be beneficial to your own organization.
 
