@@ -46,7 +46,7 @@ The purpose is to create articles that give an insight into the transformation o
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Our journey of transforming to a DevOps culture|[DRAFT3](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
+|Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 
 # Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
