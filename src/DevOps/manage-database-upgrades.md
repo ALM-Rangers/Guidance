@@ -176,6 +176,9 @@ You should consider adding validation tests and manual approvals between environ
 
 **What about backups?** - Database backups should always be part of your pipeline, unless your business doesn’t allow you to restore. Be aware that backups can take a significant amount of time and will impact the overall execution time of your pipeline. 
 
+> TIP!
+>
+
 ### Custom approaches
 
 While we recommend the use of [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications), you have other approaches to consider, such as:
