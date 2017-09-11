@@ -176,6 +176,9 @@ You should consider adding validation tests and manual approvals between environ
 
 **What about backups?** - Database backups should always be part of your pipeline, unless your business doesn’t allow you to restore. Be aware that backups can take a significant amount of time and will impact the overall execution time of your pipeline. 
 
+> [!TIP]
+> This strategy may not be the best solution to support the extension of databases associated with products like Microsoft BizTalk Server or Microsoft Commerce Server since the server engine is constantly updating the database schemas.
+
 ### Custom approaches
 
 While we recommend the use of [data-tier applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications), you have other approaches to consider, such as:
@@ -198,6 +201,15 @@ Here’s how you can automate your scripts in your release pipeline:
 - Add the Batch Script or Command Line task to your release pipeline.
 - Configure the task to execute each of the *.sql files using [SQLCMD.EXE](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility). 
 You must ensure that the *.sql files can be executed several times. For example, before updating a schema, the scripts needs to validate if the update has already been applied.
+
+The scripts should be created in a way that they can be executed multiple times over the time: 
+- before creating a column on a table there should be a validation if the the column already exists, if the column has the correct data type, ... 
+- before creating reference data, ensure the data already exist and in this case update it accordingly.
+- ...
+
+Another challenge with this strategy relates to the order to be used to execute the scripts: object dependencies should be manually managed.
+
+Finally, the scripts may also include rollback scripts. There processes should be also be tested regularly!
 
 #### Version databases in development environment
 
