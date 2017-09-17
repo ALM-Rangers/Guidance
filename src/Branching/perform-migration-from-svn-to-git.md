@@ -10,40 +10,28 @@ ms.author: hkamel
 author: hkamel
 ---
 
-# Perform the migration from SVN to Git
-
-
-## Requirements
-
-
-## Understand git-svn
-in this article we will rely on git-svn command to perform the migrations. [git svn](https://git-scm.com/docs/git-svn) is a simple conduit for changesets between Subversion and Git. It provides a bidirectional flow of changes between a Subversion and a Git repository.
-
-### Limitations
-#### Author Information
-SVN and Git are difefrent when it comes to how it store the author infromation. 
-
-#### Tags
-
-## Steps to migrate
+> 
+> #**THIS IS DRAFT.2.1 - WORK IN PROGRESS **
+> 
 
 # Migrate from SVN to Git
-SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, as well as if you use regular SVN or close relative like SVK to do the branching and merging. If you have a fairly new repository and the standard setup of a trunk, branches, and tags directory, the migration process could be straighfoward. However if your team has done a lot of branching and merging, or your repository follows a non-standard directory setup, or that setup changed over time, the migration process could be considerably more complex. 
+SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, as well as if you use regular SVN or close relative like SVK to do the branching and merging. If you have a fairly new repository and the standard setup of a trunk, branches, and tags directory, the migration process could be straightforward. However if your team has done a lot of branching and merging, or your repository follows a non-standard directory setup, or that setup changed over time, the migration process could be considerably more complex. 
 
-There are several ways to migrate from SVN to Git. This approach is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extentsion which can be used to checkout a Subversion repository to a local Git repo and then push changes from the local Git repo back to the Subversion repository. These steps provide a detailed overview of the process for migrating from SVN to Git in a Windows envrionment, without syncronization back to the original SVN repository. The end result will be a bare Git repository for sharing with the rest of your team.
+There are several ways to migrate from SVN to Git. The approach outlined in this article is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extension which can be used to checkout a Subversion repository to a local Git repo and then push changes from the local Git repo back to the Subversion repository. These steps provide a detailed overview of the process for migrating from SVN to Git in a Windows environment, without synchronizing back to the original SVN repository. The end result will be a bare Git repository for sharing with the rest of your team.
 
-Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and plan your team’s migration. After you’ve prepared, you can begin the migration.
+>[!TIP]
+>Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and plan your team’s migration. After you’ve prepared, you can begin the migration.
 
 The high level workflow for migrating from SVN-to-Git is as follows:
-* Prepare migration envrionment
+* Prepare migration environment
 * Convert the source SVN repository to a local Git repository
 * (Optional) - Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
 * Push the local Git repository to a remote Git repository hosted on Visual Studio Team Services
 * Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to VSTS remote Git repository
-* Developers begin using Git as main source control system
+* Developers switch to Git as main source control system
 
 ## Prepare Migration Environment
-A migration environment should be configuired on a local workstation. The following applications or utilities will need to be installed on the migration workstation:
+A migration environment should be configured on a local workstation. The following software will need to be installed on the migration workstation:
 * [Git](https://git-scm.com/downloads)
 * [Subversion](http://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html)
@@ -54,7 +42,7 @@ You will also need to create a Git repository on your VSTS account to host the c
 The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be modified. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like VSTS.
 
 ### Retrieve a list of all Subversion authors
-Subversion just uses the username for each commit. Git stores more data for each author but at a minmal, each commit will need a name and an email. The git-svn tool will list the SVN username in the author and email fields. However, you can create a list of all SVN users along with their corresponding Git names and emails. You can then use this list in the git-svn tool to transfrom SVN users into well formatted Git authors. 
+Subversion just uses the username for each commit. Git stores more data for each author but at a minimal, each commit will need a name and an email. The git-svn tool will list the SVN username in the author and email fields. However, you can create a list of all SVN users along with their corresponding Git names and emails. You can then use this list in the git-svn tool to transform SVN users into well formatted Git authors. 
 
 From the root of your local Subversion checkout, run this command:
 
