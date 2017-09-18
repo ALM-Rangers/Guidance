@@ -85,7 +85,7 @@ git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 
-### Push repository to a bare git repository
+## Push repository to a bare git repository
 In this step, you will create a bare repository and make its default branch match SVN's trunk branch name.
 
 1. Create a bare Git repository.
