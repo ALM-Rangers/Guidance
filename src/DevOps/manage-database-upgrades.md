@@ -95,8 +95,22 @@ To get started, you can import an existing database, or create an empty SQL Serv
 > [!TIP]
 > If you have are references to a very large Database, like an ERP database, start by creating a script with the relevant subset of the schema, then import that script to your database project. You can use SQL Server Management Studio to connect to the database and generate the script for the required objects. For more information please check [Generate Scripts](https://docs.microsoft.com/en-us/sql/relational-databases/scripting/generate-scripts-sql-server-management-studio).
 
-Once built, your SSDT project will generate a file with ***.dacpac** extension. It contains all the information needed to deploy the database changes and enables you to orchestrate your continuous integration and delivery (CI/CD) flow.
+Once built, your SSDT project will generate a file with ***.dacpac** extension. It contains all the information needed to deploy the database changes.
 
+For more complex scenarios, you can still take advantage of:
+- **Pre-Deployment scripts**: scripts that are executed prior to the execution of the core project definitions
+- **Post-Deployment scripts**: scripts that are executed after the execution of the core project definitions
+
+An example of a real-world scenario where a Database Project and its output DACPAC are being used in a CI/CD workflow:
+- **Database project contains the structure**: the initial schema and any change that doesn't imply data loss. This will be handled automatically through comparison by the DACPAC functionality.
+- **Preparatory actions** (i.e. dropping indexes) are executed on pre-deployment scripts
+- **Database structure changes that will imply data loss**, or complex change that requires multiple steps are executed through pre/post deployment scripts, depending on the case
+- **Data updates** are achieved through post execution scripts 
+- **Finally clean up actions** (i.e. recreation of the indexes) can be executed on the post deployment script
+
+This approach adds complexity to the code management, but in complex scenarios provides all the trust and fine control needed.
+
+After your data-tier application is created and structured, you can then move on to create your CI/CD pipeline:
 - **Create your build definition** - Read [CI/CD for newbies](https://www.visualstudio.com/en-us/docs/build/get-started/ci-cd-part-1) to get started.
 
 - **Create your target databases** - In the example below, we've created four databases. These can be Azure SQL or SQL Server databases. The first one is used for development and others are the target deployments for three environments. 
@@ -175,6 +189,9 @@ You should consider adding validation tests and manual approvals between environ
 **What about possible data conflicts during deployments?** - You can consider different strategies to avoid conflicts from occurring. For example, leverage the post- and pre- deployment script support in DAC. It gives you additional control over conflicts that might occur, and how to resolve them.
 
 **What about backups?** - Database backups should always be part of your pipeline, unless your business doesn’t allow you to restore. Be aware that backups can take a significant amount of time and will impact the overall execution time of your pipeline. 
+
+> TIP!
+>
 
 ### Custom approaches
 
