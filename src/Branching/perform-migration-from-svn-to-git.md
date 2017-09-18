@@ -22,6 +22,7 @@ There are several ways to migrate from SVN to Git. The approach outlined in this
 > [!NOTE]
 > 
 > Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and plan your team’s migration. After you’ve prepared, you can begin the migration.
+> Check [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/tfvc/comparison-git-tfvc)
 
 The high level workflow for migrating from SVN to Git is as follows:
 * Prepare migration environment
