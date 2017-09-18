@@ -11,7 +11,7 @@ author: hkamel
 ---
 
 > 
-> #**THIS IS DRAFT.1.0 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.2.0 - WORK IN PROGRESS **
 > 
 
 # Migrate from SVN to Git
@@ -47,7 +47,13 @@ The goal of this step is to convert the source Subversion repository to a local 
 ### Retrieve a list of all Subversion authors
 Subversion just uses the username for each commit. Git stores more data for each author but at a minimal, each commit will need a name and an email. The git-svn tool will list the SVN username in the author and email fields. However, you can create a list of all SVN users along with their corresponding Git names and emails. You can then use this list in the git-svn tool to transform SVN users into well formatted Git authors. 
 
-From the root of your local Subversion checkout, run this command:
+Subversion users
+![Subversion users](_img/perform-migration-from-svn-to-git/svn-log.png)
+
+Git users
+![git users](_img/perform-migration-from-svn-to-git/git-log.png)
+
+To create a list of all SVN users, from the root of your local Subversion checkout, run this command:
 
 ```
 svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2">"}' | sort -u > authors-transform.txt
@@ -121,11 +127,9 @@ git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchna
 
 
 ## Reference information
-- [Branching Strategies with TFVC (new guidance)](./branching-strategies-with-tfvc.md)
-- [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
-- [Continuous Integration](https://www.visualstudio.com/learn/what-is-continuous-integration/)
-- [Feature Toggles](https://msdn.microsoft.com/en-ca/magazine/dn683796.aspx)
-- [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview)
+- [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/tfvc/comparison-git-tfvc)
+- [Learn Git](https://www.visualstudio.com/learn-git/)
+- [Migrate from TFVC to Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/_)
 
 > Authors: Hosam Kamel, William H. Salazar
  
