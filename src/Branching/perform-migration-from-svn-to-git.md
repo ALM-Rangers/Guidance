@@ -44,6 +44,8 @@ You will also need to create a Git repository on your VSTS account to host the c
 ## Convert the source SVN repository to a local Git repository
 The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be modified. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like VSTS.
 
+![bare git repo](_img/perform-migration-from-svn-to-git/bare-git-repo.png)
+
 ### Retrieve a list of all Subversion authors
 Subversion just uses the username for each commit. Git stores more data for each author but at a minimal, each commit will need a name and an email. The git-svn tool will list the SVN username in the author and email fields. However, you can create a list of all SVN users along with their corresponding Git names and emails. You can then use this list in the git-svn tool to transform SVN users into well formatted Git authors. 
 
