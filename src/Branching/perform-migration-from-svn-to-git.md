@@ -70,6 +70,7 @@ svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" =
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a “authors-transform.txt” file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `almrangers = almrangers <almrangers> ` to `almrangers =  almrangers <almrangers@example.com>` .
 
 ### Clone the Subversion repository using git-svn
+
 The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the "c:\mytempdir" folder in your local machine.
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir
@@ -83,11 +84,16 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 
 If you are using the standard trunk, branches, tags layout you’ll just put –stdlayout. However if you have something different you may have to pass the –trunk, –branches, and –tags in to identify what is what. For example if your repository structure was trunk/companydir and you branched that instead of trunk, you would probably want ‘–trunk=trunk/companydir –branches=branches‘.
 
+```
+git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
+```
+
 > [!NOTE]
 >
 > This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
 
 ### Convert version control-specific configurations
+
 If your svn repo was using svn:ignore properties, you can  convert this to a .gitignore file using:
 ```
 cd c:\mytempdir
@@ -99,11 +105,13 @@ git commit -m 'Convert svn:ignore properties to .gitignore.'
 >
 > Read more about .gitignore [Ignore file changes with Git](
 https://docs.microsoft.com/en-us/vsts/git/tutorial/ignore-files?tabs=visual-studio)
+
 ### Push repository to a bare git repository
 
 In this step, you will create a bare repository and make its default branch match SVN's trunk branch name.
 
-1. Create a bare Git repository.
+1. Create a bare Git repository
+
 ```
 git init --bare c:\new-bare.git
 cd c:\new-bare.git
@@ -126,30 +134,32 @@ git branch -m trunk master
 git-svn makes all of Subversions tags into very-short branches in Git of the form “tags/name”. You’ll want to convert all those branches into actual Git tags or delete them.
 
 ### Migrate SVN tags to be Git tags
+
 ```
 cd c:\new-bare.git
-git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do git tag "$tagname" "tags/$tagname"; git branch -r -d "tags/$tagname"; done  
+git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do git tag "$tagname" "tags/$tagname"; git branch -r -d "tags/$tagname"; done
 
 ```
 
 ### Create all the SVN branches as proper Git branches
+
 ```
-git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do git branch "$branchname" "refs/remotes/$branchname"; git branch -r -d "$branchname"; done  
+git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do git branch "$branchname" "refs/remotes/$branchname"; git branch -r -d "$branchname"; done
 
 ```
 ### Update your workflow
+
 Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](https://www.visualstudio.com/learn/centralized-to-git/).
 
-
-
 ## Reference information
+
 - [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/tfvc/comparison-git-tfvc)
 - [Learn Git](https://www.visualstudio.com/learn-git/)
 - [Ignore file changes with Git](https://docs.microsoft.com/en-us/vsts/git/tutorial/ignore-files?tabs=visual-studio)
 - [Migrate from TFVC to Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/_)
 
 > Authors: Hosam Kamel, William H. Salazar
- 
+
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
