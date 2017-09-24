@@ -30,6 +30,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
 |Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
+|Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)||
   
 ### Work in progress
 
@@ -46,6 +47,7 @@ The purpose is to create articles that give an insight into the transformation o
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
+|Our DevOps transformation|[WORK IN PROGRESS](/src/Stories/our-devops-transformation.md)||
 |Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 
 # Contribute
