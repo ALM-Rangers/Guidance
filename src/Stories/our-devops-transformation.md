@@ -26,8 +26,6 @@ In April 2010 the community took another pivotal step. They switched and committ
 
 The DevOps transformation is an ongoing evolution, using experiments to explore and validate people, process, and product innovations. Recent experiments introduced many products that are continuously improving the value flow. [WhiteSource](https://www.whitesourcesoftware.com/) was introduced to automatically, continuously, and silently checking the security, licensing, and quality of open source components. The use of [deployment rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings) and [LaunchDarkly](https://launchdarkly.com/) enables teams to have fine-rained control of features for all or specific users. Teams are empowered to deliver quality and value to their end users.
 
-> See [Our journey of transforming to a DevOps culture](https://github.com/ALM-Rangers/Guidance/blob/master/src/Stories/our-journey-of-transforming-to-a-devops-culture.md) for a detailed journal of the transformation.
-
 ## Benefits
 
 Embracing DevOps enabled the Ranger community to become nimble, realize faster-to-market and quicker-to-learn-and-react processes, reduce the investment of precious family time, and introduce proclaim autonomy.
@@ -38,10 +36,11 @@ Embracing DevOps enabled the Ranger community to become nimble, realize faster-t
 
 Here's a list of key outcomes, listed in not specific order:
 
-- There's no blueprint - every organization and every team is unique!
-- Start with something tangible and iterate - avoid the big-bang.
-- The most challenging part of transformation are the **people** (culture).
-- Use engineering process to reinforce desired behaviour!
-- Transparency and visibility is key!
 - Autonomy, Mastery, and Purpose are core!
-- Transformation is continuous! 
+- Start with something tangible and iterate - avoid the big-bang.
+- Tangible and actionable metrics is important - ensure it does not turn into noise!
+- The most challenging part of transformation are the **people** (culture).
+- There's no blueprint - every organization and every team is unique!
+- Transformation is continuous!
+- Transparency and visibility is key!
+- Use engineering process to reinforce desired behaviour!
