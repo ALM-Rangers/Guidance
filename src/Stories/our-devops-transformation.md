@@ -30,7 +30,7 @@ Teams are empowered to deliver quality and value to their end users.
 
 ## Benefits
 
-Embracing DevOps enabled the Ranger community to become nimble, realize faster-to-market and quicker-to-learn-and-react processes, reduce the investment of precious family time, and introduce proclaim autonomy.
+Embracing DevOps enabled the Ranger community to become nimble, realize faster-to-market and quicker-to-learn-and-react processes, reduce the investment of precious family time, and proclaim autonomy.
 
 > See [Our journey of transforming to a DevOps culture](https://github.com/ALM-Rangers/Guidance/blob/master/src/Stories/our-journey-of-transforming-to-a-devops-culture.md) for a detailed journal of the transformation, a summary of positive experiences, and known challenges that need to be addressed in future.
 
