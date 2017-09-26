@@ -24,7 +24,7 @@ In April 2010 the community took another pivotal step. They switched and committ
 
 [Continuous integration](https://www.visualstudio.com/learn/what-is-continuous-integration/) (CI) and [continuous deployment](https://www.visualstudio.com/learn/what-is-continuous-delivery/) (CD) replaced rigid manual processes with automated pipelines. This empowered teams to deploy solutions to canary and early adopter users, without intervention from program management. [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/) introduced real-time telemetry. This enabled teams to watch their solutions and often detect and address unknown issues before users noticed them.
 
-The DevOps transformation is an ongoing evolution, using experiments to explore and validate people, process, and product innovations. Recent experiments introduced many products that are continuously improving the value flow. [WhiteSource](https://www.whitesourcesoftware.com/) was introduced to automatically, continuously, and silently check security, licensing, and quality of open source components. The use of [deployment rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings) and [LaunchDarkly](https://launchdarkly.com/) enables teams to have fine-rained control of features for all or specific users. 
+The DevOps transformation is an ongoing evolution, using experiments to explore and validate **people**, **process**, and **product** innovations. Recent experiments introduced many products that are continuously improving the value flow. [WhiteSource](https://www.whitesourcesoftware.com/) was introduced to automatically, continuously, and silently check security, licensing, and quality of open source components. The use of [deployment rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings) and [LaunchDarkly](https://launchdarkly.com/) enables teams to have fine-rained control of features for all or specific users. 
 
 Teams are empowered to deliver quality and value to their end users.
 
@@ -36,7 +36,7 @@ Embracing DevOps enabled the Ranger community to become nimble, realize faster-t
 
 ## Key outcomes ##
 
-Here's a list of key outcomes, listed in not specific order:
+Here's a list of observations, listed in not specific order:
 
 - Autonomy, Mastery, and Purpose are core!
 - Start with something tangible and iterate - avoid the big-bang.
@@ -46,3 +46,19 @@ Here's a list of key outcomes, listed in not specific order:
 - Transformation is continuous!
 - Transparency and visibility is key!
 - Use engineering process to reinforce desired behaviour!
+
+Table of transformation changes:
+
+|     |PAST|CURRENT|ENVISIONED|
+|-----|----|-------|----------|
+|Branching|Servicing and Release isolation|Feature|Master|
+|Build|Manual and error prone|Automated and consistent||
+|Issue detection|Call from user|Proactive||
+|Issue resolution|Days - weeks|Minutes - days|Minutes|
+|Planning|Detailed design|Prototyping and storyboards||
+|Release cadence|6-12 months|3-5 sprints|Every sprint|
+|Release|Manual and error prone|Automated and consistent||
+|Sprints|1-month|3-weeks||
+|Team size|10-15|2-5||
+|Time to build|Hours|Seconds||
+|Time to release|Days|Minutes||
