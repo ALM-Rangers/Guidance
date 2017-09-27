@@ -1,3 +1,4 @@
+
 # ALM | DevOps Rangers find better ways to deliver value by transitioning to DevOps
 
 The community of Ranger volunteers, give professional guidance, practical experience and gap-filling solutions to the developer community. To enable the community to respond to change and deliver value faster, they're transitioning to DevOps using Agile practices and DevOps capabilities using Visual Studio Team Services (VSTS) and Microsoft Azure.
@@ -56,6 +57,7 @@ Table of transformation changes:
 |Issue detection|Call from user|Proactive||
 |Issue resolution|Days - weeks|Minutes - days|Minutes|
 |Planning|Detailed design|Prototyping and storyboards||
+|Program management|2 Program Managers (PM)|0.25 PM|0.125 PM|
 |Release cadence|6-12 months|3-5 sprints|Every sprint|
 |Release|Manual and error prone|Automated and consistent||
 |Sprints|1-month|3-weeks||
