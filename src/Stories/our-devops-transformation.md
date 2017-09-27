@@ -57,7 +57,7 @@ Table of transformation changes:
 |Issue detection|Call from user|Proactive||
 |Issue resolution|Days - weeks|Minutes - days|Minutes|
 |Planning|Detailed design|Prototyping and storyboards||
-|Program management|2 Prohgram Managers (PM)|0.5 PM|0.25 PM|
+|Program management|2 Program Managers (PM)|0.5 PM|0.25 PM|
 |Release cadence|6-12 months|3-5 sprints|Every sprint|
 |Release|Manual and error prone|Automated and consistent||
 |Sprints|1-month|3-weeks||
