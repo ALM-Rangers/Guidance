@@ -141,12 +141,25 @@ git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tag
 
 ```
 
+### Advanced migrations
+
 ### Create all the SVN branches as proper Git branches
 
+While it's easy to create all SVN branches as a proper Git branches, we do recommend that you evaluate the following points before you proceed:
+
+- In case of Feature branches – can you wait until they integrate to the trunk before migrating?
+
+- In case of Release branches – does it make sense to keep SVN around for servicing?  If you migrate feature branches, are you prepared to service branches out of Git?
+
+If you still want to migrate existing branches, then running the following command will help
 ```
 git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do git branch "$branchname" "refs/remotes/$branchname"; git branch -r -d "$branchname"; done
 
 ```
+> [!NOTE]
+>
+> This command can take a few minutes to several hours depending on the size of the SVN repository. Upon completion, you will have a Git checkout of your repository.
+
 ### Update your workflow
 
 Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](https://www.visualstudio.com/learn/centralized-to-git/).
