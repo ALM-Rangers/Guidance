@@ -11,7 +11,7 @@ author: hkamel
 ---
 
 >
-> #**THIS IS DRAFT.3.0 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.4.0 - WORK IN PROGRESS **
 >
 
 # Migrate from SVN to Git
