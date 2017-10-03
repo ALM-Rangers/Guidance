@@ -119,7 +119,7 @@ The three core scenarios we're using are:
 
 The feature flag services enables us to fine-tune our extension services with a flip of a switch. We're able to be nimble and responsive, tweaking a user's features, hiding a feature until it's ready for prime time, or temporarily removing a feature when encountering unknown issues. All without having to build, validate, and deploy an update.
 
-In future we'll explore the option of A|B testing and allowing users to enable or disable selected features themselves. There's a lot more value to embrace.
+In future we'll explore the option of A|B testing and allowing users to enable or disable selected features themselves. There's a lot more value to embrace than we have explored herein.
 
 ## Conclusion
 
