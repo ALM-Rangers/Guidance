@@ -20,7 +20,7 @@ Are you planning Visual Studio Team Services (VSTS) continuous integration and d
 - How do you ensure your application is safe?
 - How do you add continuous security validation to your CI/CD pipeline?
 
-DevOps practices are allowing businesses to stay ahead of the competition by delivering new features faster than ever before. As the frequency of production deployments increases, this business agility cannot come at the expense of security. With continuous delivery, how do we ensure our applications are secure and stay secure? How can we find and fix security issues early in the process? In this article, we'll walk through how to help ensure your application is secure by adding continuous security validation to your CI/CD pipeline.
+DevOps practices are allowing businesses to stay ahead of the competition by delivering new features faster than ever before. As the frequency of production deployments increases, this business agility cannot come at the expense of security. With continuous delivery, how do we ensure our applications are secure and stay secure? How can we find and fix security issues early in the process? This begins with practices commonly referred to as DevSecOps.  DevSecOps incorporates the security team and their capabilities into your DevOps practices making security a responsibility of everyone on the team.  In this article, we'll walk through how to help ensure your application is secure by adding continuous security validation to your CI/CD pipeline.
 
 Security needs to shift from an afterthought to being evaluated at every step of the process. Securing applications is a continuous process that encompasses secure infrastructure, designing an architecture with layered security, continuous security validation, and monitoring for attacks.
 
@@ -72,7 +72,7 @@ The benefit of using this is that the vulnerabilities are created as bugs that p
 
 Even with continuous security validation running against every change to help ensure new vulnerabilities are not introduced, hackers are continuously changing their approaches and new vulnerabilities are being discovered. Good monitoring tools allow you to help detect, prevent, and remediate issues discovered while your application is running in production. Azure provides a number of tools that provide detection, prevention, and alerting using rules such as OWASP Top 10 / modSecurity and now even using machine learning to detect anomalies and unusual behavior to help identify attackers.
 
-Minimize security vulnerabilities by taking a holistic and layered approach to security including secure infrastructure, application architecture, continuous validation, and monitoring. Establishing continuous security validation into your CI/CD pipeline can allow your application can stay secure while you are improving the deployment frequency to meet needs of your business to stay ahead of the competition.
+Minimize security vulnerabilities by taking a holistic and layered approach to security including secure infrastructure, application architecture, continuous validation, and monitoring. DevSecOps practices enable your entire team to incorporate these security capabilities throughout the entire lifecycle of your application.  Establishing continuous security validation into your CI/CD pipeline can allow your application to stay secure while you are improving the deployment frequency to meet needs of your business to stay ahead of the competition.
 
 ##Reference information
 
