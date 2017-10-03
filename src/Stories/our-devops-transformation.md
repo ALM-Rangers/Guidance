@@ -35,8 +35,6 @@ Embracing DevOps enabled the Ranger community to become nimble, realize faster-t
 
 > See [Our journey of transforming to a DevOps culture](https://github.com/ALM-Rangers/Guidance/blob/master/src/Stories/our-journey-of-transforming-to-a-devops-culture.md) for a detailed journal of the transformation, a summary of positive experiences, and known challenges that need to be addressed in future.
 
-## Key outcomes ##
-
 Here's a list of observations, listed in not specific order:
 
 - Autonomy, Mastery, and Purpose are core!
@@ -64,3 +62,5 @@ Table of transformation changes:
 |Team size|10-15|2-5||
 |Time to build|Hours|Seconds||
 |Time to release|Days|Minutes||
+
+But, we're not done! Instead we're part of an exciting, continuous and likely never-ending transformation.
