@@ -1,6 +1,5 @@
 
-# Visual Studio ALM Rangers Guidance 
-![](ALMRangers.Logo.250x83.png)
+# ALM | DevOps Rangers Guidance 
 
 # Introduction 
 Welcome to our staging area for our practical guidance, giving you an early glimpse into upcoming guidance. You can find a list of all our published articles [here](https://aka.ms/vsarpublications). 
