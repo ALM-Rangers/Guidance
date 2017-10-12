@@ -27,7 +27,7 @@ In April 2010 the community took another pivotal step. They switched and committ
 
 The DevOps transformation is an ongoing evolution, using experiments to explore and validate **people**, **process**, and **product** innovations. Recent experiments introduced many products that are continuously improving the value flow. [WhiteSource](https://www.whitesourcesoftware.com/) was introduced to automatically, continuously, and silently check security, licensing, and quality of open source components. The use of [deployment rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings) and [LaunchDarkly](https://launchdarkly.com/) enables teams to have fine-rained control of features for all or specific users. 
 
-In October 2017 the community moved most of their private version control repositories to [GitHub](https://github.com/ALM-Rangers). Ownershiop and administration responsibilities for all repositories were transferred to the ALM | DevOps communnity, giving the teams autonomy and an opportunity to energise the broiader community to contribute to the open source solutions. 
+In October 2017 the community moved most of their private version control repositories to [GitHub](https://github.com/ALM-Rangers). Ownership and administration responsibilities for all repositories were transferred to the ALM | DevOps communnity, giving the teams autonomy and an opportunity to energise the broiader community to contribute to the open source solutions. 
 
 Teams are empowered to deliver quality and value to their end users.
 
