@@ -54,7 +54,7 @@ Table of transformation changes:
 |-----|----|-------|----------|
 |Branching|Servicing and Release isolation|Feature|Master|
 |Build|Manual and error prone|Automated and consistent||
-|Issue detection|Call from user|Proactive||
+|Issue detection|Call from user|Proactive telemetry||
 |Issue resolution|Days - weeks|Minutes - days|Minutes|
 |Planning|Detailed design|Prototyping and storyboards||
 |Program management|2 Program Managers (PM)|0.25 PM|0.125 PM|
