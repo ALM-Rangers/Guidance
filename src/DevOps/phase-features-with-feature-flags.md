@@ -16,7 +16,7 @@ author: willys
 
 # Phase the features of your application with feature flags
 
-In today's fast-paced, feature-driven markets, it is imperative to be able to deliver value and receive feedback on features quickly and continuously. Partnering with end-users to get early versions of features vetted out is extremely valuable.
+In today's fast-paced, feature-driven markets, it is imperative to be able to deliver value and receive feedback on features quickly and continuously. Collaborating with end-users to get early versions of features vetted out is extremely valuable.
 
 Are you planning to continuously integrate features into your application while they're under development? You probably have a few questions, such as:
 
@@ -30,7 +30,7 @@ This topic aims to answer this and share our implementation of feature flags (FF
 
 Before you introduce feature flags to your engineering process, it's important to consider the following:
 
-- Which users are you planning to target? For example do you want to target specific users, all users, or both?
+- Which users are you planning to target? For example, do you want to target specific users, all users, or both?
 - Would you like users to decide which features they want to use?
 - What's the value of embracing feature flags as part of your engineering process?
 - What's the cost implement feature flags in your engineering process?
@@ -45,11 +45,11 @@ Before you introduce feature flags to your engineering process, it's important t
 > 
 > A feature flag is also known as a feature toggle, feature switch, feature flipper, or conditional feature.
 
-A feature flag is a technique to enable (expose) or disable (hide) a feature in a solution. It allows us to release and test features, even before they are fully developed and ready for release. It's an alternative to maintaining multiple source-code branches and a low-risk companion for releasing, managing and fine-tuning features in production.
+It's a technique to enable (expose) or disable (hide) a feature in a solution. It allows us to release and test features, even before they are complete and ready for release. It's an alternative to maintaining multiple source-code branches and a low-risk companion for releasing, managing and fine-tuning features in production.
 
 ![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-feature-flag.png)
 
-A feature flag can be viewed as an ON | OFF switch for a specific feature. As shown, we can deploy a solution to production that includes both an email and a print feature. If the feature flag is set (ON), we'll email. If reset (OFF) we'll print.
+View a feature flag as an ON | OFF switch for a specific feature. As shown, we can deploy a solution to production that includes both an email and a print feature. If the feature flag is set (ON), we'll email. If reset (OFF) we'll print.
 
 When we combine a feature flag with an experiment, led by a hypothesis, we introduce A|B testing. For example, we could run an experiment to determine if the email (A) or the print (B) feature will result in a higher user satisfaction.
 
@@ -59,11 +59,11 @@ When we combine a feature flag with an experiment, led by a hypothesis, we intro
 
 ![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-ab-test.png)
 
-As shown, the majority of users prefer the email feature. Option (A) is more popular with the users and wins.
+As shown, most users prefer the email feature. Option (A) is more popular with the users and wins.
 
-## What FF solution did we chose?
+## What FF solution did we choose?
 
-As outlined in [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/) we considered a number of FF frameworks and solutions. We chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for a number of reasons:
+As outlined in [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/) we considered a number of FF frameworks and solutions. We chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
 - It’s a software as a service (SaaS) solution.
 	- No custom solution to maintain.
@@ -83,15 +83,15 @@ The three core scenarios we're using are:
 
 - **Enable | disable a feature for everyone**
 
-	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience we simply flip the switch.
+	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience, we simply flip the switch.
 
-	Many times, we collect data that would be invaluable to have when investigating issues, but would otherwise be undesirable to display at all times. For example, logging verbose information to a console window or displaying the Application insights could all be useful. Flags would allow us to choose when to enable that behavior or not, without redeploying code for everyone.
+	Many times, we collect data that would be invaluable to have when investigating issues but would otherwise be undesirable to display always. For example, logging verbose information to a console window or displaying the Application insights telemetry could all be useful. Flags would allow us to choose when to enable that behavior or not, without redeploying code for everyone.
 
 	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
 - **Enable | disable a feature for selected users**
 
-	With this scenario we can achieve the same, but target specific users or groups of users. For example, we could enable the verbose logging feature for a specific user experiencing a problem, or enable a feature for early adopters for preview validation.
+	With this scenario we can achieve the same but target specific users or groups of users. For example, we could enable the verbose logging feature for a specific user experiencing a problem or enable a feature for early adopters for preview validation.
 
 	Feature flags allow us to control the configuration in each environment independently. For example, if telemetry in the canary and early adopter deployment rings were overloading/blurring our metrics, we could decide to disable the behavior without redeploying.
 
@@ -99,7 +99,7 @@ The three core scenarios we're using are:
 
 - **Enable | disable a feature as selected by user**
 
-	Lastly, we'd like to give the users a list of preview features and allow each user to decide which feature to enable when. This scenario is key for feature validation, A|B testing, and giving the user flexibiolity and choice.
+	Lastly, we'd like to give the users a list of preview features and allow each user to decide which feature to enable when. This scenario is key for feature validation, A|B testing, and giving the user flexibility and choice.
 
 	![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-select.png)
 
@@ -109,7 +109,7 @@ To protect the flags from malicious users, we need to generate and pass the hash
 
 ![Use of Azure Functions](./_img/phase-features-with-ff/phase-features-with-ff-az-fx.png)
 
-Administration of feature flags is fairly straight-forward. We have different environments (1) for each extension, allowing us to have different feature flag values for Early Adopters and Users. For each feature flag, as shown, we have a default (2) feature flag value, and optionally (3) target specific users or users that match custom rules. You have granular control of each feature flag.
+Administration of feature flags is straight-forward. We have different environments (1) for each extension, allowing us to have different feature flag values for Early Adopters and Users. For each feature flag, as shown, we have a default (2) feature flag value, and optionally (3) target specific users or users that match custom rules. You have granular control of each feature flag.
 
 ![LaunchDarkly Admin Dashboard](./_img/phase-features-with-ff/phase-features-with-ff-admin.png)
 
@@ -117,20 +117,20 @@ Administration of feature flags is fairly straight-forward. We have different en
 
 The ability to expose a feature in an extension for **everyone**, without a risky re-deployment, is a common use for the all or nothing feature flags. 
 
-We found another use when we enabled telemetry in all our extensions. It was an obvious and the right decision. Unfortunately, as the volume grew, it became noisy and the teams started to ignore it. Using feature flags we're able to fine tune, enable, and disable the telemetry as needed. 
+We found another use when we enabled telemetry in all our extensions. It was an obvious and the right decision. Unfortunately, as the volume grew, it became noisy and the teams started to ignore it. Using feature flags, we're able to fine tune, enable, and disable the telemetry as needed. 
 ![LaunchDarkly Service Endpoint](./_img/phase-features-with-ff/phase-features-with-ff-ld-architecture.png)
 
 ### Phase 2 - Targeted FFs
 
 The obvious use for targeted feature flags is to enable end-users to opt in or out from feature previews. It's an experience most of us are accustomed to when selecting early previews in Visual Studio Team Services (VSTS). 
 
-One of our key scenarios is enable users to opt in to verbose logging when troubleshooting and testing our extensions. By using targeted feature flags, we're able to give the end user full control of verbose logging, with complete transparency of what and when information is collected.
+One of our key scenarios is enable users to opt in to verbose logging when troubleshooting and testing our extensions. By using targeted feature flags, we're able to give the end user full control of verbose logging, with an insight into all captured information.
 
 ![LaunchDarkly Azure Function](./_img/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
 ## What's the value?
 
-The feature flag services enables us to fine-tune our extension services with a flip of a switch. We're able to be nimble and responsive, tweaking a user's features, hiding a feature until it's ready for prime time, or temporarily 
+The feature flag services enable us to fine-tune our extension services with a flip of a switch. We're able to be nimble and responsive, tweaking a user's features, hiding a feature until it's ready for prime time, or temporarily 
 removing a feature when encountering unknown issues. All without having to build, validate, and deploy an update.
 
 Key value-adds we've identified with feature flags:
@@ -149,11 +149,11 @@ Now that you've covered the concepts and considerations of feature flags, and ou
 
 ## Q&A
 
-### Is there a dependency on feature flags?
+### Is there a dependency on deployment rings?
 
 No, rings and feature flags are symbiotic. Read [Phase the roll-out of your application through rings](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings) for details.
 
-##Reference information
+## Reference information
 - [Phase the roll-out of your application through rings](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)
 - [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
 - [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
