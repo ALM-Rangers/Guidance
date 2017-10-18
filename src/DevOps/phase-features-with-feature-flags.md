@@ -37,7 +37,10 @@ Before you introduce feature flags to your engineering process, it's important t
 
 > [!NOTE]
 > 
-> Take the time to read ["A Rough Patch"](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch), by Brian Harry, before you flip your first feature flag in production.
+> Before you flip your first feature flag in production, take the time to read:
+> 
+> - ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch)
+> - ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/guide/flagsbranching.html)
 
 ## What are Feature Flags (FF)?
 
