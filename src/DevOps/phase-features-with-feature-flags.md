@@ -11,7 +11,7 @@ author: willys
 ---
 
 > 
-> #**THIS IS DRAFT.1 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.2 - WORK IN PROGRESS **
 > 
 
 # Phase the features of your application with feature flags
@@ -34,6 +34,10 @@ Before you introduce feature flags to your engineering process, it's important t
 - Would you like users to decide which features they want to use?
 - What's the value of embracing feature flags as part of your engineering process?
 - What's the cost implement feature flags in your engineering process?
+
+> [!NOTE]
+> 
+> Take the time to read ["A Rough Patch"](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch), by Brian Harry, before you flip your first feature flag in production.
 
 ## What are Feature Flags (FF)?
 
@@ -64,7 +68,7 @@ As outlined in [How to implement feature flags and A|B testing](https://blogs.ms
 - It’s a software as a service (SaaS) solution.
 	- No custom solution to maintain.
 	- No upgrades - we're always using the latest and greatest.
-	- No servers - LaunchDarkly takes care of the machines that LaunchDarkly runs on.
+	- No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on.
 	- Always on and optimized for the Internet.
 - It's integrated with Visual Studio Team Services and Team Foundation Server.
 - It's simple and cost-effective to configure and use in our community space.
@@ -73,7 +77,7 @@ As outlined in [How to implement feature flags and A|B testing](https://blogs.ms
 
 We have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension we're hosting on the [marketplace](https://marketplace.visualstudio.com), using a ring deployment model, and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. We're looking for an engineering process in which we can continuously deploy, never have to roll-back, and with which we can fine tune the user experience.
 
-You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features at **run-time** and in **production**!
+You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features at **run-time** and in **production**! 
 
 The three core scenarios we're using are:
 
@@ -101,23 +105,41 @@ The three core scenarios we're using are:
 
 ## Managing features with feature flags in our engineering process
 
-@
+To protect the flags from malicious users, we need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, we chose Azure Functions to help us generate the hash, as shown. Read [Building VSTS Extensions with feature flags – Part 2](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/07/18/building-vsts-extensions-with-feature-flags-part-2/) for details.
+
+![Use of Azure Functions](./_img/phase-features-with-ff/phase-features-with-ff-az-fx.png)
+
+Administration of feature flags is fairly straight-forward. We have different environments (1) for each extension, allowing us to have different feature flag values for Early Adopters and Users. For each feature flag, as shown, we have a default (2) feature flag value, and optionally (3) target specific users or users that match custom rules. You have granular control of each feature flag.
+
+![LaunchDarkly Admin Dashboard](./_img/phase-features-with-ff/phase-features-with-ff-admin.png)
 
 ### Phase 1 - All or nothing FFs
 
-@
+The ability to expose a feature in an extension for **everyone**, without a risky re-deployment, is a common use for the all or nothing feature flags. 
 
+We found another use when we enabled telemetry in all our extensions. It was an obvious and the right decision. Unfortunately, as the volume grew, it became noisy and the teams started to ignore it. Using feature flags we're able to fine tune, enable, and disable the telemetry as needed. 
 ![LaunchDarkly Service Endpoint](./_img/phase-features-with-ff/phase-features-with-ff-ld-architecture.png)
 
 ### Phase 2 - Targeted FFs
 
-@
+The obvious use for targeted feature flags is to enable end-users to opt in or out from feature previews. It's an experience most of us are accustomed to when selecting early previews in Visual Studio Team Services (VSTS). 
+
+One of our key scenarios is enable users to opt in to verbose logging when troubleshooting and testing our extensions. By using targeted feature flags, we're able to give the end user full control of verbose logging, with complete transparency of what and when information is collected.
 
 ![LaunchDarkly Azure Function](./_img/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
 ## What's the value?
 
-The feature flag services enables us to fine-tune our extension services with a flip of a switch. We're able to be nimble and responsive, tweaking a user's features, hiding a feature until it's ready for prime time, or temporarily removing a feature when encountering unknown issues. All without having to build, validate, and deploy an update.
+The feature flag services enables us to fine-tune our extension services with a flip of a switch. We're able to be nimble and responsive, tweaking a user's features, hiding a feature until it's ready for prime time, or temporarily 
+removing a feature when encountering unknown issues. All without having to build, validate, and deploy an update.
+
+Key value-adds we've identified with feature flags:
+
+- Decouple deployment and exposure.
+- Provide run-time control of features to the end user.
+- Make changes (enable|disable features) without redeployment.
+- Introduce early testing, feedback, and experimentation. 
+- Support the quick "off" or "revert" switch for new features.
 
 In future we'll explore the option of A|B testing and allowing users to enable or disable selected features themselves. There's a lot more value to embrace than we have explored herein.
 
