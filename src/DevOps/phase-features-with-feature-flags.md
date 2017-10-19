@@ -30,7 +30,7 @@ This topic aims to answer this and share our implementation of feature flags (FF
 
 Before you introduce feature flags to your engineering process, it's important to consider the following:
 
-- Which users are you planning to target? For example, do you want to target specific users, all users, or both?
+- Which users are you planning to target? For example, do you want to target specific users or all users?
 - Would you like users to decide which features they want to use?
 - What's the value of embracing feature flags as part of your engineering process?
 - What's the cost implement feature flags in your engineering process?
@@ -80,13 +80,13 @@ As outlined in [How to implement feature flags and A|B testing](https://blogs.ms
 
 We have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension we're hosting on the [marketplace](https://marketplace.visualstudio.com), using a ring deployment model, and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. We're looking for an engineering process in which we can continuously deploy, never have to roll-back, and with which we can fine tune the user experience.
 
-You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features at **run-time** and in **production**! 
+You have probably guessed it. Welcome to feature flags, which allow us to fine tune the visibility of features in **production**! 
 
 The three core scenarios we're using are:
 
 - **Enable | disable a feature for everyone**
 
-	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience, we simply flip the switch.
+	We would like to ship a batch of hidden features, for example new features, bug fixes, verbose logging and telemetry. Then, with a flip of a switch enable a feature for **all** users of the extension. If the feature results in an unsatisfactory user experience, we simply flip the switch back.
 
 	Many times, we collect data that would be invaluable to have when investigating issues but would otherwise be undesirable to display always. For example, logging verbose information to a console window or displaying the Application insights telemetry could all be useful. Flags would allow us to choose when to enable that behavior or not, without redeploying code for everyone.
 
@@ -145,6 +145,10 @@ Key value-adds we've identified with feature flags:
 - Support the quick "off" or "revert" switch for new features.
 
 In future we'll explore the option of A|B testing and allowing users to enable or disable selected features themselves. There's a lot more value to embrace than we have explored herein.
+
+## What's the cost?
+
+Aside from the possible cost of a feature flag service, the flags come with a carrying cost. They add new logic and maintenance effort. Be proactive and remove stale feature flags. Keep the code maintenance and flag inventory administration as low as possible. Feature flags also introduce a risk and added testing, as highlighted by the ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch) story.
 
 ## Conclusion
 
