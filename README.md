@@ -35,7 +35,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Manage database upgrades|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
+|Manage database upgrades|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
 |Phase the features of your application with feature flags|||
 
 ## Stories
