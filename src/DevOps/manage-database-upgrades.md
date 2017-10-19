@@ -11,7 +11,7 @@ author: ruimelo
 ---
 
 > 
-> #**THIS IS DRAFT.2 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.2.1 - WORK IN PROGRESS **
 > 
 
 # Manage database upgrades
