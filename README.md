@@ -1,4 +1,4 @@
-
+[
 # ALM | DevOps Rangers Guidance 
 
 # Introduction 
@@ -17,8 +17,8 @@ The purpose is to build some insightful and practical guidance around branching 
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-feature-isolation-on-tfvc)|
-|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/effective-tfvc-branching-strategies-for-devops)|
+|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
+|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
@@ -28,8 +28,8 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[visualstudio.com](https://www.visualstudio.com/en-us/articles/phase-rollout-with-rings)|
-|Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)||
+|Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings)|
+|Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/security-validation-cicd-pipeline)|
   
 ### Work in progress
 
