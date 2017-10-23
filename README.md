@@ -1,4 +1,3 @@
-[
 # ALM | DevOps Rangers Guidance 
 
 # Introduction 
