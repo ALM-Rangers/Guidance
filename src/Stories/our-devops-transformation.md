@@ -1,4 +1,4 @@
-
+open source 
 # ALM | DevOps Rangers find better ways to deliver value by transitioning to DevOps
 
 The community of Ranger volunteers, give professional guidance, practical experience and gap-filling solutions to the developer community. To enable the community to respond to change and deliver value faster, they're transitioning to DevOps using Agile practices and DevOps capabilities using Visual Studio Team Services (VSTS) and Microsoft Azure.
@@ -21,11 +21,13 @@ To address these challenges, the community stopped all new projects for a couple
 
 Getting the [culture](https://www.visualstudio.com/learn/what-is-devops-culture/), the **people**, right was the first step to embrace DevOps. The community implemented the [Scrum](http://www.scrumguides.org/scrum-guide.html) framework, used [Kanban](https://leankit.com/learn/kanban/what-is-kanban/) to improve the engineering process, and visualization to improve transparency, awareness, and most importantly, trust. With self-organization of teams, the traditional hierarchy and chain-of-command disappeared. Self-management encouraged teams to actively monitor and evolve their own process.
 
-In April 2010 the community took another pivotal step. They switched and committed their process, environments, deployments, and architecture to the Visual Studio Team Services ([VSTS](https://www.visualstudio.com/team-services/)) **product**. 
+In April 2010 the community took another pivotal step. They switched and committed their culture, process, and products to the cloud. While the core focus of the free by-the-community-for-the-community [solutions](https://aka.ms/vsarsolutions) remains on guidance and gap-filling solutions, there's a growing investment in open source solutions (OSS), such as [arm templates](https://github.com/Azure/azure-quickstart-templates/tree/master/sonarqube-azuresql) and [feature flag samples](https://github.com/ALM-Rangers/azurefunction-vsts-feature-flags) to research and share outcomes from the DevOps transformations.
 
-[Continuous integration](https://www.visualstudio.com/learn/what-is-continuous-integration/) (CI) and [continuous deployment](https://www.visualstudio.com/learn/what-is-continuous-delivery/) (CD) replaced rigid manual processes with automated pipelines. This empowered teams to deploy solutions to canary and early adopter users, without intervention from program management. [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/) introduced real-time telemetry. This enabled teams to watch their solutions and often detect and address unknown issues before users noticed them.
+[Continuous integration](https://www.visualstudio.com/learn/what-is-continuous-integration/) (CI) and [continuous delivery](https://www.visualstudio.com/learn/what-is-continuous-delivery/) (CD) replaced rigid manual processes with automated pipelines. This empowered teams to deploy solutions to canary and early adopter users, without intervention from program management. [Application Insights](https://azure.microsoft.com/en-us/services/application-insights/) introduced real-time telemetry. This enabled teams to watch their solutions and often detect and address unknown issues before users noticed them.
 
 The DevOps transformation is an ongoing evolution, using experiments to explore and validate **people**, **process**, and **product** innovations. Recent experiments introduced many products that are continuously improving the value flow. [WhiteSource](https://www.whitesourcesoftware.com/) was introduced to automatically, continuously, and silently check security, licensing, and quality of open source components. The use of [deployment rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings) and [LaunchDarkly](https://launchdarkly.com/) enables teams to have fine-rained control of features for all or specific users. 
+
+In October 2017 the community moved most of their private version control repositories to [GitHub](https://github.com/ALM-Rangers). Ownership and administration responsibilities for all repositories were transferred to the ALM | DevOps communnity, giving the teams autonomy and an opportunity to energise the broiader community to contribute to the open source solutions. 
 
 Teams are empowered to deliver quality and value to their end users.
 
@@ -52,7 +54,7 @@ Table of transformation changes:
 |-----|----|-------|----------|
 |Branching|Servicing and Release isolation|Feature|Master|
 |Build|Manual and error prone|Automated and consistent||
-|Issue detection|Call from user|Proactive||
+|Issue detection|Call from user|Proactive telemetry||
 |Issue resolution|Days - weeks|Minutes - days|Minutes|
 |Planning|Detailed design|Prototyping and storyboards||
 |Program management|2 Program Managers (PM)|0.25 PM|0.125 PM|
