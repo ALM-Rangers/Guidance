@@ -29,13 +29,14 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 |---------|-------|-------------------|
 |Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings)|
 |Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/security-validation-cicd-pipeline)|
+|Phase the features of your application with feature flags|[DRAFT 3](|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|)||
   
 ### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
 |Manage database upgrades|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
-|Phase the features of your application with feature flags|||
+
 
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
