@@ -11,7 +11,7 @@ author: willys
 ---
 
 > 
-> #**THIS IS DRAFT.2 - WORK IN PROGRESS **
+> #**THIS IS DRAFT.3 - WORK IN PROGRESS **
 > 
 
 # Phase the features of your application with feature flags
@@ -30,7 +30,7 @@ This topic aims to answer this and share our implementation of feature flags (FF
 
 Before you introduce feature flags to your engineering process, it's important to consider the following:
 
-- Which users are you planning to target? For example, do you want to target specific users or all users?
+- Which users are you planning to target? For example, do you want to target specific or all users?
 - Would you like users to decide which features they want to use?
 - What's the value of embracing feature flags as part of your engineering process?
 - What's the cost implement feature flags in your engineering process?
