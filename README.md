@@ -23,7 +23,7 @@ The purpose is to build some insightful and practical guidance around branching 
 #### Work in progress
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|SVN to Git migration|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/edit/branching/hkamel/svn-git-migration/src/Branching/perform-migration-from-svn-to-git.md?pr=/ALM-Rangers/Guidance/pull/39)||
+|SVN to Git migration|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/blob/14dd9994e5edc7ab6542c23faf15c3cb594ed3ae/src/Branching/perform-migration-from-svn-to-git.md)||
 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
