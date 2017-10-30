@@ -26,7 +26,7 @@ This topic aims to answer those questions, and give you branching strategy in TF
 
 > [!NOTE]
 > 
-> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](./git-branching-guidance.md).  
+> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance).  
 
 [![Channel9](_img/channel9.png)](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean) *(Based on an interview with Abel Wang and Steve St Jean)*
 
