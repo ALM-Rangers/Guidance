@@ -1,3 +1,4 @@
+
 # ALM | DevOps Rangers Guidance 
 
 # Introduction 
@@ -19,6 +20,11 @@ The purpose is to build some insightful and practical guidance around branching 
 |Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
 |Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
 
+#### Work in progress
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|SVN to Git migration|[DRAFT 1](https://github.com/ALM-Rangers/Guidance/edit/branching/hkamel/svn-git-migration/src/Branching/perform-migration-from-svn-to-git.md?pr=/ALM-Rangers/Guidance/pull/39)||
+
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
@@ -31,7 +37,7 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 |Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/security-validation-cicd-pipeline)|
 |Phase the features of your application with feature flags|[DRAFT 3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-features-with-feature-flags.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-features-with-feature-flags)|
   
-### Work in progress
+#### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
