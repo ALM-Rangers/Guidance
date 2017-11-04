@@ -66,7 +66,7 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users, from the root of your local Subversion checkout, run this command:
 
 ```
-svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2">"}' | sort -u > authors-transform.txt
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' | ')[1] } | Select-Object -Unique
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `willys = willys <willys> ` to `willys =  Willy-Peter Schaub <willys@microsoft.com> <willys@microsoft.com>` .
 
@@ -138,7 +138,7 @@ git-svn makes all of Subversions tags into very-short branches in Git of the for
 
 ```
 cd c:\new-bare.git
-git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do git tag "$tagname" "tags/$tagname"; git branch -r -d "tags/$tagname"; done
+git for-each-ref --format='%(refname)' refs/heads/tags | % { $.Replace('refs/heads/tags/','') } | % { git tag $ "refs/heads/tags/$"; git branch -D "tags/$" }
 
 ```
 
@@ -154,7 +154,7 @@ While it's easy to create all SVN branches as a proper Git branches, we do recom
 
 If you still want to migrate existing branches, then running the following command will help
 ```
-git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do git branch "$branchname" "refs/remotes/$branchname"; git branch -r -d "$branchname"; done
+git for-each-ref --format='%(refname)' refs/remotes | % { $.Replace('refs/remotes/','') } | % { git branch "$" "refs/remotes/$"; git branch -r -d "$"; }
 
 ```
 > [!NOTE]
