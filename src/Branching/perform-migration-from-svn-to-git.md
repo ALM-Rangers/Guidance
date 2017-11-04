@@ -68,11 +68,11 @@ To extract a list of all SVN users, from the root of your local Subversion check
 ```
 svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2">"}' | sort -u > authors-transform.txt
 ```
-This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a “authors-transform.txt” file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `almrangers = almrangers <almrangers> ` to `almrangers =  almrangers <almrangers@example.com>` .
+This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `willys = willys <willys> ` to `willys =  Willy-Peter Schaub <willys@microsoft.com> <willys@microsoft.com>` .
 
 ### Clone the Subversion repository using git-svn
 
-The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the "c:\mytempdir" folder in your local machine.
+The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the ```c:\mytempdir``` folder in your local machine.
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir
 ```
@@ -83,7 +83,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to origin/.
 
-If you are using the standard trunk, branches, tags layout you’ll just put –stdlayout. However if you have something different you may have to pass the –trunk, –branches, and –tags in to identify what is what. For example if your repository structure was trunk/companydir and you branched that instead of trunk, you would probably want ‘–trunk=trunk/companydir –branches=branches‘.
+If you are using the standard trunk, branches, tags layout you’ll just put ```–stdlayout ```. However if you have something different you may have to pass the ```–trunk```, ```–branches```, and ```–tags``` in to identify what is what. For example if your repository structure was ```trunk/companydir``` and you branched that instead of trunk, you would probably want ```–trunk=trunk/companydir –branches=branches```.
 
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
@@ -126,13 +126,13 @@ git config remote.bare.push 'refs/remotes/*:refs/heads/*'
 git push bare
 ```
 3. Rename "trunk" branch to "master"
-Your main development branch will be named “trunk” which matches the name it was in Subversion. You’ll want to rename it to Git’s standard “master” branch using:
+Your main development branch will be named "trunk" which matches the name it was in Subversion. You’ll want to rename it to Git’s standard "master" branch using:
 ```
 cd c:\new-bare.git
 git branch -m trunk master
 ```
 4. Clean up branches and tags
-git-svn makes all of Subversions tags into very-short branches in Git of the form “tags/name”. You’ll want to convert all those branches into actual Git tags or delete them.
+git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You’ll want to convert all those branches into actual Git tags or delete them.
 
 ### Migrate SVN tags to be Git tags
 
