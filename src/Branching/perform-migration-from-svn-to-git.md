@@ -63,7 +63,7 @@ Subversion just uses the username for each commit, while Git stores both a real 
 *Git users*
 ![git users](_img/perform-migration-from-svn-to-git/git-log.png)
 
-To extract a list of all SVN users, from the root of your local Subversion checkout, run this command:
+To extract a list of all SVN users, from the root of your local Subversion checkout, run this Powershell command:
 
 ```
 svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' | ')[1] } | Select-Object -Unique
@@ -152,7 +152,7 @@ While it's easy to create all SVN branches as a proper Git branches, we do recom
 
 - In case of Release branches -does it make sense to keep SVN around for servicing?  If you migrate feature branches, are you prepared to service branches out of Git?
 
-If you still want to migrate existing branches, then running the following command will help
+If you still want to migrate existing branches, then running the following Powershell command will help
 ```
 git for-each-ref --format='%(refname)' refs/remotes | % { $.Replace('refs/remotes/','') } | % { git branch "$" "refs/remotes/$"; git branch -r -d "$"; }
 
