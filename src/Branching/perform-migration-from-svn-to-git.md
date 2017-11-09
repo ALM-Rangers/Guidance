@@ -22,7 +22,7 @@ There are several ways to migrate from SVN to Git. The approach outlined in this
 
 > [!NOTE]
 >
-> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team’s migration](https://www.visualstudio.com/learn/centralized-to-git/). After you’ve prepared, you can begin the migration.
+> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](https://www.visualstudio.com/learn/centralized-to-git/). After you've prepared, you can begin the migration.
 
 The high level workflow for migrating from SVN to Git is as follows:
 
@@ -79,11 +79,11 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 
 > [!NOTE]
 >
-> The –prefix=svn/ is necessary because otherwise the tools can’t tell apart SVN revisions from imported ones. Setting a prefix (with a trailing slash) is strongly encouraged in any case, as your SVN-tracking refs will then be located at "refs/remotes/$prefix/", which is compatible with Git’s own remote-tracking ref layout (refs/remotes/$remote/).
+> The --prefix=svn/ is necessary because otherwise the tools can't tell apart SVN revisions from imported ones. Setting a prefix (with a trailing slash) is strongly encouraged in any case, as your SVN-tracking refs will then be located at "refs/remotes/$prefix/", which is compatible with Git's own remote-tracking ref layout (refs/remotes/$remote/).
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to origin/.
 
-If you are using the standard trunk, branches, tags layout you’ll just put ```–stdlayout ```. However if you have something different you may have to pass the ```–trunk```, ```–branches```, and ```–tags``` in to identify what is what. For example if your repository structure was ```trunk/companydir``` and you branched that instead of trunk, you would probably want ```–trunk=trunk/companydir –branches=branches```.
+If you are using the standard trunk, branches, tags layout you'll just put ```--stdlayout ```. However if you have something different you may have to pass the ```--trunk```, ```--branches```, and ```--tags``` in to identify what is what. For example if your repository structure was ```trunk/companydir``` and you branched that instead of trunk, you would probably want ```--trunk=trunk/companydir --branches=branches```.
 
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
@@ -126,13 +126,13 @@ git config remote.bare.push 'refs/remotes/*:refs/heads/*'
 git push bare
 ```
 3. Rename "trunk" branch to "master"
-Your main development branch will be named "trunk" which matches the name it was in Subversion. You’ll want to rename it to Git’s standard "master" branch using:
+Your main development branch will be named "trunk" which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
 ```
 cd c:\new-bare.git
 git branch -m trunk master
 ```
 4. Clean up branches and tags
-git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You’ll want to convert all those branches into actual Git tags or delete them.
+git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
 
 ### Migrate SVN tags to be Git tags
 
@@ -148,9 +148,9 @@ git for-each-ref --format='%(refname)' refs/heads/tags | % { $.Replace('refs/hea
 
 While it's easy to create all SVN branches as a proper Git branches, we do recommend that you evaluate the following points before you proceed:
 
-- In case of Feature branches – can you wait until they integrate to the trunk before migrating?
+- In case of Feature branches - can you wait until they integrate to the trunk before migrating?
 
-- In case of Release branches – does it make sense to keep SVN around for servicing?  If you migrate feature branches, are you prepared to service branches out of Git?
+- In case of Release branches -does it make sense to keep SVN around for servicing?  If you migrate feature branches, are you prepared to service branches out of Git?
 
 If you still want to migrate existing branches, then running the following command will help
 ```
