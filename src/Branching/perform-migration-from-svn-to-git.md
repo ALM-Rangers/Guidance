@@ -72,7 +72,7 @@ This command will retrieve all the log messages, extract the usernames, eliminat
 
 ### Clone the Subversion repository using git-svn
 
-The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the ```c:\mytempdir``` folder in your local machine.
+The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the `c:\mytempdir` folder in your local machine.
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir
 ```
@@ -83,7 +83,7 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to origin/.
 
-If you are using the standard trunk, branches, tags layout you'll just put ```--stdlayout ```. However if you have something different you may have to pass the ```--trunk```, ```--branches```, and ```--tags``` in to identify what is what. For example if your repository structure was ```trunk/companydir``` and you branched that instead of trunk, you would probably want ```--trunk=trunk/companydir --branches=branches```.
+If you are using the standard trunk, branches, tags layout you'll just put `--stdlayout`. However if you have something different you may have to pass the `--trunk`, `--branches`, and `--tags` in to identify what is what. For example if your repository structure was `trunk/companydir` and you branched that instead of trunk, you would probably want `--trunk=trunk/companydir --branches=branches`.
 
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
