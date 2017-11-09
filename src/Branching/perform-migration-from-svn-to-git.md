@@ -29,8 +29,8 @@ The high level workflow for migrating from SVN to Git is as follows:
 * Prepare a migration environment
 * Convert the source SVN repository to a local Git repository
 * (Optional) - Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
-* Push the local Git repository to a remote Git repository hosted on Visual Studio Team Services
-* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to Visual Studio Team Services (VSTS) remote Git repository
+* Push the local Git repository to a remote Git repository hosted on Visual Studio Team Services (VSTS)
+* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on VSTS
 * Developers switch to Git as main source control system
 
 ## Prepare a migration environment
