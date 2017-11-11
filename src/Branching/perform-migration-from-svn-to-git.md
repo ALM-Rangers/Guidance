@@ -1,18 +1,14 @@
 ---
 title: Perform the migration from SVN to Git
 description: Explore how to migrate from SVN to Git
-ms.assetid: 
-ms.prod: 
-ms.technology: 
-ms.manager: 
-ms.date: 
+ms.assetid: 0DBA5AC3-3065-45D7-974D-AF6E5D218BBF
+ms.prod: vs-devops-perform-migration-from-svn-to-git
+ms.technology: vs-devops-articles
+ms.manager: willys
+ms.date: 11/10/2017
 ms.author: hkamel
 author: hkamel
 ---
-
->
-> #**THIS IS DRAFT.4.0 - WORK IN PROGRESS **
->
 
 # Migrate from Subversion (SVN) to Git
 
@@ -177,7 +173,7 @@ Moving from a centralized version control system to Git is more than just migrat
 - [Ignore file changes with Git](https://docs.microsoft.com/en-us/vsts/git/tutorial/ignore-files?tabs=visual-studio)
 - [Migrate from TFVC to Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/_)
 
-> Authors: Hosam Kamel, William H. Salazar
+> Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
