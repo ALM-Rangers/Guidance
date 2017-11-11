@@ -52,6 +52,7 @@ The goal of this step is to convert the source Subversion repository to a local 
 
 > [!TIP]
 > *bare* Git repositories are structured differently and given the fact that it doesn't have a working directory prevent direct commit to the repository.
+>
 >![bare git repo](_img/perform-migration-from-svn-to-git/bare-git-repo.png)
 
 ### Retrieve a list of all Subversion authors
@@ -60,15 +61,17 @@ Subversion just uses the username for each commit, while Git stores both a real 
 
 
 *Subversion users*
+
 ![Subversion users](_img/perform-migration-from-svn-to-git/svn-log.png)
 
 *Git users*
+
 ![git users](_img/perform-migration-from-svn-to-git/git-log.png)
 
 To extract a list of all SVN users, from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' | ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' \| ')[1] } | Select-Object -Unique
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `willys = willys <willys> ` to `willys =  Willy Schaub <willys@microsoft.com>`.
 
