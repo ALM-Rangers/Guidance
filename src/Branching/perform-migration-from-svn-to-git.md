@@ -18,15 +18,15 @@ author: hkamel
 
 When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](https://www.visualstudio.com/learn/centralized-to-git/)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a history _with_ migration.
 
-Subversion migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, as well as if you use regular SVN or close relative like SVK to do the branching and merging. If you have a fairly new repository and the standard setup of a trunk, branches, and tags directory, the migration process could be straightforward. However, if your team has done a lot of branching and merging, your repository follows a non-standard directory setup, or your directory setup has changed over time then the migration process could be considerably more complex.
+Subversion migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, as well as if you use regular SVN or close relative like SVK to do the branching and merging. If you have a new repository and the standard setup of a trunk, branches, and tags directory, the migration process could be straightforward. However, if your team has done a lot of branching and merging, your repository follows a non-standard directory setup, or your directory setup has changed over time then the migration process could be considerably more complex.
 
-There are several ways to migrate from SVN to Git. The approach outlined in this article is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extension which can be used to checkout a Subversion repository to a local Git repository and then push changes from the local Git repository back to the Subversion repository. These steps provide a detailed overview of the process for migrating from SVN to Git in a Windows environment, without synchronizing back to the original SVN repository. The end result will be a bare Git repository for sharing with the rest of your team.
+There are several ways to migrate from SVN to Git. The approach outlined in this article is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extension which can be used to checkout a Subversion repository to a local Git repository and then push changes from the local Git repository back to the Subversion repository. These steps give a detailed overview of the process for migrating from SVN to Git in a Windows environment, without synchronizing back to the original SVN repository. The result will be a bare Git repository for sharing with the rest of your team.
 
 > [!NOTE]
 >
 > Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](https://www.visualstudio.com/learn/centralized-to-git/). After you've prepared, you can begin the migration.
 
-The high level workflow for migrating from SVN to Git is as follows:
+The high-level workflow for migrating from SVN to Git is as follows:
 
 * Prepare a migration environment
 * Convert the source SVN repository to a local Git repository
@@ -37,7 +37,7 @@ The high level workflow for migrating from SVN to Git is as follows:
 
 ## Prepare a migration environment
 
-A migration environment should be configured on a local workstation. The following software will need to be installed on the migration workstation:
+Configure a migration environment on a local workstation and install the following software:
 
 * [Git](https://git-for-windows.github.io/)
 * [Subversion](http://subversion.apache.org/packages.html)
@@ -48,7 +48,7 @@ You will also need to create a Git repository on your VSTS account to host the c
 
 ## Convert the source SVN repository to a local Git repository
 
-The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository repository does not have a local working checkout of files that can be modified, instead it only contains the repository's history and the metadata about the repository itself.This is the recommended format for sharing a Git repository via a remote repository hosted on a service like VSTS.
+The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like VSTS.
 
 > [!TIP]
 > *bare* Git repositories are structured differently and given the fact that it doesn't have a working directory prevent direct commit to the repository.
@@ -56,7 +56,7 @@ The goal of this step is to convert the source Subversion repository to a local 
 
 ### Retrieve a list of all Subversion authors
 
-Subversion just uses the username for each commit, while Git stores both a real name and an email address. By default, The git-svn tool will list the SVN username in the author and email fields. However, you can create a mapping file for SVN users along with their corresponding Git names and emails.
+Subversion just uses the username for each commit, while Git stores both a real name and an email address. By default, the git-svn tool will list the SVN username in the author and email fields. However, you can create a mapping file for SVN users along with their corresponding Git names and emails.
 
 
 *Subversion users*
@@ -65,27 +65,27 @@ Subversion just uses the username for each commit, while Git stores both a real 
 *Git users*
 ![git users](_img/perform-migration-from-svn-to-git/git-log.png)
 
-To extract a list of all SVN users, from the root of your local Subversion checkout, run this Powershell command:
+To extract a list of all SVN users, from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' \| ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' | ')[1] } | Select-Object -Unique
 ```
-This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `willys = willys <willys> ` to `willys =  Willy-Peter Schaub <willys@microsoft.com>` .
+This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `willys = willys <willys> ` to `willys =  Willy Schaub <willys@microsoft.com>`.
 
 ### Clone the Subversion repository using git-svn
 
-The following command will do the standard git-svn transformation using the authors-transform.txt file created in the previous step. It will place the Git repository in the `c:\mytempdir` folder in your local machine.
+The following command will do the standard git-svn transformation using the authors-transform.txt file created in the earlier step. It will place the Git repository in the `c:\mytempdir` folder in your local machine.
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "authors-transform.txt" --stdlayout c:\mytempdir
 ```
 
 > [!NOTE]
 >
-> The --prefix=svn/ is necessary because otherwise the tools can't tell apart SVN revisions from imported ones. Setting a prefix (with a trailing slash) is strongly encouraged in any case, as your SVN-tracking refs will then be located at "refs/remotes/$prefix/", which is compatible with Git's own remote-tracking ref layout (refs/remotes/$remote/).
+> The --prefix=svn/ is necessary because otherwise the tools can't tell apart SVN revisions from imported ones. We recommend setting a prefix (with a trailing slash), as your SVN-tracking refs will then be located at "refs/remotes/$prefix/", which is compatible with Git's own remote-tracking ref layout (refs/remotes/$remote/).
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to origin/.
 
-If you are using the standard trunk, branches, tags layout you'll just put `--stdlayout`. However if you have something different you may have to pass the `--trunk`, `--branches`, and `--tags` in to identify what is what. For example if your repository structure was `trunk/companydir` and you branched that instead of trunk, you would probably want `--trunk=trunk/companydir --branches=branches`.
+If you are using the standard trunk, branches, tags layout you'll just put `--stdlayout`. However, if you have something different you may have to pass the `--trunk`, `--branches`, and `--tags` to find what is what. For example, if your repository structure was `trunk/companydir` and you branched that instead of trunk, you would probably want `--trunk=trunk/companydir --branches=branches`.
 
 ```
 git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --trunk=/trunk --branches=/branches --tags=/tags  --authors-file "authors-transform.txt" c:\mytempdir
@@ -148,13 +148,13 @@ git for-each-ref --format='%(refname)' refs/heads/tags | % { $.Replace('refs/hea
 
 ### Create all the SVN branches as proper Git branches
 
-While it's easy to create all SVN branches as a proper Git branches, we do recommend that you evaluate the following points before you proceed:
+While it's easy to create all SVN branches as a proper Git branches, we do recommend that you evaluate the following points before you continue:
 
 - In case of Feature branches - can you wait until they integrate to the trunk before migrating?
 
 - In case of Release branches -does it make sense to keep SVN around for servicing?  If you migrate feature branches, are you prepared to service branches out of Git?
 
-If you still want to migrate existing branches, then running the following Powershell command will help
+If you still want to migrate existing branches, then running the following PowerShell command will help
 ```
 git for-each-ref --format='%(refname)' refs/remotes | % { $.Replace('refs/remotes/','') } | % { git branch "$" "refs/remotes/$"; git branch -r -d "$"; }
 
