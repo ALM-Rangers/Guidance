@@ -1,3 +1,4 @@
+
 # ALM | DevOps Rangers Guidance 
 
 # Introduction 
@@ -42,12 +43,15 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 ## Stories
 The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
 
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Our DevOps transformation|[WORK IN PROGRESS](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
+
 #### [Start here](src/Stories) to edit the stories
 #### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Our DevOps transformation|[WORK IN PROGRESS](/src/Stories/our-devops-transformation.md)||
 |Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 
 # Contribute
