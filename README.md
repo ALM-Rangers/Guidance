@@ -45,7 +45,7 @@ The purpose is to create articles that give an insight into the transformation o
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Our DevOps transformation|[WORK IN PROGRESS](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
+|Our DevOps transformation|[DRAFT](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
 
 #### [Start here](src/Stories) to edit the stories
 #### Work in progress
