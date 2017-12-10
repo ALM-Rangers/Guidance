@@ -6,7 +6,7 @@ You're probably asking yourself whether to use ring-based deployments, or featur
 
 ## Let's understand what feature flags and rings are for
 
-**Feature Flags** - The earliest reference to feature flags we've found comes from [Martin Fowler](https://martinfowler.com/bliki/FeatureToggle.html). Flags decouple deployment and exposure, give run-time control down to the individual user, and enable hypothesis-driven development. Using and tying feature flags back to telemetry, allows you to decide if a feature helped to increase user satisfaction, acquisition, and retention. You can also use feature flags to do an emergency roll-back, hide a feature in a region where it shouldn't be available, or enable telemetry when needed.
+**Feature Flags** - The earliest reference to feature flags we've found comes from [Martin Fowler](https://martinfowler.com/bliki/FeatureToggle.html). Flags decouple deployment and exposure, give run-time control down to the individual user, and enable hypothesis-driven development. Using and tying feature flags back to telemetry, allows you to decide if a feature helped to increase user satisfaction, acquisition, and retention. You can also use feature flags to do an emergency roll-back, hide a feature in a region where it shouldn't be available, or enable telemetry as needed.
 
 ![Feature flags](_img/rings-or-feature-flags/FF-switch.png)
 
@@ -20,9 +20,9 @@ The following diagram show an implementation of the ring-based deployment proces
 
 ![Ring-based deployment process](_img/rings-or-feature-flags/ring-based-deployment.png)
 
-When your developers commit a pull request with proposed changes to the master branch, a (1) continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly when you're confident that the release is ready for prime time, (3) you release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
+When your developers commit a pull request with proposed changes to the master branch, (1) a continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly when you're confident that the release is ready for prime time, (3) you approve the release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
 
-Both strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions) we introduced in [How DevOps eliminates development bottlenecks](https://opensource.com/article/17/11/devops-rangers-transformation), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
+Both strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions) we introduced in [how DevOps eliminates development bottlenecks](https://opensource.com/article/17/11/devops-rangers-transformation), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
 
 ## Back to the question. Should you use the feature flags, or rings, or both?
 
