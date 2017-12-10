@@ -1,39 +1,34 @@
-open source 
-# Should we use the ring deployment model, feature flags, or both?
+# Is the relationship between feature flags and the ring deployment model symbiotic?
 
-## We evaluated both concepts
+DevOps enables us to deliver at speed, learn from production feedback, make better decisions, and increase customer satisfaction, acquisition and retention. We need to fail fast on features that result in indifference or negative user experience and focus on features that make a positive difference. **Progressive exposure** is a DevOps practise, based on **feature flags** and **ring-based deployment** that allows us to expose features to selected users in production, to observe and validate, before exposing all users.
 
-Progressive exposure is an important DevOps practice. It allows us to exposure features with only a few users in production, observe and validate, and progressively have more and more users exposed. Two progressive exposure strategies we explored are [feature flags](https://docs.microsoft.com/en-us/vsts/articles/phase-features-with-feature-flags) and [ring-based deployment](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings).
+You're probably asking yourself whether to use ring-based deployments, or feature flags, or both to support progressive exposure in your environment. Let's start by exploring both strategies.
 
-Before you invest in either practice, you need to understand the value of both practices. It's also important to realize that both will introduce new complexity and cost to your environment.
+## Let's understand what feature flags and rings are for
 
-**Ring-based deployment** is used to limit impact on end-users, while gradually deploying and validating change in **production**. The impact, "blast radius", is evaluated through observation, testing, diagnosis of telemetry, and most importantly, user feedback. Rings make it possible to have multiple production releases running in parallel. You can gather feedback without being at risk of impacting all users, decommission old releases, and distribute new releases when you are confident that everything is working properly.
+**Feature Flags** - The earliest reference to feature flags we've found comes from [Martin Fowler](https://martinfowler.com/bliki/FeatureToggle.html). Flags decouple deployment and exposure, give run-time control down to the individual user, and enable hypothesis-driven development. Using and tying feature flags back to telemetry, allows you to decide if a feature helped to increase user satisfaction, acquisition, and retention. You can also use feature flags to do an emergency roll-back, hide a feature in a region where it shouldn't be available, or enable telemetry when needed.
 
-The following diagram summarizes our implementation of the ring-based deployment process:
+![Feature flags](_img/rings-or-feature-flags/FF-switch.png)
 
-![Ring-based deployment process](_img/rings-or-feature-flags/ring-based-deployment.png)
-
-1. When our developers commit a pull request with proposed changes to the master branch, a continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. It's important to emphasize that the canary and other rings are using the same production environment.
-2. When we are confident that the release is ready for user acceptance and exploratory testing in production, we approve the release to the Early Adopter ring.
-3. Similarly when we are confident that the release is ready for prime time, we approve the release to the Users ring. In an emergency we have the option of [rolling back](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/11/02/how-do-i-roll-back-a-vsts-extension-when-i-am-using-a-cicd-pipeline/). Over the past 2.5 years we only had to roll back once, which speaks volume to the value of the ring-based deployment process.
-
-**Feature Flags** are used to **show** or **hide** an encapsulated feature, to deliver a different experience for new versus advanced users, and to support hypothesis-driven development. Using and tying feature flags back to telemetry, allows us to determine if a feature helped to increase user satisfaction, acquisition, and retention. We can also use feature flags to do an emergency roll-back, or hide a feature in a region where it shouldn't be available.
-
-Here's a simple diagram of a feature flag:
+A typical feature flag implementation is based on (1) a feature flag implementation service that defines the flag, (2) a run-time query to determine value of the flag, and (3) an if-else programming construct, as shown:
 
 ![Feature flags](_img/rings-or-feature-flags/feature-flags.png)
 
-1. We're using a software as a service (Saa) feature flag solution. It typically comes as a cost, but abstracts complexity of the flag database, maintenance, and security from our team. Turning a feature on or or is as simple as toggling a radio button. ![Feature flags](_img/rings-or-feature-flags/FF-switch.png)
-2. We query the state of the flags at run-time when launching the solution, or if the user opts to configure features.
-3. At the code level feature flags are based on the basic if-then-else control flow statement. As shown, if the flag is **true** we send an email, else we print.
+**Ring-based deployment** was first discussed in Jez Humble's book [Continuous Delivery](https://www.continuousdelivery.com/), as Canary-deployments. Rings limit impact on end-users, while gradually deploying and confirming change in **production**. With rings we evaluate the impact, "blast radius", through observation, testing, diagnosis of telemetry, and most importantly, user feedback. Rings make it possible to have multiple production releases running in parallel. You can gather feedback without being at risk of affecting all users, decommission old releases, and distribute new releases when you are confident that everything is working properly.
 
-**Blue-green** deployment is another practice that you can consider. It's based on two identical production environments. The trusted release is the "green" environment. You expose a new release to the "blue" environment for smoke testing. When you're confident with the new release you swap the environments. We have not evaluated this practice as we favoured one over a number of identical production environments, and we're not confident with the environment "swap".
+The following diagram show an implementation of the ring-based deployment process:
 
-## Back to the question. One or the other, or both?
+![Ring-based deployment process](_img/rings-or-feature-flags/ring-based-deployment.png)
 
-You're probably asking yourself whether to use ring-based deployments or feature flags to support progressive exposure in your environment.
+When your developers commit a pull request with proposed changes to the master branch, a (1) continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly when you're confident that the release is ready for prime time, (3) you release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
 
-> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Both strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions) we introduced in [How DevOps eliminates development bottlenecks](https://opensource.com/article/17/11/devops-rangers-transformation), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
+
+## Back to the question. Should you use the feature flags, or rings, or both?
+
+
+
+@@@@@@@@@@@A key advantage of the cloud service is that it provides a continuous feedback loop with our users. Here Buck discusses how we use feature flags to progressively reveal new functionality and to experiment in production.> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 > TBD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 > XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -41,7 +36,7 @@ Happy flagging and ringing!
 
 ---
 
-Table comparing rings with flags:
+Table comparing rings with flags within the context of our open source [extensions](https://aka.ms/vsarsolutions#Extensions):
 
 |     |DEPLOYMENT RING|FEATURE FLAG|
 |-----|---------------|------------|
@@ -49,6 +44,6 @@ Table comparing rings with flags:
 |A/B Testing|All users within ring|All or selected users within ring|
 |Cost|Production environment maintenance|Feature Flag database and code maintenance|
 |Primary use|Manage impact "blast radius"|Show or hide features in a release|
-|Our blast radius - Canaries|5-20 users|0, all, or specific users|
-|Our blast radius - Early Adopters|50-100 users|0, all, or specific users|
-|Our blast radius - Users|1000-10000+ users|0, all, or specific users|
+|Blast radius - Canaries|0-9 users|0, all, or specific canary users|
+|Blast radius - Early Adopters|10-100 users|0, all, or specific early adopter users|
+|Blast radius - Users|10000+ of users|0, all, or specific users|
