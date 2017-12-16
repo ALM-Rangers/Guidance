@@ -2,7 +2,7 @@
 
 DevOps enables us to deliver at speed, learn from production feedback, make better decisions, and increase customer satisfaction, acquisition and retention. We need to fail fast on features that result in indifference or negative user experience and focus on features that make a positive difference. **Progressive exposure** is a DevOps practise, based on **feature flags** and **ring-based deployment** that allows us to expose features to selected users in production, to observe and validate, before exposing all users.
 
-You're probably asking yourself whether to use ring-based deployments, or feature flags, or both to support progressive exposure in your environment. Let's start by exploring both strategies.
+You're probably asking yourself whether to use ring-based deployments, feature flags, or both to support progressive exposure in your environment. Let's start by exploring both strategies.
 
 ## Let's understand what feature flags and rings are for
 
@@ -10,7 +10,7 @@ You're probably asking yourself whether to use ring-based deployments, or featur
 
 ![Feature flags](_img/rings-or-feature-flags/FF-switch.png)
 
-A typical feature flag implementation is based on (1) a feature flag implementation service that defines the flag, (2) a run-time query to determine value of the flag, and (3) an if-else programming construct, as shown:
+A typical feature flag implementation is based on (1) a feature flag implementation service that defines the flag, (2) a run-time query to figure out the value of the flag, and (3) an if-else programming construct, as shown:
 
 ![Feature flags](_img/rings-or-feature-flags/feature-flags.png)
 
@@ -20,17 +20,19 @@ The following diagram show an implementation of the ring-based deployment proces
 
 ![Ring-based deployment process](_img/rings-or-feature-flags/ring-based-deployment.png)
 
-When your developers commit a pull request with proposed changes to the master branch, (1) a continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly when you're confident that the release is ready for prime time, (3) you approve the release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
+When your developers commit a pull request with proposed changes to the master branch, (1) a continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly, when you're confident that the release is ready for prime time, (3) you approve the release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
 
-Both strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions) we introduced in [how DevOps eliminates development bottlenecks](https://opensource.com/article/17/11/devops-rangers-transformation), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
+Both strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
 
 ## Back to the question. Should you use the feature flags, or rings, or both?
 
+The quote “You do not respond to a mosquito bite with a hammer.”, by Patrick L.O. Lumumba, comes to mind. You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - in other words, there's no definitive answer, but we use both effectively.
 
+We use the ring deployment model to progressively expose a new **release** in production, whether it's a hotfix or feature release. We use the same strategy for our part-time open source extensions and our commercial product affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius increases.
 
-@@@@@@@@@@@A key advantage of the cloud service is that it provides a continuous feedback loop with our users. Here Buck discusses how we use feature flags to progressively reveal new functionality and to experiment in production.> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-> TBD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Feature flags allows us to progressively reveal new **features** of each release, perform A|B testing, and experiment in production. Because we're working with cloud services and extensions, we have a continuous feedback loop with our users and the ability to fine tune each release toggling feature flags.
+
+Personally, I think of ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to expose a release and of a ![Small screw driver](_img/rings-or-feature-flags/Screwdriver.png) when using **feature flags** to fine tune a release. I use "personally", because the answer to our question eventually boils down to personal preference.
 
 Happy flagging and ringing!
 
