@@ -34,7 +34,7 @@ Feature flags allows us to progressively reveal new **features** of each release
 
 The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is a simplified example of using both strategies to deploy new features to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
 
-Personally, I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to expose a release and of a ![Small screw driver](_img/rings-or-feature-flags/Screwdriver.png) when using **feature flags** to fine tune a release. I use "personally", because the answer to our question boils down to personal preference and how cautious you want to be when rolling out features. 
+Personally, I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to expose a release and of a ![Small screw driver](_img/rings-or-feature-flags/ScrewDiver.png) when using **feature flags** to fine tune a release. I use "personally", because the answer to our question boils down to personal preference and how cautious you want to be when rolling out features. 
 
 Happy flagging and ringing!
 
