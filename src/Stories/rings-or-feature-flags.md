@@ -22,8 +22,6 @@ The following diagram show an implementation of the ring-based deployment proces
 
 When your developers commit a pull request with proposed changes to the master branch, (1) a continuous integration build performs the build, unit testing, and triggers an automatic release to the Canary environment in production. When you're confident that the release is ready for user acceptance and exploratory testing in production (2) you approve the release to the Early Adopter ring. Similarly, when you're confident that the release is ready for prime time, (3) you approve the release to the Users ring. The names and number of rings depends on your preferences, but it's important that all rings are using the same production environment.
 
-The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is an extra cautious approach of the gradual roll-out that deploys to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
-
 Both the **feature flags** and **ring deployment model** strategies are invaluable, whether you're working with a part-time community working on open source [extensions](https://aka.ms/vsarsolutions#Extensions), or [moving 65,000 engineers to DevOps](https://aka.ms/devops).
 
 ## Back to the question. Should you use the feature flags, or rings, or both?
@@ -33,6 +31,8 @@ The quote “You do not respond to a mosquito bite with a hammer.”, by Patrick
 We use the ring deployment model to progressively expose a new **release** in production, whether it's a hotfix or feature release. We use the same strategy for our part-time open source extensions and our commercial product affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius increases.
 
 Feature flags allows us to progressively reveal new **features** of each release, perform A|B testing, and experiment in production. Because we're working with cloud services and extensions, we have a continuous feedback loop with our users and the ability to fine tune each release toggling feature flags.
+
+The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is a simplified example of using both strategies to deploy new features to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
 
 Personally, I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to expose a release and of a ![Small screw driver](_img/rings-or-feature-flags/Screwdriver.png) when using **feature flags** to fine tune a release. I use "personally", because the answer to our question boils down to personal preference and how cautious you want to be when rolling out features. 
 
