@@ -28,7 +28,7 @@ Both the **feature flags** and **ring deployment model** strategies are invaluab
 
 The quote “You do not respond to a mosquito bite with a hammer.”, by Patrick L.O. Lumumba, comes to mind. You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - in other words, there's no definitive answer, but we use both effectively.
 
-We use the to progressively expose a new **release** in production, whether it's a hotfix or feature release. We use the same strategy for our part-time open source extensions and our commercial product affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius increases.
+We use both to progressively expose a new **release** in production, whether it's a hotfix or feature release. We use the same strategy for our part-time open source extensions and our commercial product affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius increases.
 
 Feature flags allows us to [progressively reveal](https://youtu.be/ed3ziUDq_n0) new **features** of each release, perform A|B testing, and experiment in production. Because we're working with cloud services and extensions, we have a continuous feedback loop with our users and the ability to fine tune each release toggling feature flags.
 
