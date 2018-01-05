@@ -26,15 +26,19 @@ Both the **feature flags** and **ring deployment model** strategies are invaluab
 
 ## Back to the question. Should you use the feature flags, or rings, or both?
 
-The quote “You do not respond to a mosquito bite with a hammer.”, by Patrick L.O. Lumumba, comes to mind. You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - in other words, there's no definitive answer, but we use both effectively.
+The quote “You do not respond to a mosquito bite with a hammer.”, by Patrick L.O. Lumumba, comes to mind. You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - in other words, there's no definitive answer.
 
-We use both to progressively expose a new **release** in production, whether it's a hotfix or feature release. We use the same strategy for our part-time open source extensions and our commercial product affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius increases.
+We use both rings and feature flags to progressively expose a new **release** in production, whether it's a hot fix or feature release for our commercial product, affecting 65,000 engineers and eventually hundred of thousand of users as the blast or impact radius of the release increases.
 
-Feature flags allows us to [progressively reveal](https://youtu.be/ed3ziUDq_n0) new **features** of each release, perform A|B testing, and experiment in production. Because we're working with cloud services and extensions, we have a continuous feedback loop with our users and the ability to fine tune each release toggling feature flags.
+We primarily use the deployment ring strategy for our part-time open source extensions, affecting up to a few thousand users, as outlined in the table below. We're selectively implementing feature flags, as needed, to minimize technical debt while we gather experience with flags. See our [feature flag blogs](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/launchdarkly/) for details.
 
-The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is a simplified example of using both strategies to deploy new features to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
+Feature flags allow us to [progressively reveal](https://youtu.be/ed3ziUDq_n0) new **features** of each release, perform A|B testing, and experiment in production. Because we're working with cloud services and extensions, we have a continuous feedback loop with our users and the ability to fine tune each release by toggling feature flags.
 
-Personally, I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to expose a release and of a ![Small screw driver](_img/rings-or-feature-flags/ScrewDriver.png) when using **feature flags** to fine tune a release. I use "personally", because the answer to our question boils down to personal preference and how cautious you want to be when rolling out features. 
+The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is another simplified example of using both strategies to deploy new features to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
+
+I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to deploy a release and a ![Small screw driver](_img/rings-or-feature-flags/ScrewDriver.png) when using **feature flags** to fine tune the release. 
+
+So, the answer to the "rings and/or feature flags" question essentially boils down to how cautious you want to be when rolling out features. I strongly recommend that you you experiment with both.
 
 Happy flagging and ringing!
 
