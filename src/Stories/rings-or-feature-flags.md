@@ -38,9 +38,9 @@ The [quasi-continuous delivery mode](https://code.facebook.com/posts/27031490013
 
 I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when I'm using the **ring deployment** model to deploy a release and a ![Small screw driver](_img/rings-or-feature-flags/ScrewDriver.png) when using **feature flags** to fine tune the release. 
 
-So, the answer to the "rings and/or feature flags" question essentially boils down to how cautious you want to be when rolling out features. I strongly recommend that you you experiment with both.
+So, the answer to the "rings and/or feature flags" question essentially boils down to how cautious you want to be when rolling out features. I strongly recommend that you you experiment with both. Start by using deployment rings to expose a new release, then use feature flags to fine tune each release in production.
 
-Happy flagging and ringing!
+Happy ringing and flagging!
 
 ---
 
