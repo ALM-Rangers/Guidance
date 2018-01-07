@@ -34,7 +34,7 @@ For our open source community extensions we're primarily using the deployment ri
 
 The [quasi-continuous delivery mode](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale/) is another example of using both strategies to deploy new features to 1% of the users in the first ring, then 20%, 50%, and 100%, continuing with the same pattern to the second ring, and so on.
 
-You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - it boils down to how cautious you want to be when rolling out releases and exposing features. I recommend that you experiment with both. Start by using deployment rings to progressively expose a new release, then use feature flags to fine tune each release in production.
+You can use either the ring deployment model or the feature flag strategy to implement the progressive exposure DevOps practice - they are symbiotic. It all boils down to how cautious you want to be when rolling out releases and exposing features. I recommend that you experiment with both. Start by using deployment rings to progressively expose a new release, then use feature flags to fine tune each release in production.
 
 I think of a ![Trolley](_img/rings-or-feature-flags/Trolley.png) when using the **ring deployment** model to deploy a release and a ![Small screw driver](_img/rings-or-feature-flags/ScrewDriver.png) when using **feature flags** to fine tune the release.
 
