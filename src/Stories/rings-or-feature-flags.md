@@ -50,8 +50,8 @@ Table comparing rings with flags within the context of our open source [extensio
 |A/B Testing|All users within ring|All or selected users within ring|
 |Cost|Production environment maintenance|Feature Flag database and code maintenance|
 |Primary use|Manage impact "blast radius"|Show or hide features in a release|
-|Blast radius - Canaries|0-9 users|0, all, or specific canary users|
-|Blast radius - Early Adopters|10-100 users|0, all, or specific early adopter users|
+|Blast radius - Canaries|0-9 canary users|0, all, or specific canary users|
+|Blast radius - Early Adopters|10-100 early adopter users|0, all, or specific early adopter users|
 |Blast radius - Users|10000+ of users|0, all, or specific users|
 
 For more details refer to [Software Development with Feature Toggles](https://msdn.microsoft.com/en-ca/magazine/dn683796.aspx), [Phase the roll-out of your application through rings](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings), and [Our Feature Flag Investigations](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/launchdarkly/).
