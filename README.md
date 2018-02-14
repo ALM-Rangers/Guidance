@@ -45,7 +45,7 @@ The purpose is to create articles that give an insight into the transformation o
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
 |Our DevOps transformation|[DRAFT](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
-|Should we use the ring deployment model, feature flags, or both?|[DRAFT](/src/Stories/rings-or-feature-flags.md)|[opensource](https://opensource.com/article/18/2/feature-flags-ring-deployment-model)|
+|Should we use the ring deployment model, feature flags, or both?|[DRAFT](/src/Stories/rings-or-feature-flags.md)|[opensource.com](https://opensource.com/article/18/2/feature-flags-ring-deployment-model)|
 
 #### [Start here](src/Stories) to edit the stories
 #### Work in progress
