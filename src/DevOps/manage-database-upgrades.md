@@ -83,7 +83,7 @@ Based on the considerations we covered, let's have a look at some of the automat
 	- Manually generate scripts
 	- Version databases in development environment
 	- Version databases and script differences
-	- Use Red Gate data tools
+	- Use Redgate Data Tools
 
 ### Data-Tier Applications
 
@@ -200,7 +200,7 @@ While we recommend the use of [data-tier applications](https://docs.microsoft.co
 - Manually generate scripts
 - Version databases in development environment
 - Version databases and script differences
-- Use Red Gate data tools
+- Use Redgate Data Tools
 
 #### Manually generate scripts
 
@@ -232,9 +232,9 @@ You can take versioned databases one step further, by creating a Visual Studio s
  
 During your CI build, you can run tools, such as **vsdbcmd.exe**, to generate *.sql files with statements to update the database. You can then apply the .sql files during the CD release if the target database has a matching version.
 
-#### Use Red Gate data tools
+#### Use Redgate Data Tools
 
-If you’re using Visual Studio 2017 you can consider the [Red Gate](https://www.red-gate.com/) data tools set. They extend DevOps practices to SQL Server and Azure SQL databases and increase your productivity while doing database development. 
+If you’re using Visual Studio 2017 you can consider the [Redgate](https://www.red-gate.com/) data tools set. They extend DevOps practices to SQL Server and Azure SQL databases and increase your productivity while doing database development. 
 Use the [Redgate ReadyRoll VSTS/TFS plugin](https://marketplace.visualstudio.com/items?itemName=redgatesoftware.redgate-readyroll) to automate the deployment of changes in your CD pipeline. (Read [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) for a walk-through of the process).
 
 
