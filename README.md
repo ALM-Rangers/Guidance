@@ -11,7 +11,7 @@ notice. You bear the risk of using it.
 ## Branching Guidance
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-**[Start here](src/Branching)** to edit the brabching articles
+**[Start here](src/Branching)** to edit the branching articles
 
 #### Completed articles to edit the branching articles
 
