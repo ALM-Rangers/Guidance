@@ -11,7 +11,8 @@ notice. You bear the risk of using it.
 ## Branching Guidance
 The purpose is to build some insightful and practical guidance around branching and merging with Visual Studio Team Foundation Server and Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-#### [Start here](src/Branching)
+**[Start here](src/Branching)** to edit the brabching articles
+
 #### Completed articles to edit the branching articles
 
 | Article | DRAFT | FINAL PUBLICATION |
@@ -23,7 +24,8 @@ The purpose is to build some insightful and practical guidance around branching 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
 
-#### [Start here](src/DevOps) to edit the DevOps articles
+**[Start here](src/DevOps)** to edit the DevOps articles
+
 #### Completed articles
 
 | Article | DRAFT | FINAL PUBLICATION |
@@ -47,7 +49,8 @@ The purpose is to create articles that give an insight into the transformation o
 |Our DevOps transformation|[DRAFT](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
 |Should we use the ring deployment model, feature flags, or both?|[DRAFT](/src/Stories/rings-or-feature-flags.md)|[opensource.com](https://opensource.com/article/18/2/feature-flags-ring-deployment-model)|
 
-#### [Start here](src/Stories) to edit the stories
+**[Start here](src/Stories)** to edit the stories
+
 #### Work in progress
 
 | Article | DRAFT | FINAL PUBLICATION |
