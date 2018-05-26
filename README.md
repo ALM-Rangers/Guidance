@@ -40,24 +40,6 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 |---------|-------|-------------------|
 |Manage database upgrades|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/manage-database-upgrades.md)||
 
-
-## Stories
-The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
-
-| Article | DRAFT | FINAL PUBLICATION |
-|---------|-------|-------------------|
-|Our DevOps transformation|[DRAFT](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
-|Should we use the ring deployment model, feature flags, or both?|[DRAFT](/src/Stories/rings-or-feature-flags.md)|[opensource.com](https://opensource.com/article/18/2/feature-flags-ring-deployment-model)|
-
-**[Start here](src/Stories)** to edit the stories
-
-#### Work in progress
-
-| Article | DRAFT | FINAL PUBLICATION |
-|---------|-------|-------------------|
-|Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
-|Is DevOps a misnomer for part-time community teams?|||
-
 ## Planning Guidance
 The purpose is to build some insightful and practical guidance to replace the aging TFS Planning, Disaster Avoidance and Recovery guidance.
 
@@ -78,15 +60,22 @@ Look at aka.ms/devopsarticles to get a feel of the tone and length of articles a
 
 **[Start here](src/Planning)** to edit the planning articles
 
-#### Completed articles to edit the branching articles
+## Stories
+The purpose is to create articles that give an insight into the transformation of our process, culture, and community, by sharing stories from the field.
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
-|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
-|SVN to Git migration|[DRAFT 4](https://github.com/ALM-Rangers/Guidance/blob/master/src/Branching/perform-migration-from-svn-to-git.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/perform-migration-from-svn-to-git)|
+|Our DevOps transformation|[DRAFT](/src/Stories/our-devops-transformation.md)|[opensource.com](https://opensource.com/article/17/11/devops-rangers-transformation)|
+|Should we use the ring deployment model, feature flags, or both?|[DRAFT](/src/Stories/rings-or-feature-flags.md)|[opensource.com](https://opensource.com/article/18/2/feature-flags-ring-deployment-model)|
 
+**[Start here](src/Stories)** to edit the stories
 
+#### Work in progress
+
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
+|Is DevOps a misnomer for part-time community teams?|||
 
 # Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
