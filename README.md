@@ -58,6 +58,36 @@ The purpose is to create articles that give an insight into the transformation o
 |Our journey of transforming to a DevOps culture|[WORK IN PROGRESS](/src/Stories/our-journey-of-transforming-to-a-devops-culture.md)||
 |Is DevOps a misnomer for part-time community teams?|||
 
+## Planning Guidance
+The purpose is to build some insightful and practical guidance to replace the aging TFS Planning, Disaster Avoidance and Recovery guidance.
+
+**GUIDELINES**
+- Based on [TFS Planning, Disaster Avoidance and Recovery guidance](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance
+- Reference product documenation where relevant - do not duplicate
+- Article format, length, style, and tone to align with [technical articles](https://aka.ms/devopsarticles)
+- Build and review article here. After PO approval, we'll migrate to [technical articles](https://aka.ms/devopsarticles)
+
+Look at aka.ms/devopsarticles to get a feel of the tone and length of articles and familiarise yourself with ALM-Rangers/Guidance where we will create the first DRAFT.
+
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Understand your options for planning a TFS and VSTS engineering environment|||
+|Deploy Team Foundation Server on Azure IaaS |||
+|Encourage disaster avoidance in your TFS environment |||
+|Explore options for defining your Team project and Team strategy in VSTS |||
+
+**[Start here](src/Planning)** to edit the planning articles
+
+#### Completed articles to edit the branching articles
+
+| Article | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------------------|
+|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
+|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
+|SVN to Git migration|[DRAFT 4](https://github.com/ALM-Rangers/Guidance/blob/master/src/Branching/perform-migration-from-svn-to-git.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/perform-migration-from-svn-to-git)|
+
+
+
 # Contribute
 Contributions to this project are welcome. Here is how you can contribute:  
 
