@@ -352,7 +352,7 @@ Smaller teams mean fewer meetings and more communication between team members. T
 
 > I think it’s also easier for a new Ranger to on-board the program. There is no more Ruck guide and other stuff. You just follow aka.ms/sos and you’re done.  - WK
 
-In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ internal landing site at [aka.ms/sos](htpps://aka.ms/sos) to be up to date on all ongoing projects and teams.  The _sos_ page is created and maintained by the Ranger PM and provides a "home page" for new Rangers.  The page was created using simple markdown and is just a simple _readme.md_ file for the main team project in our repository on VSTS.
+In the past, new members had to read process documents such as the Ruck Guide and go through a period of mentoring to become productive members of the group. Now, all they need to do is follow the Rangers’ internal landing site at [aka.ms/sos](https://aka.ms/sos) to be up to date on all ongoing projects and teams.  The _sos_ page is created and maintained by the Ranger PM and provides a "home page" for new Rangers.  The page was created using simple markdown and is just a simple _readme.md_ file for the main team project in our repository on VSTS.
 
 In other words, the resources that they need are all neatly organized and available on demand (“*pull*” instead of the previous “*push*” of having a mentor send them artifacts to consume). All a new Rangers needs to bring is their experience and passion for all things ALM.
 
