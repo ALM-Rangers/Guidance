@@ -53,7 +53,7 @@ Look at aka.ms/devopsarticles to get a feel of the tone and length of articles a
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Understand your options for planning a TFS and VSTS engineering environment|||
+|Understand your options for planning a TFS and VSTS engineering environment|[DRAFT](/src/Planning/understand-options-tfs-vsts-environments.md||
 |Deploy Team Foundation Server on Azure IaaS |||
 |Encourage disaster avoidance in your TFS environment |||
 |Explore options for defining your Team project and Team strategy in VSTS |||
