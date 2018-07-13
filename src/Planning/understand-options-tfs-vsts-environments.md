@@ -10,7 +10,7 @@ This article aims to answer those questions, and give you a perspective on deplo
 
 ## Deployment Options
 
-[Team Foundation Server](https://visualstudio.microsoft.com/tfs) (TFS) and Visual Studio Team Foundation Server (VSTS) both provide an integrated collaboration solution. To [Understand differences between VSTS and TFS](https://docs.microsoft.com/en-us/vsts/user-guide/about-vsts-tfs?view=vsts), read [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts).
+[Team Foundation Server](https://visualstudio.microsoft.com/tfs) (TFS) and Visual Studio Team Foundation Server (VSTS) both provide an integrated collaboration solution. To [understand differences between VSTS and TFS](https://docs.microsoft.com/en-us/vsts/user-guide/about-vsts-tfs?view=vsts), read [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts).
 
 ![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-evolution.png)
 
@@ -21,7 +21,7 @@ You can deploy TFS in your on-premises datacenter, a hosted datacenter, or a hyb
 For TFS there are a few deployment options. 
 
 - **Single-server** hosts both the application tier (AT) and the data tier (DT) on a single server. Build, release, test, and proxy servers are optional features and can be deployed on the same or separate servers. A suitable option if you're looking for an easy to use and shareable demo or experimental environment, or simplicity in terms of infrastructure management.
-- **Multi-server (scale up)** starts with the application and the data tiers on separate server. When you are “scaling up,” you are adding resources to a single node in the system, for example, more CPU, memory or disk space.
+- **Dual Server (scale up)** starts with the application and the data tiers on separate server. When you are “scaling up,” you are adding resources to a single node in the system, for example, more CPU, memory or disk space.
 - **Multi-server (scale out)** also starts with the application and the data tiers on separate server. However, when you add resources, you add a new node to the system to distribute load and achieve greater capacity. For example, you can add a new server to the application tier to distribute user request load. The scale-out option also adds redundancy and performance by adding additional application and data tier servers. A typical data tier is implemented using SQL Server instances and the application tier by network load balancing (NLB) two or more application tier servers.
 
 [VSTS](https://visualstudio.microsoft.com/team-services/) is the software as a service (SaaS) cloud offering.
@@ -43,24 +43,27 @@ While both TFS and VSTS provide the same essential services, VSTS provides your 
 
 >
 > [!NOTE]
+>
 > If you want to focus on delivering **business value** and delegate data center operations, security, monitoring, and 24x7 support to the experts, then VSTS is for you!
 >
 
 ## Capacity Planning
 
-To decide which of the TFS deployment options are viable, you need to consider the advantages of each option, the number of users and projects you will need to support and understand the expected requests per second per application tier (AT) server. The following table is a quick summary of the three deployment options, with the maximum number of conservative users. For a more detailed breakdown and recommended scenarios, use the capacity planning workbook that's part of the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
+To decide which of the TFS deployment options are viable, you need to consider the advantages of each option, the number of users and projects you will need to support and understand the expected requests per second (RPS) per application tier (AT) server. 
 
-|Deployment Option|RPS|Max Users|
-|-----------------|---|---------|
+The following table is a quick summary of the three deployment options, with suggested maximum number of conservative users. For a more detailed breakdown of the scenarios and recommended hardware, use the capacity planning workbook from the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
+
+|Deployment Option|Requests per second (RPS)|Max Users|
+|-----------------|--:|--------:|
 |Single Server|92-180|250-500|
 |Dual Servers (scale up)|476-730|2200-3600|
-|Dual Servers (scale out)|730+|3600+|
+|Multi Servers (scale out)|730+|3600+|
 
-XXXTBDXXX
-
-## One Team Project to rule them all?
-
-XXXTBDXXX
+>
+> [!TIP]
+>
+> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow.
+>
 
 ## Conclusion
 
