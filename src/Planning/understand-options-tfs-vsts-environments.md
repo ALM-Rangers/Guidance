@@ -35,17 +35,12 @@ Consider VSTS when you want quick setup, maintenance-free operations, easy colla
 While both TFS and VSTS provide the same essential services, VSTS provides your organization these added benefits:
 
 - **Always Latest** - No more expensive and complex upgrade cycles to manage your data center. You always have access to the latest version of the service, with optional access to preview features.
+- **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimised business model, based on operational expenses (OPEX). Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing their cloud.
+- **Ease of use** - Easy access from anywhere, with improved connectivity with remote sites, and control when you need it. 
 - **React Fast** - The VSTS live-site management processes are crafted to ensure a deep focus on service health and customer experience, to minimize time to detect, respond to, and mitigate business impacting issues. You have fast access to patches and bug fixes. 
-- **Security** - VSTS is hosted entirely in Microsoft Azure datacenters and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This ensures that VSTS takes advantage of the state of the art capabilities, protection, and industry certifications available from the Azure platform. You get data protection by the experts for data availability, service availability, service security, and data privacy. For details on security, read [Data Protection Overview](https://aka.ms/vsts-security).
-- **Accessibility** - Easy access from anywhere, with improved connectivity with remote sites, and control when you need it.
-- **Licensing** - Simplified licensing allows you to transition from a capital expenditure (servers and the like) to operational expenditure (subscriptions).
 - **Scalability** - Automatically scales with your needs, with resilience and quality assurance.
-
->
-> [!NOTE]
->
-> If you want to focus on delivering **business value** and delegate data center operations, security, monitoring, and 24x7 support to the experts, then VSTS is for you!
->
+- **Security** - VSTS is hosted entirely in Microsoft Azure datacenters and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This ensures that VSTS takes advantage of the state of the art capabilities, protection, and industry certifications available from the Azure platform. You get data protection by the experts for data availability, service availability, service security, and data privacy. For details on security, read [Data Protection Overview](https://aka.ms/vsts-security).
+- **Licensing** - Simplified licensing allows you to transition from a capital expenditure (servers and the like) to operational expenditure (subscriptions).
 
 ## Capacity Planning
 
@@ -69,8 +64,17 @@ If you have remote sites, sharing code with your main TFS server site, the [Team
 
 ## Conclusion
 
-XXXTBDXXX - Add image to help user select the recommended option. 
-XXXTBDXXX - VSTS is recommended option. 
+VSTS enables you to start small, take your solution from idea to release, scale-up as needed, and leave the support and maintenance of services to the experts.
+
+![Choose the recommended option](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-select.png)
+
+It's only when you want to manage servers and services yourself, that the on-premises or virtualised TFS single, dual, and multi server scenarios (7-9) are recommended.
+
+>
+> [!NOTE]
+>
+> If you want to focus on delivering **business value** and delegate data center operations, security, monitoring, and 24x7 support to the experts, then VSTS is for you!
+>
 
 ## Reference Information
 
@@ -79,6 +83,7 @@ XXXTBDXXX - VSTS is recommended option.
 - [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance
 - [Understand differences between VSTS and TFS](https://docs.microsoft.com/en-us/vsts/user-guide/about-vsts-tfs?view=vsts)
 - [VSTS](https://visualstudio.microsoft.com/team-services/)
+- [VSTS SSH on Azure’s Global Network](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/)
 - [Why move to VSTS in the Cloud](https://1drv.ms/p/s!AnFDv11RH3N2bXAED61fZ-kePzY)
 
 >
