@@ -35,10 +35,10 @@ Consider VSTS when you want quick setup, maintenance-free operations, easy colla
 While both TFS and VSTS provide the same essential services, VSTS provides your organization these added benefits:
 
 - **Always Latest** - No more expensive and complex upgrade cycles to manage your data center. You always have access to the latest version of the service, with optional access to preview features.
-- **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimised business model, based on operational expenses (OPEX). Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing their cloud.
+- **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimised business model, based on operational expenses (OPEX).
 - **Ease of use** - Easy access from anywhere, with improved connectivity with remote sites, and control when you need it. 
 - **React Fast** - The VSTS live-site management processes are crafted to ensure a deep focus on service health and customer experience, to minimize time to detect, respond to, and mitigate business impacting issues. You have fast access to patches and bug fixes. 
-- **Scalability** - Automatically scales with your needs, with resilience and quality assurance.
+- **Scalability** - Automatically scales with your needs, with resilience and quality assurance. Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing their cloud.
 - **Security** - VSTS is hosted entirely in Microsoft Azure datacenters and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This ensures that VSTS takes advantage of the state of the art capabilities, protection, and industry certifications available from the Azure platform. You get data protection by the experts for data availability, service availability, service security, and data privacy. For details on security, read [Data Protection Overview](https://aka.ms/vsts-security).
 - **Licensing** - Simplified licensing allows you to transition from a capital expenditure (servers and the like) to operational expenditure (subscriptions).
 
@@ -57,7 +57,7 @@ The following table is a quick summary of the three deployment options, with sug
 >
 > [!TIP]
 >
-> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow.
+> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow. You can change the deployment option and migrate to VSTS at a later stage.
 >
 
 If you have remote sites, sharing code with your main TFS server site, the [Team Foundation Server Proxy](https://docs.microsoft.com/en-us/tfs/server/install/install-proxy-setup-remote) helps to cache recently used version control files, improve remote user experience, and reduce network load.
@@ -68,7 +68,7 @@ VSTS enables you to start small, take your solution from idea to release, scale-
 
 ![Choose the recommended option](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-select.png)
 
-It's only when you want to manage servers and services yourself, that the on-premises or virtualised TFS single, dual, and multi server scenarios (7-9) are recommended.
+It's only when you want to manage servers and services yourself that the on-premises or virtualised TFS single, dual, and multi server scenarios (7-9) are recommended.
 
 >
 > [!NOTE]
