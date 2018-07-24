@@ -80,10 +80,10 @@ It's only when you want to manage servers and services yourself that the on-prem
 ## Reference Information
 
 - [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts)
-- [TFS](https://visualstudio.microsoft.com/tfs) 
+- [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs) 
 - [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance
 - [Understand differences between VSTS and TFS](https://docs.microsoft.com/en-us/vsts/user-guide/about-vsts-tfs?view=vsts)
-- [VSTS](https://visualstudio.microsoft.com/team-services/)
+- [Visual Studio Team Services (VSTS)](https://visualstudio.microsoft.com/team-services/)
 - [VSTS SSH on Azure’s Global Network](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/)
 - [Why move to VSTS in the Cloud](https://1drv.ms/p/s!AnFDv11RH3N2bXAED61fZ-kePzY)
 
