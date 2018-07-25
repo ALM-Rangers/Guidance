@@ -58,7 +58,7 @@ The following table is a quick summary of the three deployment options, with sug
 >
 > [!TIP]
 >
-> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow. You can change the deployment option and migrate to VSTS at a later stage.
+> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow. You can change the deployment option and migrate to VSTS at a later stage. See [Migration options](https://docs.microsoft.com/en-us/vsts/articles/migrate-to-vsts-from-tfs?view=vsts) to review the migration approaches.
 >
 
 If you have remote sites, sharing code with your main TFS server site, the [Team Foundation Server Proxy](https://docs.microsoft.com/en-us/tfs/server/install/install-proxy-setup-remote) helps to cache recently used version control files, improve remote user experience, and reduce network load.
