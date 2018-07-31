@@ -17,10 +17,10 @@ Consider VSTS when you want quick setup, maintenance-free operations, easy colla
 While both TFS and VSTS provide the same essential services, VSTS provides your organization these added benefits:
 
 - **Always Latest** - No more expensive and complex upgrade cycles to manage your data center. You always have access to the latest version of the service, with optional access to preview features.
-- **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimised business model, based on operational expenses (OPEX).
+- **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimized business model, based on operational expenses (OPEX).
 - **Ease of use** - Easy access from anywhere, with improved connectivity with remote sites, and control when you need it. 
 - **React Fast** - The VSTS live-site management processes are crafted to ensure a deep focus on service health and customer experience, to minimize time to detect, respond to, and mitigate business impacting issues. You have fast access to patches and bug fixes. 
-- **Scalability** - Automatically scales with your needs, with resilience and quality assurance. Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing their cloud.
+- **Scalability** - Automatically scales with your needs, with resilience and quality assurance. Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing in their cloud.
 - **Security** - VSTS is hosted entirely in Microsoft Azure datacenters and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This ensures that VSTS takes advantage of the state of the art capabilities, protection, and industry certifications available from the Azure platform. You get data protection by the experts for data availability, service availability, service security, and data privacy. For details on security, read [Data Protection Overview](https://aka.ms/vsts-security).
 - **Licensing** - Simplified licensing allows you to transition from a capital expenditure (servers and the like) to operational expenditure (subscriptions).
 
@@ -33,21 +33,21 @@ While both TFS and VSTS provide the same essential services, VSTS provides your 
 
 ![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-evolution.png)
 
-You can deploy TFS in your on-premises datacenter, a hosted datacenter, or a hybrid infrastructure. A transition to a hosted datacenter allows your business to win agility and flexibility, reduce capitial expenditures, deliver your applications and services to the business cheaper and more effectively, and enable your digital transformation.
+You can deploy TFS in your on-premises datacenter, a hosted datacenter, or a hybrid infrastructure. A transition to a hosted datacenter allows your business to win agility and flexibility, reduce capital expenditure, deliver your applications and services to the business cheaper and more effectively, and enable your digital transformation.
 
 ![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-scenarios.png)
 
 For TFS there are a few deployment options. 
 
 - **Single-server** hosts both the application tier (AT) and the data tier (DT) on a single server. Build, release, test, and proxy servers are optional features and can be deployed on the same or separate servers. A suitable option if you're looking for an easy to use and shareable demo or experimental environment, or simplicity in terms of infrastructure management.
-- **Dual Server (scale up)** starts with the application and the data tiers on separate server. When you are “scaling up,” you are adding resources to a single node in the system, for example, more CPU, memory or disk space.
+- **Dual Server (scale up)** starts with the application and the data tiers on separate servers. When you are “scaling up,” you are adding resources to a single node in the system, for example, more CPU, memory or disk space.
 - **Multi-server (scale out)** also starts with the application and the data tiers on separate server. However, when you add resources, you add a new node to the system to distribute load and achieve greater capacity. For example, you can add a new server to the application tier to distribute user request load. The scale-out option also adds redundancy and performance by adding additional application and data tier servers. A typical data tier is implemented using SQL Server instances and the application tier by network load balancing (NLB) two or more application tier servers.
 
 ## Capacity Planning
 
 To decide which of the TFS deployment options are viable, you need to consider the advantages of each option, the number of users and projects you will need to support and understand the expected requests per second (RPS) per application tier (AT) server. 
 
-The following table is a quick summary of the three deployment options, with suggested maximum number of conservative users. For a more detailed breakdown of the scenarios and recommended hardware, use the capacity planning workbook from the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
+The following table is a quick summary of the three deployment options, with a conservative suggested maximum number of users. For a more detailed breakdown of the scenarios and recommended hardware, use the capacity planning workbook from the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
 
 |Deployment Option|Requests per second (RPS)|Max Users|
 |-----------------|--:|--------:|
@@ -69,7 +69,7 @@ VSTS enables you to start small, take your solution from idea to release, scale-
 
 ![Choose the recommended option](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-select.png)
 
-It's only when you want to manage servers and services yourself that the on-premises or virtualised TFS single, dual, and multi server scenarios (7-9) are recommended.
+It's only when you want to manage servers and services yourself that the on-premises or virtualized TFS single, dual, and multi server scenarios (7-9) are recommended.
 
 >
 > [!NOTE]
