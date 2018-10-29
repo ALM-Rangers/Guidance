@@ -90,6 +90,8 @@ It's only when you want to manage servers and services yourself that the on-prem
 >
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/alm-rangers/guidance).
 >
+> Reviewers: Hasaan Fadili, Ken Muse, and Mike Fourie
+>
 
 *(c) 2018 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. 
 This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.*
