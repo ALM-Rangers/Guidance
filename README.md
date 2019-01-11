@@ -51,12 +51,13 @@ The purpose is to build some insightful and practical guidance to replace the ag
 
 Look at aka.ms/devopsarticles to get a feel of the tone and length of articles and familiarise yourself with ALM-Rangers/Guidance where we will create the first DRAFT.
 
-| Article | DRAFT | FINAL PUBLICATION |
-|---------|-------|-------------------|
-|Understand your options for planning a TFS and VSTS engineering environment|[DRAFT](/src/Planning/understand-options-tfs-vsts-environments.md)||
-|Deploy Team Foundation Server on Azure IaaS |||
-|Encourage disaster avoidance in your TFS environment |||
-|Explore options for defining your Team project and Team strategy in VSTS |||
+| Article | DRAFT | LEAD | FINAL PUBLICATION |
+|---------|-------|------|-------------------|
+| Otions for planning a TFS and AzDO engineering environment | Willy |[DRAFT](/src/Planning/understand-options-tfs-vsts-environments.md)| 
+| Otions for planning a TFS and AzDO engineering environment (workbook)|[DRAFT](/src/Planning/understand-options-tfs-vsts-environments.md) |  |  |  |
+| Dploy Team Foundation Server on Azure IaaS |  |  |  |
+| Ecourage disaster avoidance in your TFS environment |  |  |  |
+| Eplore options for defining your Team project and Team strategy in VSTS |  |  |  |
 
 **[Start here](src/Planning)** to edit the planning articles
 
