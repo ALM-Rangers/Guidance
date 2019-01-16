@@ -54,7 +54,7 @@ Look at aka.ms/devopsarticles to get a feel of the tone and length of articles a
 | Article | DRAFT | LEAD | FINAL PUBLICATION |
 |---------|-------|------|-------------------|
 | Otions for planning a TFS and AzDO engineering environment | Willy |[DRAFT](/src/Planning/understand-options-tfs-vsts-environments.md)| 
-| Otions for planning a TFS and AzDO engineering environment (workbook) | | [DRAFT](/src/Planning/understand-options-tfs-vsts-environments-capacity-guide.xlsx) |  |  |
+| Otions for planning a TFS and AzDO engineering environment (workbook) | KenM | [DRAFT](/src/Planning/understand-options-tfs-vsts-environments-capacity-guide.xlsx) |  |  |
 | Deploy Team Foundation Server on Azure IaaS | NielZ |  |  |
 | Encourage disaster avoidance in your TFS environment |  |  |  |
 | Explore options for defining your Team project and Team strategy in VSTS | Jesper |  |  |
