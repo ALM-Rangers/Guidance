@@ -43,7 +43,7 @@ For TFS there are a few deployment options.
 
 ## Capacity Planning
 
-To decide which of the Azure DevOps Server deployment options are viable, you need to consider the advantages of each option, the number of users and projects you will need to support and understand the expected requests per second (RPS) per application tier (AT) server. 
+To decide which of the Azure DevOps Server deployment options are viable, you need to consider the advantages of each option and the number of users and projects you will need to support. 
 
 The following table is a quick summary of the three deployment options, with a conservative suggested maximum number of users. For a more detailed breakdown of the scenarios and recommended hardware, use the capacity planning workbook from the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
 
