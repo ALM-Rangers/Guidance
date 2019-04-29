@@ -25,7 +25,7 @@ While both Azure DevOps Server and Azure DevOps provide the same essential servi
 
 ## Deployment Options
 
-[Azure DevOps Server](https://visualstudio.microsoft.com/tfs) and Visual Studio Azure DevOps Server (Azure DevOps ) both provide an integrated collaboration solution. To [understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops), read [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts).
+[Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/) and [Azure DevOps](https://azure.microsoft.com/en-ca/services/devops/) both provide an integrated collaboration solution. To [understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops), read [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts).
 
 [Azure DevOps](https://visualstudio.microsoft.com/team-services/) is the recommended software as a service (SaaS) cloud offering on the far right.
 
