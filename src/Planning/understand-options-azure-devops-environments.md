@@ -11,7 +11,7 @@ This article aims to answer those questions, and give you a perspective on deplo
 
 Consider Azure DevOps when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, rock solid security, with access to cloud load testing, cloud build servers, and application insights. It provides a scalable, reliable, backed by a 99.9% SLA, monitored 24x7, and available in local data centers around the world.
 
-![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-saas.png)
+![Evolution from datacenters to cloud](_img/understand-options-azure-devops-environments/understand-options-azure-devops-environments-saas.png)
 
 While both Azure DevOps Server and Azure DevOps provide the same essential services, Azure DevOps provides your organization these added benefits:
 
@@ -19,23 +19,23 @@ While both Azure DevOps Server and Azure DevOps provide the same essential servi
 - **CAPEX -> OPEX** - No servers and infrastructure to support, manage, and upgrade. You can move your organizations from resource optimized model, based on capital expenses (CAPEX), to a market optimized business model, based on operational expenses (OPEX).
 - **Ease of use** - Easy access from anywhere, with improved connectivity with remote sites, and control when you need it. 
 - **React Fast** - The Azure DevOps live-site management processes are crafted to ensure a deep focus on service health and customer experience, to minimize time to detect, respond to, and mitigate business impacting issues. You have fast access to patches and bug fixes. 
-- **Scalability** - Automatically scales with your needs, with resilience and quality assurance. Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-gb/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing in their cloud.
+- **Scalability** - Automatically scales with your needs, with resilience and quality assurance. Read [how Microsoft builds its fast and reliable global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) to understand how Microsoft is continuously innovating and investing in their cloud.
 - **Security** - Azure DevOps is hosted entirely in Microsoft Azure datacenters and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This ensures that Azure DevOps  takes advantage of the state of the art capabilities, protection, and industry certifications available from the Azure platform. You get data protection by the experts for data availability, service availability, service security, and data privacy. For details on security, read [Data Protection Overview](https://aka.ms/vsts-security).
 - **Licensing** - Simplified licensing allows you to transition from a capital expenditure (servers and the like) to operational expenditure (subscriptions).
 
 ## Deployment Options
 
-[Azure DevOps Server](https://visualstudio.microsoft.com/tfs) (TFS) and Visual Studio Azure DevOps Server (Azure DevOps ) both provide an integrated collaboration solution. To [understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops), read [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts).
+[Azure DevOps Server](https://azure.microsoft.com/services/devops/server/) and [Azure DevOps](https://azure.microsoft.com/services/devops/) both provide an integrated collaboration solution. To [understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops), read [Essential Services](https://docs.microsoft.com/vsts/user-guide/services?view=vsts).
 
 [Azure DevOps](https://visualstudio.microsoft.com/team-services/) is the recommended software as a service (SaaS) cloud offering on the far right.
 
-![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-evolution.png)
+![Evolution from datacenters to cloud](_img/understand-options-azure-devops-environments/understand-options-azure-devops-environments-evolution.png)
 
 You can deploy Azure DevOps Server in your on-premises datacenter, a hosted datacenter, or a hybrid infrastructure. A transition to a hosted datacenter allows your business to win agility and flexibility, reduce capital expenditure, deliver your applications and services to the business cheaper and more effectively, and enable your digital transformation.
 
-![Evolution from datacenters to cloud](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-scenarios.png)
+![Evolution from datacenters to cloud](_img/understand-options-azure-devops-environments/understand-options-azure-devops-environments-scenarios.png)
 
-For TFS there are a few deployment options. 
+For Azure DevOps Server there are a few deployment options. 
 
 - **Single-server** hosts both the application tier (AT) and the data tier (DT) on a single server. Build, release, test, and proxy servers are optional features and can be deployed on the same or separate servers. A suitable option if you're looking for an easy to use and shareable demo or experimental environment, or simplicity in terms of infrastructure management.
 - **Dual Server (scale up)** starts with the application and the data tiers on separate servers. When you are “scaling up,” you are adding resources to a single node in the system, for example, more CPU, memory or disk space.
@@ -45,7 +45,12 @@ For TFS there are a few deployment options.
 
 To decide which of the Azure DevOps Server deployment options are viable, you need to consider the advantages of each option and the number of users and projects you will need to support. 
 
-The following table is a quick summary of the three deployment options, with a conservative suggested maximum number of users. For a more detailed breakdown of the scenarios and recommended hardware, use the capacity planning workbook from the [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance.
+The following table is a quick summary of the three deployment options, with a conservative suggested maximum number of users. 
+
+>
+> [!TIP]
+>
+> For a more detailed breakdown of the scenarios and recommended hardware, use the [capacity planning workbook](understand-options-azure-devops-environments-capacity-guide.xlsx).
 
 |Deployment Option|Requests per second (RPS)|Max Users|
 |-----------------|--:|--------:|
@@ -54,20 +59,20 @@ The following table is a quick summary of the three deployment options, with a c
 |Multi Servers (scale out)|730+|3600+|
 
 >
-> [!TIP]
+> [!NOTE]
 >
-> The dual and multi server options allow you to scale your TFS environment as your organization or number of power users grow. You can change the deployment option and migrate to Azure DevOps  at a later stage. See [Migration options](https://docs.microsoft.com/en-us/vsts/articles/migrate-to-vsts-from-tfs?view=vsts) to review migration approaches.
+> The dual and multi server options allow you to scale your Azure DevOps Server environment as your organization or number of power users grow. You can change the deployment option and migrate to Azure DevOps  at a later stage. See [Migration options](https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs?view=azure-devops&viewFallbackFrom=vsts) to review migration approaches.
 >
 
-If you have remote sites, sharing code with your main TFS server site, the [Azure DevOps Server Proxy](https://docs.microsoft.com/en-us/tfs/server/install/install-proxy-setup-remote) helps to cache recently used version control files, improve remote user experience, and reduce network load.
+If you have remote sites, sharing code with your main Azure DevOps server site, the [Azure DevOps Server Proxy](https://docs.microsoft.com/azure/devops/server/install/install-proxy-setup-remote?view=azure-devops) helps to cache recently used version control files, improve remote user experience, and reduce network load.
 
 ## Conclusion
 
 Azure DevOps  enables you to start small, take your solution from idea to release, scale-up as needed, and leave the support and maintenance of services to the experts.
 
-![Choose the recommended option](_img/understand-options-tfs-vsts-environments/understand-options-tfs-vsts-environments-select.png)
+![Choose the recommended option](_img/understand-options-azure-devops-environments/understand-options-azure-devops-environments-select.png)
 
-It's only when you want to manage servers and services yourself that the on-premises or virtualized TFS single, dual, and multi server scenarios (7-9) are recommended.
+It's only when you want to manage servers and services yourself that the on-premises or virtualized Azure DevOps Server single, dual, and multi server scenarios (7-9) are recommended.
 
 >
 > [!NOTE]
@@ -78,16 +83,16 @@ It's only when you want to manage servers and services yourself that the on-prem
 ## Reference Information
 
 - [Azure DevOps Server](https://visualstudio.microsoft.com/tfs) 
-- [Essential Services](https://docs.microsoft.com/en-us/vsts/user-guide/services?view=vsts)
+- [Essential Services](https://docs.microsoft.com/vsts/user-guide/services?view=vsts)
 - [TFS Planning, Disaster Avoidance and Recovery](https://vsardata.blob.core.windows.net/projects/Rangers_vsarPlanninglGuide_Everything.zip) guidance
-- [Understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops)
+- [Understand differences between Azure DevOps and Azure DevOps Server](https://docs.microsoft.com/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops)
 - [VSTS SSH on Azure’s Global Network](https://blogs.msdn.microsoft.com/devops/2017/10/23/vsts-ssh-on-azure-global-network/)
 - [Why move to Azure DevOps in the Cloud](https://1drv.ms/p/s!AnFDv11RH3N2bXAED61fZ-kePzY)
 
 >
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/alm-rangers/guidance).
 >
-> Reviewers: Hasaan Fadili, Ken Muse, and Mike Fourie
+> Reviewers: Hasaan Fadili, Ken Muse, Mike Fourie, and Niel Zeeman
 >
 
 *(c) 2019 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. 
