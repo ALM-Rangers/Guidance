@@ -51,8 +51,8 @@ The purpose is to build some insightful and practical guidance to replace the ag
 
 Look at aka.ms/devopsarticles to get a feel of the tone and length of articles and familiarise yourself with ALM-Rangers/Guidance where we will create the first DRAFT.
 
-| Article | DRAFT | LEAD | FINAL PUBLICATION |
-|---------|-------|------|-------------------|
+| Article | LEAD  | DRAFT | FINAL PUBLICATION |
+|---------|-------|-------|-------------------|
 | Options for planning an Azure DevOps engineering environment | Willy |[DRAFT 2](/src/Planning/understand-options-azure-devops-environments.md)| 
 | Options for planning an Azure DevOps  engineering environment (workbook) | KenM | [DRAFT 2](/src/Planning/understand-options-azure-devops-environments-capacity-guide.xlsx) |  |  |
 | Deploy Azure DevOps Server on Azure IaaS | NielZ |  |  |
