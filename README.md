@@ -17,9 +17,9 @@ The purpose is to build some insightful and practical guidance around branching 
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Effective feature isolation on TFVC|[DRAFT 4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
-|Effective TFVC branching strategies for DevOps|[DRAFT 3](src/Branching/effective-tfvc-branching-strategies-for-devops.xlsx)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
-|SVN to Git migration|[DRAFT 4](https://github.com/ALM-Rangers/Guidance/blob/master/src/Branching/perform-migration-from-svn-to-git.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/perform-migration-from-svn-to-git)|
+|Effective feature isolation on TFVC|[DRAFT.4](/src/Branching/effective-feature-isolation-on-tfvc.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-feature-isolation-on-tfvc)|
+|Effective TFVC branching strategies for DevOps|[DRAFT.3](src/Branching/effective-tfvc-branching-strategies-for-devops.xlsx)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops)|
+|SVN to Git migration|[DRAFT.4](https://github.com/ALM-Rangers/Guidance/blob/master/src/Branching/perform-migration-from-svn-to-git.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/perform-migration-from-svn-to-git)|
 
 ## DevOps Articles
 The purpose is to build some insightful and practical guidance to "rub some DevOps" on Visual Studio Team Services, to be shared as [technical articles](https://aka.ms/techarticles).
@@ -30,9 +30,9 @@ The purpose is to build some insightful and practical guidance to "rub some DevO
 
 | Article | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------------------|
-|Phase rollout of your application with rings|[DRAFT 2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings)|
+|Phase rollout of your application with rings|[DRAFT.2](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-rollout-with-rings.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-rollout-with-rings)|
 |Security Validation CI/CD Pipeline|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/security-validation-cicd-pipeline.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/security-validation-cicd-pipeline)|
-|Phase the features of your application with feature flags|[DRAFT 3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-features-with-feature-flags.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-features-with-feature-flags)|
+|Phase the features of your application with feature flags|[DRAFT.3](https://github.com/ALM-Rangers/Guidance/blob/master/src/DevOps/phase-features-with-feature-flags.md)|[docs.microsoft.com](https://docs.microsoft.com/en-us/vsts/articles/phase-features-with-feature-flags)|
   
 #### Work in progress
 
@@ -53,8 +53,8 @@ Look at aka.ms/devopsarticles to get a feel of the tone and length of articles a
 
 | Article | LEAD  | DRAFT | FINAL PUBLICATION |
 |---------|-------|-------|-------------------|
-| Options for planning an Azure DevOps engineering environment | Willy |[DRAFT 2](/src/Planning/understand-options-azure-devops-environments.md)| 
-| Options for planning an Azure DevOps  engineering environment (workbook) | KenM | [DRAFT 2](/src/Planning/understand-options-azure-devops-environments-capacity-guide.xlsx) |  |  |
+| Options for planning an Azure DevOps engineering environment | Willy |[DRAFT.2](/src/Planning/understand-options-azure-devops-environments.md)| 
+| Options for planning an Azure DevOps  engineering environment (workbook) | KenM | [DRAFT.2](/src/Planning/understand-options-azure-devops-environments-capacity-guide.xlsx) |  |  |
 | Deploy Azure DevOps Server on Azure IaaS | NielZ |  |  |
 | Encourage disaster avoidance in your Azure DevOps Server environment |  |  |  |
 | Explore options for defining your Team project and Team strategy in Azure DevOps | Jesper |  |  |
