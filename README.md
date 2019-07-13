@@ -53,11 +53,11 @@ Look at aka.ms/devopsarticles to get a feel of the tone and length of articles a
 
 | Article | DRAFT | LEAD | FINAL PUBLICATION |
 |---------|-------|------|-------------------|
-| Options for planning a TFS and AzDO engineering environment | Willy |[DRAFT 2](/src/Planning/understand-options-azure-devops-environments.md)| 
-| Options for planning a TFS and AzDO engineering environment (workbook) | KenM | [DRAFT 2](/src/Planning/understand-options-azure-devops-environments-capacity-guide.xlsx) |  |  |
-| Deploy Team Foundation Server on Azure IaaS | NielZ |  |  |
-| Encourage disaster avoidance in your TFS environment |  |  |  |
-| Explore options for defining your Team project and Team strategy in VSTS | Jesper |  |  |
+| Options for planning an Azure DevOps engineering environment | Willy |[DRAFT 2](/src/Planning/understand-options-azure-devops-environments.md)| 
+| Options for planning an Azure DevOps  engineering environment (workbook) | KenM | [DRAFT 2](/src/Planning/understand-options-azure-devops-environments-capacity-guide.xlsx) |  |  |
+| Deploy Azure DevOps Server on Azure IaaS | NielZ |  |  |
+| Encourage disaster avoidance in your Azure DevOps Server environment |  |  |  |
+| Explore options for defining your Team project and Team strategy in Azure DevOps | Jesper |  |  |
 
 **[Start here](src/Planning)** to edit the planning articles
 
